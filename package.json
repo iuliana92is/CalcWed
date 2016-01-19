@@ -1,0 +1,22 @@
+{
+  "name": "escape",
+  "version": "1.0.0",
+  "description": "escape, iasi, room, romania",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "escape",
+    "iasi",
+    "room",
+    "romania"
+  ],
+  "author": "tstarciuc, abolbocean, iuciobanu",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.3",
+    "express-handlebars": "^2.0.1",
+    "express-hbs": "^0.8.4"
+  }
+}
