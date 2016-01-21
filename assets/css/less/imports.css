@@ -1,6 +1,5 @@
 body {
   font-size: 18px;
-  font-weight: 300;
   font-family: 'Josefin Sans', sans-serif;
   margin: 0;
   padding: 0;
@@ -9,12 +8,36 @@ body {
 body .clearfix {
   clear: both;
 }
-footer {
-  width: 100%;
-  height: auto;
+.button {
+  text-transform: uppercase;
+  color: #fff;
+  border-top-right-radius: 10px;
+  text-decoration: none;
+  box-shadow: 0px 2px 0px 0px #179abf;
+  background: red;
+  padding: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+  width: 150px;
+  height: 40px;
+  box-sizing: border-box;
 }
-footer .content--background {
-  background-image: url(../../img/structure/index-background-content2.jpg);
+.content--zone__style {
+  z-index: 1;
+  position: relative;
+  display: block;
+  float: left;
+  margin: -100px 0 100px 0;
+  width: 100%;
+  background: gray;
+  transform: skew(0deg, -10deg);
+  -ms-transform: skew(0deg, -10deg);
+  /* IE 9 */
+  -webkit-transform: skew(0deg, -5deg);
+  /* Safari and Chrome */
+}
+.content--background__style {
+  background-image: url(../img/structure/index-background-content2.jpg);
   height: auto;
   width: 100%;
   background-size: cover;
@@ -23,6 +46,23 @@ footer .content--background {
   box-sizing: border-box;
   color: #fff;
   position: relative;
+  background-attachment: fixed;
+}
+footer {
+  width: 100%;
+  height: auto;
+}
+footer .content--background {
+  background-image: url(../img/structure/index-background-content2.jpg);
+  height: auto;
+  width: 100%;
+  background-size: cover;
+  margin-top: 200px;
+  padding: 0 2% 200px 2%;
+  box-sizing: border-box;
+  color: #fff;
+  position: relative;
+  background-attachment: fixed;
 }
 footer .content--background p,
 footer .content--background h1 {
@@ -42,13 +82,14 @@ footer .content--background .newsletter input {
 }
 footer .content--background .newsletter input.email {
   width: 200px;
-  background-color: #f9f9f9;
+  background-color: #fff;
   border: 0;
   height: 40px;
   padding: 10px;
   border-bottom-left-radius: 10px;
   float: left;
   box-shadow: 0px 2px 0px 0px #ccc;
+  outline: none;
 }
 footer .content--background .newsletter .subscribe {
   text-transform: uppercase;
@@ -118,22 +159,43 @@ footer .content--card .socials li {
   background-position: center;
 }
 footer .content--card .socials li:nth-of-type(1) {
-  background-image: url(../../img/icons/facebook-l.png);
+  background-image: url(../img/icons/facebook-l.png);
 }
 footer .content--card .socials li:nth-of-type(2) {
-  background-image: url(../../img/icons/twitter-l.png);
+  background-image: url(../img/icons/twitter-l.png);
 }
 footer .content--card .socials li:nth-of-type(3) {
-  background-image: url(../../img/icons/youtube-l.png);
+  background-image: url(../img/icons/youtube-l.png);
 }
 footer .content--card .socials li:nth-of-type(4) {
-  background-image: url(../../img/icons/gmail-l.png);
+  background-image: url(../img/icons/gmail-l.png);
 }
 footer .footer--submenu {
   width: 100%;
   background-color: #000;
   background-size: cover;
-  min-height: 200px;
+  min-height: 300px;
   padding-bottom: 10px;
+}
+footer .footer--submenu p {
+  float: left;
+  width: 30%;
+}
+footer .footer--submenu .submenu {
+  padding-left: 0;
+  float: right;
+}
+footer .footer--submenu .submenu li {
+  text-align: right;
+  display: inline-block;
+  padding: 0 10px;
+  border-right: 1px solid white;
+}
+footer .footer--submenu .submenu li a {
+  color: white;
+  text-decoration: none;
+}
+footer .footer--submenu .submenu li a:hover {
+  color: #1fcdff;
 }
 /*# sourceMappingURL=imports.css.map */
