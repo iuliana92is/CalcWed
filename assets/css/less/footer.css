@@ -1,16 +1,11 @@
 .button {
-  text-transform: uppercase;
-  color: #fff;
-  border-top-right-radius: 10px;
-  text-decoration: none;
-  box-shadow: 0px 2px 0px 0px #179abf;
-  background: #1fcdff;
-  padding: 10px;
-  padding-right: 20px;
-  padding-left: 20px;
   width: 150px;
   height: 40px;
   box-sizing: border-box;
+  background: #1fcdff;
+  box-shadow: 0px 2px 0px 0px #179abf;
+  text-transform: uppercase;
+  color: #fff;
 }
 .content--zone__style {
   z-index: 1;
@@ -38,6 +33,11 @@
   position: relative;
   background-attachment: fixed;
 }
+.list-style {
+  list-style: none;
+  text-decoration: none;
+  text-transform: none;
+}
 footer {
   width: 100%;
   height: auto;
@@ -62,7 +62,6 @@ footer .content--background h1 {
 footer .content--background .newsletter {
   height: 40px;
   width: 350px;
-  color: red;
   margin: 0 auto;
   text-align: center;
 }
@@ -80,33 +79,26 @@ footer .content--background .newsletter input.email {
   float: left;
   box-shadow: 0px 2px 0px 0px #ccc;
   outline: none;
+  color: #7F8786;
 }
 footer .content--background .newsletter .subscribe {
-  text-transform: uppercase;
   float: left;
-  color: #fff;
   border-top-right-radius: 10px;
   text-decoration: none;
-  box-shadow: 0px 2px 0px 0px #179abf;
-  background: #1fcdff;
   padding: 10px;
   padding-right: 20px;
   padding-left: 20px;
   width: 150px;
   height: 40px;
   box-sizing: border-box;
-}
-footer .content--background .newsletter .subscribe a {
-  text-decoration: none;
-  text-align: center;
-  color: white;
-  padding: 10px;
+  background: #1fcdff;
+  box-shadow: 0px 2px 0px 0px #179abf;
+  text-transform: uppercase;
+  color: #fff;
 }
 footer .content--background .newsletter .subscribe:hover {
-  background-color: #eee;
-}
-footer .content--background .newsletter .subscribe:hover a {
-  color: black;
+  background-color: #7F8786;
+  box-shadow: 0px 2px 0px 0px #454848;
 }
 footer #content--zone .content--card {
   display: block;
@@ -145,6 +137,8 @@ footer .content--card .socials li {
   background-repeat: no-repeat;
   background-size: 52px 52px;
   list-style: none;
+  text-decoration: none;
+  text-transform: none;
   float: left;
   background-position: center;
 }
@@ -161,15 +155,19 @@ footer .content--card .socials li:nth-of-type(4) {
   background-image: url(../img/icons/gmail-l.png);
 }
 footer .footer--submenu {
+  padding: 0 2%;
+  box-sizing: border-box;
   width: 100%;
+  background-image: url(../img/structure/index-background-footer.jpg);
   background-color: #000;
   background-size: cover;
-  min-height: 300px;
+  min-height: 330px;
   padding-bottom: 10px;
 }
 footer .footer--submenu p {
   float: left;
-  width: 30%;
+  width: 100%;
+  color: #fff;
 }
 footer .footer--submenu .submenu {
   padding-left: 0;
@@ -179,7 +177,10 @@ footer .footer--submenu .submenu li {
   text-align: right;
   display: inline-block;
   padding: 0 10px;
-  border-right: 1px solid white;
+  border-right: 1px solid #7F8786;
+}
+footer .footer--submenu .submenu li:last-child {
+  border-right: none;
 }
 footer .footer--submenu .submenu li a {
   color: white;

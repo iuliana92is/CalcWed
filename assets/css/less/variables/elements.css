@@ -1,16 +1,11 @@
 .button {
-  text-transform: uppercase;
-  color: #fff;
-  border-top-right-radius: 10px;
-  text-decoration: none;
-  box-shadow: 0px 2px 0px 0px #179abf;
-  background: #1fcdff;
-  padding: 10px;
-  padding-right: 20px;
-  padding-left: 20px;
   width: 150px;
   height: 40px;
   box-sizing: border-box;
+  background: #1fcdff;
+  box-shadow: 0px 2px 0px 0px #179abf;
+  text-transform: uppercase;
+  color: #fff;
 }
 .content--zone__style {
   z-index: 1;
@@ -37,5 +32,10 @@
   color: #fff;
   position: relative;
   background-attachment: fixed;
+}
+.list-style {
+  list-style: none;
+  text-decoration: none;
+  text-transform: none;
 }
 /*# sourceMappingURL=elements.css.map */

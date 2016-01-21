@@ -12,8 +12,7 @@
 		} 
 		.newsletter {
 			height: 40px;
-			width: 350px;
-			color: red;
+			width: 350px; 
 			margin: 0 auto;
 			text-align: center;
 
@@ -31,34 +30,20 @@
 			    float: left;
 			    box-shadow: 0px 2px 0px 0px @shadow-form;
 			    outline: none;
+			    color: @pallete-color-blue-hover;
 			}
-			.subscribe { 
-			       	text-transform: uppercase;
-				    float: left;
-				    color: @base-color-second;
-				    border-top-right-radius: 10px;
-				    text-decoration: none;
-				    box-shadow: 0px 2px 0px 0px #179abf;
-				    background: #1fcdff;
-				    padding: 10px;
-				    padding-right: 20px;
-				    padding-left: 20px;
-				    width: 150px;
-				    height: 40px;
-				    box-sizing: border-box;
-			    a {
-			    	text-decoration: none;
-			    	text-align: center;
-			    	color: white;
-			    	padding: 10px;
-			    }
+			.subscribe {  
+			    float: left; 
+			    border-top-right-radius: 10px;
+			    text-decoration: none; 
+			    padding: 10px;
+			    padding-right: 20px;
+			    padding-left: 20px; 
+			    .button;
 
 			    &:hover {
-			    	background-color: #eee;
-			    	a{
-
-			    		color: black;
-			    	}
+			    	background-color: @pallete-color-blue-hover;  
+			    	box-shadow: 0px 2px 0px 0px @pallete-color-darkblue-hover; 
 			    }
 			}
 		}
@@ -66,7 +51,7 @@
 
 	#content--zone .content--card {
 		display:block;
-		float:left;
+		float: left;
 		margin: 100px auto 100px;
 		width:100%;
 		padding:0 2%;
@@ -92,7 +77,7 @@
 	        background-color: transparent; 
 	        background-repeat: no-repeat;
 	        background-size: 52px 52px;
-	        list-style: none;
+	        .list-style;
 	        float: left;
 	        background-position: center;	
 
@@ -113,15 +98,18 @@
 	} 
 
  	.footer--submenu {
+ 		padding: 0 2%;
+ 		box-sizing: border-box;
  		width: 100%;
- 		// background-image:url( ../../img/structure/index-background-header.jpg);
+ 		background-image:url( ../img/structure/index-background-footer.jpg);
  		background-color: @base-color;
  		background-size: cover;
- 		min-height: 300px;	
+ 		min-height: 330px;	
  		padding-bottom: 10px;
  		p{
  			float: left;
- 			width: 30%;
+ 			width: 100%; 
+ 			color: @base-color-second;
 
  		}
  		.submenu {
@@ -131,12 +119,16 @@
 				text-align: right;
 				display: inline-block;
 				padding: 0 10px;
-				border-right: 1px solid white;
+				border-right: 1px solid @pallete-color-blue-hover;
+				&:last-child {
+					border-right: none;
+				}
+
 				a{
 					color: white;
-					text-decoration: none;
+					text-decoration: none; 
 					&:hover {
-						color: #1fcdff;
+						color: @pallete-color-blue;
 					}
 				}
  			}

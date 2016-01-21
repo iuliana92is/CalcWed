@@ -1,11 +1,4 @@
-body {
-  font-size: 18px;
-  font-family: 'Josefin Sans', sans-serif;
-  margin: 0;
-  padding: 0;
-  color: #fff;
-}
-body .clearfix {
+.clearfix {
   clear: both;
 }
 .button {
@@ -14,7 +7,7 @@ body .clearfix {
   border-top-right-radius: 10px;
   text-decoration: none;
   box-shadow: 0px 2px 0px 0px #179abf;
-  background: red;
+  background: #1fcdff;
   padding: 10px;
   padding-right: 20px;
   padding-left: 20px;
@@ -72,7 +65,6 @@ footer .content--background h1 {
 footer .content--background .newsletter {
   height: 40px;
   width: 350px;
-  color: red;
   margin: 0 auto;
   text-align: center;
 }

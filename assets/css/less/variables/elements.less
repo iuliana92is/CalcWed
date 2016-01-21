@@ -1,18 +1,13 @@
 @import url('colors.less');
 
 .button {
-	text-transform: uppercase; 
-    color: @base-color-second;
-    border-top-right-radius: 10px;
-    text-decoration: none;
-    box-shadow: 0px 2px 0px 0px @pallete-color-darkblue;
-    background: @pallete-color-blue;
-    padding: 10px;
-    padding-right: 20px;
-    padding-left: 20px;
-    width: 150px;
+	width: 150px;
     height: 40px;
     box-sizing: border-box;
+    background: @pallete-color-blue;
+    box-shadow: 0px 2px 0px 0px @pallete-color-darkblue;  
+    text-transform: uppercase;
+	color: @base-color-second; 
 }
 
 .content--zone__style {
@@ -22,10 +17,11 @@
 	float:left;
 	margin: -100px 0 100px 0;
 	width:100%;
-	background:gray;
+	background: gray;
 	transform:skew(0deg,-10deg);
 	-ms-transform:skew(0deg,-10deg); /* IE 9 */
 	-webkit-transform:skew(0deg,-5deg); /* Safari and Chrome */
+	// box-shadow: @box-shadow;
 }
 
 .content--background__style{
@@ -40,4 +36,10 @@
 	color: @base-color-second;
 	position: relative;
 	background-attachment: fixed;
+}
+
+.list-style {
+	list-style: none;
+	text-decoration: none;
+	text-transform: none;
 }
