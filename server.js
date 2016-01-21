@@ -11,7 +11,9 @@ server.engine('hbs', hbs.express3({
   partialsDir: __dirname + '/views/partials',
   layoutsDir: __dirname + '/views/layouts'
 }));
-
+// routing for server static content
+    server.use('/assets', express.static(__dirname + '/assets'));
+//
 // configure views path
 server.set('views', __dirname + '/views');
 
@@ -24,4 +26,4 @@ server.get('/', function(req, res) {
 });
 
 server.listen(8000);
-console.log("Serverasul a pornit cu portul:'8000'");  
+console.log("Serverul a pornit cu portul:'8000'");  
