@@ -1,0 +1,136 @@
+ footer {
+ 	width: 100%;
+ 	height: auto;
+ 	 .content--background {
+		background-image:url( "../img/structure/index-background-content2.jpg");
+		height: auto;
+		width:100%;
+		background-size:cover;
+		position:relative;
+		z-index:-1;
+		margin-top: 200px; 
+		padding:0 2% 200px 2%;
+		box-sizing: border-box;
+		color: #fff;
+		p, h1 {
+			text-align: center;
+			padding: 0 20%;
+		} 
+		.newsletter {
+			height: 40px;
+			width: 350px;
+			color: red;
+			margin: 0 auto;
+			text-align: center;
+
+			.subscribe, input {
+				display: inline;
+			}
+
+			input.email {
+			    width: 200px;
+			    background-color: #f9f9f9;
+			    border: 0;
+			    height: 40px;
+			    padding: 10px;
+			    border-bottom-left-radius: 10px;
+			    float: left;
+			    box-shadow: 0px 2px 0px 0px #ccc;
+			}
+			.subscribe { 
+			       	text-transform: uppercase;
+				    float: left;
+				    color: #fff;
+				    border-top-right-radius: 10px;
+				    text-decoration: none;
+				    box-shadow: 0px 2px 0px 0px #179abf;
+				    background: #1fcdff;
+				    padding: 10px;
+				    padding-right: 20px;
+				    padding-left: 20px;
+				    width: 150px;
+				    height: 40px;
+				    box-sizing: border-box;
+			    a {
+			    	text-decoration: none;
+			    	text-align: center;
+			    	color: white;
+			    	padding: 10px;
+			    }
+
+			    &:hover {
+			    	background-color: #eee;
+			    	a{
+
+			    		color: black;
+			    	}
+			    }
+			}
+		}
+	}
+
+	#content--zone .content--card {
+		display:block;
+		float:left;
+		margin: 100px auto 100px;
+		width:100%;
+		padding:0 2%;
+		transform:skew(0deg,5deg);
+		-ms-transform:skew(0deg,10deg);
+		-webkit-transform:skew(0deg,5deg); 
+		width: 100%;
+	    box-sizing: border-box;
+	}
+
+	#content--zone {
+		z-index:1;
+		display:block;
+		float:left;
+		margin: -100px 0 100px 0;
+		width:100%;
+		background:gray;
+		transform:skew(0deg,-10deg);
+		-ms-transform:skew(0deg,-10deg); /* IE 9 */
+		-webkit-transform:skew(0deg,-5deg); /* Safari and Chrome */
+	}
+
+	.content--card {
+	  .socials { 
+	    margin: 0 auto;	
+	    width: 40%;
+	    padding-left: 0;
+	    li {
+	        height: 64px;
+	        width: 	25%;
+	        background-color: transparent; 
+	        background-repeat: no-repeat;
+	        background-size: 52px 52px;
+	        list-style: none;
+	        float: left;
+	        background-position: center;	
+
+	        &:nth-of-type(1) {
+	        	background-image:url( ../img/icons/facebook-l.png);
+	        }
+	        &:nth-of-type(2) {
+	        	background-image:url( ../img/icons/twitter-l.png);
+	        }
+	        &:nth-of-type(3) {
+	        	background-image:url( ../img/icons/youtube-l.png);
+	        }
+	        &:nth-of-type(4) {
+	        	background-image:url( ../img/icons/gmail-l.png);
+	        }
+	    }
+	  }
+	} 
+
+ 	.footer--submenu {
+ 		width: 100%;
+ 		// background-image:url( ../../img/structure/index-background-header.jpg);
+ 		background-color: #000;
+ 		background-size: cover;
+ 		min-height: 200px;	
+ 		padding-bottom: 10px;
+ 	}
+ }
