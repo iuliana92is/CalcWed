@@ -25,5 +25,5 @@ server.get('/', function(req, res) {
 
 });
 
-server.listen(8000);
-console.log("Serverul a pornit cu portul:'8000'");  
+server.listen(1234);
+console.log("Serverul a pornit cu portul:'1234'");  
