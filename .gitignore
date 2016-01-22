@@ -3,8 +3,3 @@ nbproject
 node_modules
 /node_modules
 assets/css/main.compiled.css
-/assets/css/less/about_us.less
-assets/css/less/about_us.less
-views/partials/about_us.hbs
-
-/assets/css/less/footer.less
