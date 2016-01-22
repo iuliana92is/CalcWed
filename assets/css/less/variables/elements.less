@@ -1,0 +1,45 @@
+@import url('colors.less');
+
+.button {
+	width: 150px;
+    height: 40px;
+    box-sizing: border-box;
+    background: @pallete-color-blue;
+    box-shadow: 0px 2px 0px 0px @pallete-color-darkblue;  
+    text-transform: uppercase;
+	color: @base-color-second; 
+}
+
+.content--zone__style {
+	z-index:1;
+	position: relative;
+	display:block;
+	float:left;
+	margin: -100px 0 100px 0;
+	width:100%;
+	background: gray;
+	transform:skew(0deg,-10deg);
+	-ms-transform:skew(0deg,-10deg); /* IE 9 */
+	-webkit-transform:skew(0deg,-5deg); /* Safari and Chrome */
+	// box-shadow: @box-shadow;
+}
+
+.content--background__style{
+	background-image:url( ../img/structure/index-background-content2.jpg);
+	height: auto;
+	width:100%;
+	background-size:cover;
+	position:relative; ;
+	margin-top: 200px; 
+	padding:0 2% 200px 2%;
+	box-sizing: border-box;
+	color: @base-color-second;
+	position: relative;
+	background-attachment: fixed;
+}
+
+.list-style {
+	list-style: none;
+	text-decoration: none;
+	text-transform: none;
+}
