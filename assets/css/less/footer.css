@@ -194,7 +194,6 @@ footer #content--zone__footer .content--card {
   box-sizing: border-box;
 }
 footer .footer--submenu {
-  padding: 0 2%;
   box-sizing: border-box;
   width: 100%;
   background-color: #000;
@@ -206,14 +205,17 @@ footer .footer--submenu {
 footer .footer--submenu p {
   float: left;
   width: 100%;
-  color: #ccc;
+  color: #fff;
   text-align: center;
+  background-color: #343434;
   margin-top: 20px;
+  padding: 5px 0;
 }
 footer .footer--submenu .submenu {
   padding-left: 0;
   float: right;
   margin-top: 20px;
+  margin-right: 10px;
 }
 footer .footer--submenu .submenu li {
   text-align: right;
