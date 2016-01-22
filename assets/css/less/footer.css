@@ -79,7 +79,7 @@ footer .content--background .newsletter input.email {
   float: left;
   box-shadow: 0px 2px 0px 0px #ccc;
   outline: none;
-  color: #7F8786;
+  color: #343434;
 }
 footer .content--background .newsletter .subscribe {
   float: left;
@@ -97,8 +97,60 @@ footer .content--background .newsletter .subscribe {
   color: #fff;
 }
 footer .content--background .newsletter .subscribe:hover {
-  background-color: #7F8786;
+  background-color: #343434;
   box-shadow: 0px 2px 0px 0px #454848;
+}
+footer .content--background .content--card .socials {
+  display: flex;
+  text-align: center;
+  list-style: none;
+  text-decoration: none;
+  padding: 1% 0;
+  width: 50%;
+  max-width: 300px;
+  margin: auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+footer .content--background .content--card .socials li {
+  height: 62px;
+  width: 62px;
+  border-radius: 50%;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: 52px 52px;
+  list-style: none;
+  text-decoration: none;
+  text-transform: none;
+  float: left;
+  background-position: center;
+  transition: box-shadow 0.1s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  transition-delay: .1s;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  display: flex;
+  margin: auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+footer .content--background .content--card .socials li:nth-of-type(1) {
+  background-image: url(../img/icons/facebook-l.png);
+}
+footer .content--background .content--card .socials li:nth-of-type(2) {
+  background-image: url(../img/icons/twitter-l.png);
+}
+footer .content--background .content--card .socials li:nth-of-type(3) {
+  background-image: url(../img/icons/youtube-l.png);
+}
+footer .content--background .content--card .socials li:nth-of-type(4) {
+  background-image: url(../img/icons/gmail-l.png);
+}
+footer .content--background .content--card .socials li:hover {
+  box-shadow: 0 9px 9px black,0 1px 0px blue;
+  background-size: 100% 100%;
 }
 footer #content--zone .content--card {
   display: block;
@@ -111,7 +163,7 @@ footer #content--zone .content--card {
   width: 100%;
   box-sizing: border-box;
 }
-footer #content--zone {
+footer #content--zone__footer {
   z-index: 1;
   position: relative;
   display: block;
@@ -124,50 +176,35 @@ footer #content--zone {
   /* IE 9 */
   -webkit-transform: skew(0deg, -5deg);
   /* Safari and Chrome */
+  background-color: black;
+  margin: -100px 0 30px 0;
 }
-footer .content--card .socials {
-  margin: 0 auto;
-  width: 40%;
-  padding-left: 0;
-}
-footer .content--card .socials li {
-  height: 64px;
-  width: 25%;
-  background-color: transparent;
-  background-repeat: no-repeat;
-  background-size: 52px 52px;
-  list-style: none;
-  text-decoration: none;
-  text-transform: none;
+footer #content--zone__footer .content--card {
+  display: block;
   float: left;
-  background-position: center;
-}
-footer .content--card .socials li:nth-of-type(1) {
-  background-image: url(../img/icons/facebook-l.png);
-}
-footer .content--card .socials li:nth-of-type(2) {
-  background-image: url(../img/icons/twitter-l.png);
-}
-footer .content--card .socials li:nth-of-type(3) {
-  background-image: url(../img/icons/youtube-l.png);
-}
-footer .content--card .socials li:nth-of-type(4) {
-  background-image: url(../img/icons/gmail-l.png);
+  margin: 100px auto 80px;
+  padding: 0 2%;
+  transform: skew(0deg, 5deg);
+  -ms-transform: skew(0deg, 10deg);
+  -webkit-transform: skew(0deg, 5deg);
+  width: 100%;
+  box-sizing: border-box;
 }
 footer .footer--submenu {
   padding: 0 2%;
   box-sizing: border-box;
   width: 100%;
-  background-image: url(../img/structure/index-background-footer.jpg);
   background-color: #000;
   background-size: cover;
-  min-height: 330px;
+  min-height: 200px;
   padding-bottom: 10px;
 }
 footer .footer--submenu p {
   float: left;
   width: 100%;
   color: #fff;
+  text-align: center;
+  margin-top: 20px;
 }
 footer .footer--submenu .submenu {
   padding-left: 0;
@@ -177,7 +214,7 @@ footer .footer--submenu .submenu li {
   text-align: right;
   display: inline-block;
   padding: 0 10px;
-  border-right: 1px solid #7F8786;
+  border-right: 1px solid #343434;
 }
 footer .footer--submenu .submenu li:last-child {
   border-right: none;
