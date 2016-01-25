@@ -21,6 +21,28 @@
   -webkit-transform: skew(0deg, -5deg);
   /* Safari and Chrome */
 }
+.content--card__style {
+  display: block;
+  float: left;
+  margin: 100px auto 80px;
+  padding: 0 2%;
+  transform: skew(0deg, 5deg);
+  -ms-transform: skew(0deg, 10deg);
+  -webkit-transform: skew(0deg, 5deg);
+  width: 100%;
+  box-sizing: border-box;
+}
+.content--zone--card__style {
+  display: block;
+  float: left;
+  margin: 100px auto 100px;
+  padding: 0 2%;
+  transform: skew(0deg, 5deg);
+  -ms-transform: skew(0deg, 10deg);
+  -webkit-transform: skew(0deg, 5deg);
+  width: 100%;
+  box-sizing: border-box;
+}
 .content--background__style {
   background-image: url(../img/structure/index-background-content2.jpg);
   height: auto;
@@ -32,6 +54,7 @@
   color: #fff;
   position: relative;
   background-attachment: fixed;
+  background-position: center;
 }
 .list-style {
   list-style: none;
