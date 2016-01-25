@@ -1,5 +1,10 @@
 @import url('variables/colors.less');
 @import url('variables/elements.less');
+
+.content--menu__menu img {
+    display: none;
+}
+
 nav {
     width: 100%;
     min-width: 570px;
@@ -47,11 +52,22 @@ nav {
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
 
+    .content--menu__menu {
+        img {
+            display: block;
+            margin-top: 10px;
+        }
+        nav {
+            display: none;
+        }
+    }
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
-
+    .content--menu__menu img {
+        width: 20px;
+    }
 }
 
 /* Custom, iPhone Retina */

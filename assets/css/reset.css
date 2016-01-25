@@ -25,9 +25,9 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
     line-height: 1;
-    font-size: 18px;
+    font-size: 24px;
     font-weight: 300;
-    font-family: 'Avenir Next LT Pro Regular', sans-serif; 
+    font-family: 'Josefin Sans', sans-serif; 
 }
 ol, ul {
     list-style: none;

@@ -14,7 +14,19 @@ header {
         box-sizing: border-box;
         color: @base-color-second;
         background-attachment: fixed;
-        min-height: 550px;
+
+        .content--message {
+            width: 25%;
+            margin: 0 auto;
+
+            h1 {
+                font-size: 4.2em;
+                margin: 18% 0;
+                border-bottom: 4px solid @pallete-color-blue;
+                text-align: center;
+                font-weight: 800;
+            }
+        }
 
         .content--menu {
             padding-top: 5%;
@@ -45,8 +57,19 @@ header {
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
-    header .content--background .content--menu {
-        background-color: rgba(0,0,0,0.4);
+    header .content--background {
+        .content--menu {
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+
+        .content--message {
+            width: 40%;
+
+            h1 {
+                font-size: 3.2em;
+                border-bottom: 3px solid @pallete-color-blue;
+            }
+        }
     }
 }
 
@@ -73,30 +96,58 @@ header {
                 .content--menu__logo a img {
                     width: 200px;
                 }
+            }
 
-                nav ul li {
-                    margin-top: 55px;
+            .content--message {
+                width: 45%;
+
+                h1 {
+                    font-size: 3em;
+                    border-bottom: 2px solid @pallete-color-blue;
                 }
             }
         }
     }
 }
 
-@media only screen and (max-width : 738px) {
-
-}
-
-@media only screen and (max-width : 540px) {
-
-}
-
-
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
+    header {
+        .content--background {
 
+            .content--message {
+                width: 50%;
+
+                h1 {
+                    font-size: 2.5em;
+                    margin: 25% 0;
+                }
+            }
+        }
+    }
 }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
+    header .content--background {
+        .content--menu {
 
+            .content--menu__logo a img {
+                width: 144px;
+            }
+
+            .content--menu__menu img {
+                margin-top: 4px;
+            }
+        }
+
+        .content--message {
+            width: 60%;
+
+            h1 {
+                font-size: 2em;
+                margin: 40% 0;
+            }
+        }
+    }
 }
