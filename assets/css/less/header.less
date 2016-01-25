@@ -39,3 +39,64 @@ header {
         }
     }
 }
+
+
+/*********************** Responsive Header **************************/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+    header .content--background .content--menu {
+        background-color: rgba(0,0,0,0.4);
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+    header {
+        .content--background {
+            .content--menu {
+                .content--menu__logo a img {
+                    width: 200px;
+                }
+            }
+        }
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+    header {
+        .content--background {
+            .content--menu {
+                background-color: rgba(0,0,0,0.4);
+
+                .content--menu__logo a img {
+                    width: 200px;
+                }
+
+                nav ul li {
+                    margin-top: 55px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width : 738px) {
+
+}
+
+@media only screen and (max-width : 540px) {
+
+}
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
