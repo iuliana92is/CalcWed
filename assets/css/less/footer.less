@@ -10,10 +10,10 @@ footer {
 		p, h1 {
 			text-align: center;
 			padding: 0 20%;
-		} 
+		}
 		.newsletter {
 			height: 40px;
-			width: 350px; 
+			width: 350px;
 			margin: 0 auto;
 			text-align: center;
 
@@ -33,28 +33,26 @@ footer {
 			    outline: none;
 			    color: @pallete-color-blue-hover;
 			    box-sizing: border-box;
-			    font-size: 18px;
 			}
-			.subscribe {  
-			    float: left; 
+			.subscribe {
+			    float: left;
 			    border-top-right-radius: 10px;
-			    text-decoration: none; 
+			    text-decoration: none;
 			    padding: 13px;
 			    padding-right: 20px;
-			    padding-left: 20px; 
+			    padding-left: 20px;
 			    font-weight: bold;
-			    font-size: 18px;
 			    .button;
 
 			    &:hover {
-			    	background-color: @pallete-color-blue-hover;  
-			    	box-shadow: 0px 2px 0px 0px @pallete-color-darkblue-hover; 
+			    	background-color: @pallete-color-blue-hover;
+			    	box-shadow: 0px 2px 0px 0px @pallete-color-darkblue-hover;
 			    }
 			}
 
 		}
 		.content--card {
-		  .socials { 
+		  .socials {
 		        display: flex;
 			    text-align: center;
 			    list-style: none;
@@ -101,13 +99,13 @@ footer {
 		        &:nth-of-type(4) {
 		        	background-image:url( ../img/icons/gmail-l.png);
 		        }
-		        &:hover { 
+		        &:hover {
  					box-shadow: 0 9px 9px black,0 1px 0px blue;
  					background-size: 100% 100%;
 		        }
 		    }
 		  }
-		} 
+		}
 
 	}
 
@@ -119,7 +117,7 @@ footer {
 		padding:0 2%;
 		transform:skew(0deg,5deg);
 		-ms-transform:skew(0deg,10deg);
-		-webkit-transform:skew(0deg,5deg); 
+		-webkit-transform:skew(0deg,5deg);
 		width: 100%;
 	    box-sizing: border-box;
 	}
@@ -137,30 +135,30 @@ footer {
 			padding:0 2%;
 			transform:skew(0deg,5deg);
 			-ms-transform:skew(0deg,10deg);
-			-webkit-transform:skew(0deg,5deg); 
+			-webkit-transform:skew(0deg,5deg);
 			width: 100%;
 		    box-sizing: border-box;
 
 		}
 	}
 
-	
- 	.footer--submenu { 
+
+ 	.footer--submenu {
  		box-sizing: border-box;
  		width: 100%;
  		// background-image:url( ../img/structure/index-background-footer.jpg);
  		background-color: @base-color;
  		background-size: cover;
- 		min-height: 100px;	
+ 		min-height: 100px;
  		padding-bottom: 10px;
  		font-size: 15px;
  		p{
  			float: left;
- 			width: 100%; 
+ 			width: 100%;
  			color: @base-color-second;
  			text-align: center;
- 			margin-top: 20px; 
-		    background-color: @pallete-color-blue-hover; 
+ 			margin-top: 20px;
+		    background-color: @pallete-color-blue-hover;
 		    margin-top: 20px;
 		    padding: 5px 0;
 
@@ -182,7 +180,7 @@ footer {
 
 				a{
 					color: white;
-					text-decoration: none; 
+					text-decoration: none;
 					&:hover {
 						color: @pallete-color-blue;
 					}
@@ -190,167 +188,6 @@ footer {
  			}
  		}
  	}
-}
+ }
 
 
- // Large Devices, Wide Screens 
-@media only screen and (max-width : 1200px) {
-
-}
-
- // Medium Devices, Desktops 
-@media only screen and (max-width : 992px) {
-	body {
-		font-size: 18px;
-	}
-}
-
- // Small Devices, Tablets 
-@media only screen and (max-width : 768px) {
-	body {
-		font-size: 18px;
-		footer {
-			.content--background{
-				h1 {
-					font-size: 26px;
-	        	}
-				.newsletter {
-						height: 30px;
-						width: 310px;
-
-		            .subscribe, input {
-		            }
-		            input.email {
-		            	width: 160px; 
-		            	height: 30px;
-		            }
-		            .subscribe {
-						width: 150px;
-						height: 30px;
-						padding: 8px;  
-		            }
-		        }
-				.content--card {
-					.socials{
-						margin-top: 30px;
-					 	li {
-							height: 52px;
-							width: 52px;
-							background-size: 42px 42px;
-					 	}
-					 }
-				} 
-			} 
-		}
-	}
-}
-
- // Extra Small Devices, Phones 
-@media only screen and (max-width : 480px) {
-	body {
-		font-size: 15px;
-		footer {
-			.content--background{
-				 
-				.newsletter {
-						height: 30px;
-						width: 240px;
-						margin-top: 20px;
-
-		            .subscribe, input {
-		            }
-		            input.email {
-		            	width: 130px; 
-		            	height: 30px;
-		            	font-size: 15px;
-		            }
-		            .subscribe {
-						width: 110px;
-						height: 30px;
-						font-size: 15px;
-		            }
-		        }
-				.content--card { 
-					.socials{
-						margin-top: 30px;
-						width: 100%;
-					 	li {
-							height: 52px;
-							width: 52px;
-							background-size: 42px 42px;
-					 	}
-					 }
-				} 
-			} 
-			.footer--submenu {
-				min-height: 120px;
-		        p {
-		        }
-		        .submenu {
-		            li { 
-		            	margin-top: 20px;
-		            }
-		        }
-		    }
-		}
-	}
-}
-
- // Custom, iPhone Retina 
-@media only screen and (max-width : 320px) {
-
-}
-
-
-// footer {
-//     .content--background {
-//         p, h1 {
-//         }
-//         .newsletter {
-//             .subscribe, input {
-//             }
-//             input.email {
-//             }
-//             .subscribe {
-//                 &:hover {
-//                 }
-//             }
-//         }
-//         .content--card {
-//             .socials {
-//                 li {
-//                     &:nth-of-type(1) {
-//                     }
-//                     &:nth-of-type(2) {
-//                     }
-//                     &:nth-of-type(3) {
-//                     }
-//                     &:nth-of-type(4) {
-//                     }
-//                     &:hover {
-//                     }
-//                 }
-//             }
-//         }
-//     }
-//     #content--zone .content--card {
-//     }
-//     #content--zone__footer {
-//         .content--card {
-//         }
-//     }
-    // .footer--submenu {
-    //     p {
-    //     }
-    //     .submenu {
-    //         li {
-    //             &:last-child {
-    //             }
-    //             a {
-    //                 &:hover {
-    //                 }
-    //             }
-    //         }
-    //     }
-    // }
-// }
