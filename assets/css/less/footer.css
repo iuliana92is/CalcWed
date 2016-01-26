@@ -14,7 +14,7 @@
   float: left;
   margin: -100px 0 100px 0;
   width: 100%;
-  background: gray;
+  background: #fff;
   transform: skew(0deg, -10deg);
   -ms-transform: skew(0deg, -10deg);
   /* IE 9 */
@@ -73,6 +73,18 @@
   cursor: pointer;
   background: #1fcdff;
   /* opacity: .5; */
+}
+.input {
+  background-color: #fff;
+  height: 40px;
+  padding: 10px;
+  border-bottom-left-radius: 10px;
+  float: left;
+  box-shadow: 0 2px 0 0 #ccc;
+  outline: none;
+  color: #343434;
+  box-sizing: border-box;
+  font-size: 18px;
 }
 footer {
   width: 100%;
@@ -212,7 +224,7 @@ footer #content--zone__footer {
   float: left;
   margin: -100px 0 100px 0;
   width: 100%;
-  background: gray;
+  background: #fff;
   transform: skew(0deg, -10deg);
   -ms-transform: skew(0deg, -10deg);
   /* IE 9 */
