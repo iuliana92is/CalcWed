@@ -1,0 +1,34 @@
+header {
+  width: 100%;
+  height: auto;
+}
+header .content--background {
+  background-image: url("../img/structure/index-background-header.jpg");
+  height: auto;
+  width: 100%;
+  background-size: cover;
+  position: relative;
+  padding: 0 2% 200px 2%;
+  box-sizing: border-box;
+  color: #fff;
+  background-attachment: fixed;
+  min-height: 550px;
+}
+header .content--background .content--menu {
+  padding-top: 5%;
+  width: 100%;
+  display: inline-block;
+}
+header .content--background .content--menu .content--menu__logo {
+  float: left;
+}
+header .content--background .content--menu .content--menu__logo a {
+  cursor: pointer;
+}
+header .content--background .content--menu .content--menu__logo a img {
+  width: 250px;
+}
+header .content--background .content--menu .content--menu__menu {
+  float: right;
+}
+/*# sourceMappingURL=header.css.map */

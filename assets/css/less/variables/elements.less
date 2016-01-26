@@ -18,7 +18,7 @@
 	float:left;
 	margin: -100px 0 100px 0;
 	width:100%;
-	background: gray;
+	background: @content--color;
 	transform:skew(0deg,-10deg);
 	-ms-transform:skew(0deg,-10deg); /* IE 9 */
 	-webkit-transform:skew(0deg,-5deg); /* Safari and Chrome */
@@ -84,5 +84,18 @@
     /* opacity: .5; */
 }
 
-
+.input {
+	height: 40px;
+	background-color: @base-color-second;
+	border: 0;
+	height: 40px;
+	padding: 10px;
+	border-bottom-left-radius: 10px;
+	float: left;
+	box-shadow: 0 2px 0 0 #ccc;
+	outline: none;
+	color: #343434;
+	box-sizing: border-box;
+	font-size: 18px;
+}
 

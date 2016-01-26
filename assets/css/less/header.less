@@ -16,7 +16,7 @@ header {
         background-attachment: fixed;
 
         .content--message {
-            width: 27%;
+            width: 25%;
             margin: 0 auto;
 
             h1 {
@@ -82,6 +82,15 @@ header {
                     width: 200px;
                 }
             }
+
+            .content--message {
+                width: 35%;
+
+                h1 {
+                    font-size: 3.5em;
+                    border-bottom: 2px solid @pallete-color-blue;
+                }
+            }
         }
     }
 }
@@ -102,8 +111,22 @@ header {
                 width: 45%;
 
                 h1 {
-                    font-size: 2.5em;
+                    font-size: 3.5em;
                     border-bottom: 2px solid @pallete-color-blue;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width : 640px) {
+    header {
+        .content--background {
+
+            .content--message {
+
+                h1 {
+                    font-size: 3em;
                 }
             }
         }
@@ -113,13 +136,9 @@ header {
 @media only screen and (max-width : 603px) {
     header {
         .content--background {
-
             .content--message {
-                width: 50%;
-
                 h1 {
-                    font-size: 2.5em;
-                    border-bottom: 2px solid @pallete-color-blue;
+                    font-size: 3em;
                 }
             }
         }
@@ -130,12 +149,11 @@ header {
 @media only screen and (max-width : 480px) {
     header {
         .content--background {
-
             .content--message {
-                width: 55%;
+                width: 50%;
 
                 h1 {
-                    font-size: 2em;
+                    font-size: 3em;
                     margin: 25% 0;
                 }
             }
@@ -146,13 +164,10 @@ header {
 @media only screen and (max-width : 360px) {
     header {
         .content--background {
-
             .content--message {
-                width: 65%;
 
                 h1 {
-                    font-size: 2em;
-                    margin: 25% 0;
+                    font-size: 2.5em;
                 }
             }
         }
@@ -174,10 +189,10 @@ header {
         }
 
         .content--message {
-            width: 75%;
+            width: 60%;
 
             h1 {
-                font-size: 2em;
+                font-size: 2.5em;
                 margin: 40% 0;
             }
         }
@@ -188,11 +203,9 @@ header {
     header .content--background {
 
         .content--message {
-            width: 75%;
 
             h1 {
-                font-size: 1.5em;
-                margin: 40% 0;
+                font-size: 2em;
             }
         }
     }
