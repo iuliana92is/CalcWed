@@ -2,8 +2,9 @@
 @import url('variables/elements.less');
 
 #contact {
-    .content--background{
+    .content--background {
         .content--background__style; 
+        margin-top: 0;
         p, h1 {
             text-align: center;
             padding: 0 20%;
@@ -14,6 +15,7 @@
         background: @content--color;
         .content--card{
             .content--card__style;
+            padding: 0;
             .contacts{
                 height: auto;
                 width: 700px; 
@@ -62,6 +64,7 @@
                     .form--personal__infos{
                         padding-left: 0;
                         margin: 25px 0;
+                        line-height: 1.3;
                         li{
                             margin: 16px 0;
                             list-style: none;
@@ -108,14 +111,21 @@
                     }
                 }
             }
-            .contact--map {
-                width: 100%;
-                height: 400px;
-                background-color: red;
-            }
+            
 
         }
+
     }
+     .contact--map {
+            width: 100%; 
+            iframe {
+                border: 0;
+                width: 100%;
+                height:600px;
+                margin-top: -200px;
+                -webkit-filter: grayscale(1);
+            }
+        }
 }
 
 

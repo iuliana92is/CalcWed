@@ -102,6 +102,7 @@ footer .content--background {
   position: relative;
   background-attachment: fixed;
   background-position: center;
+  position: inherit;
   padding: 0 2% 100px 2%;
 }
 footer .content--background p,
