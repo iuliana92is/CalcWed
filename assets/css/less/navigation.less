@@ -1,9 +1,13 @@
 @import url('variables/colors.less');
 @import url('variables/elements.less');
 
+.content--menu__menu img {
+    display: none;
+}
+
 nav {
     width: 100%;
-    min-width: 550px;
+    min-width: 570px;
 
     ul {
         li {
@@ -12,7 +16,7 @@ nav {
             text-transform: uppercase;
             font-weight: 800;
             font-size: 14px;
-            border-right: 1px solid #fff;
+            border-right: 1px solid @base-color-second;
             margin-top: 17px;
 
             &:last-child {
@@ -21,7 +25,7 @@ nav {
             }
 
             a {
-                color: #fff;
+                color: @base-color-second;
                 text-decoration: none;
 
                 &:hover {
@@ -32,27 +36,42 @@ nav {
     }
 }
 
-// Large Devices, Wide Screens 
+
+/*********************** Responsive Navigation **************************/
+
+/* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
 
 }
 
- // Medium Devices, Desktops 
+/* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-    
+
 }
 
- // Small Devices, Tablets 
+/* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
-     
+
+    .content--menu__menu {
+        img {
+            display: block;
+            margin-top: 10px;
+        }
+        nav {
+            display: none;
+        }
+    }
 }
 
- // Extra Small Devices, Phones 
+/* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
-     
+    .content--menu__menu img {
+        width: 20px;
+    }
 }
 
- // Custom, iPhone Retina 
+/* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
 
 }
+

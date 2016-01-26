@@ -1,3 +1,5 @@
+@import url('variables/colors.less');
+@import url('variables/elements.less');
 header {
     width: 100%;
     height: auto;
@@ -10,9 +12,21 @@ header {
         position:relative;
         padding:0 2% 200px 2%;
         box-sizing: border-box;
-        color: #fff;
+        color: @base-color-second;
         background-attachment: fixed;
-        min-height: 550px;
+
+        .content--message {
+            width: 25%;
+            margin: 0 auto;
+
+            h1 {
+                font-size: 4.2em;
+                margin: 18% 0;
+                border-bottom: 4px solid @pallete-color-blue;
+                text-align: center;
+                font-weight: 800;
+            }
+        }
 
         .content--menu {
             padding-top: 5%;
@@ -33,6 +47,165 @@ header {
 
             .content--menu__menu {
                 float: right;
+            }
+        }
+    }
+}
+
+
+/*********************** Responsive Header **************************/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+    header .content--background {
+        .content--menu {
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+
+        .content--message {
+            width: 40%;
+
+            h1 {
+                font-size: 3.2em;
+                border-bottom: 3px solid @pallete-color-blue;
+            }
+        }
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+    header {
+        .content--background {
+            .content--menu {
+                .content--menu__logo a img {
+                    width: 200px;
+                }
+            }
+
+            .content--message {
+                width: 35%;
+
+                h1 {
+                    font-size: 3.5em;
+                    border-bottom: 2px solid @pallete-color-blue;
+                }
+            }
+        }
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+    header {
+        .content--background {
+            .content--menu {
+                background-color: rgba(0,0,0,0.4);
+
+                .content--menu__logo a img {
+                    width: 200px;
+                }
+            }
+
+            .content--message {
+                width: 45%;
+
+                h1 {
+                    font-size: 3.5em;
+                    border-bottom: 2px solid @pallete-color-blue;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width : 640px) {
+    header {
+        .content--background {
+
+            .content--message {
+
+                h1 {
+                    font-size: 3em;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width : 603px) {
+    header {
+        .content--background {
+            .content--message {
+                h1 {
+                    font-size: 3em;
+                }
+            }
+        }
+    }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+    header {
+        .content--background {
+            .content--message {
+                width: 50%;
+
+                h1 {
+                    font-size: 3em;
+                    margin: 25% 0;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width : 360px) {
+    header {
+        .content--background {
+            .content--message {
+
+                h1 {
+                    font-size: 2.5em;
+                }
+            }
+        }
+    }
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+    header .content--background {
+        .content--menu {
+
+            .content--menu__logo a img {
+                width: 144px;
+            }
+
+            .content--menu__menu img {
+                margin-top: 4px;
+            }
+        }
+
+        .content--message {
+            width: 60%;
+
+            h1 {
+                font-size: 2.5em;
+                margin: 40% 0;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width : 240px) {
+    header .content--background {
+
+        .content--message {
+
+            h1 {
+                font-size: 2em;
             }
         }
     }
