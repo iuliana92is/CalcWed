@@ -85,6 +85,17 @@
   box-sizing: border-box;
   font-size: 18px;
 }
+.order--list li {
+  width: 100%;
+  background-image: none;
+}
+.elem--transition {
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
 #contact .content--background {
   background-image: url(../img/structure/index-background-content2.jpg);
   height: auto;
@@ -241,4 +252,40 @@
   margin-top: -200px;
   -webkit-filter: grayscale(1);
 }
+/*********************** Responsive Navigation **************************/
+/* Large Devices, Wide Screens */
+/* Medium Devices, Desktops */
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  #contact #content--zone .content--card .contacts {
+    width: 100%;
+  }
+  #contact #content--zone .content--card .contacts .form--contact {
+    width: 70%;
+    margin-left: 15%;
+  }
+  #contact #content--zone .content--card .contacts .form--personal {
+    margin-top: 20px;
+    width: 70%;
+    margin-left: 15%;
+  }
+  #contact #content--zone .content--card .contacts .form--personal .form--personal__infos li {
+    font-size: 15px;
+  }
+}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  #contact #content--zone .content--card .contacts {
+    width: 100%;
+  }
+  #contact #content--zone .content--card .contacts .form--contact {
+    width: 98%;
+    margin-left: 2%;
+  }
+  #contact #content--zone .content--card .contacts .form--personal {
+    width: 98%;
+    margin-left: 2%;
+  }
+}
+/* Custom, iPhone Retina */
 /*# sourceMappingURL=contact.css.map */

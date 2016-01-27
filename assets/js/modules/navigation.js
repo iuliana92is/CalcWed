@@ -5,20 +5,19 @@
 
     $navigation.toggleMobileMenu = function(elem) {
 
-        var $nav = $("nav"),
-            $menu = $('.content--menu__menu'),
-            $logo = $('.content--menu__logo'),
-            $fixedMenu = $('#fixed--menu'),
+        var $fixedMenu = $('#fixed--menu'),
+            $menu = $fixedMenu.find('.content--menu__menu'),
+            $logo = $fixedMenu.find('.content--menu__logo'),
+            $nav = $menu.find('nav'),
             $li = $menu.find('li'),
-            $ul = $menu.find('ul'),
-            $content = $('.content--background');
+            $ul = $menu.find('ul');
+
 
 
         elem.click(function() {
             if(!$nav.hasClass('open')) {
                 $fixedMenu.css({
-//                    "background-color": "rgba(0,0,0,0.8)"
-                    "background-color": "red"
+                    "background-color": "rgba(0,0,0,0.8)"
                 });
                 $menu.css({
                     width: "100%"
