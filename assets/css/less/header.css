@@ -85,9 +85,25 @@
   box-sizing: border-box;
   font-size: 18px;
 }
+.order--list li {
+  width: 100%;
+  background-image: none;
+}
+.elem--transition {
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
 header {
   width: 100%;
   height: auto;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
 header .content--background {
   background-image: url("../img/structure/index-background-header.jpg");
@@ -104,10 +120,17 @@ header .content--background .content--message {
   width: 25%;
   margin: 0 auto;
 }
+header .content--background .content--message h1 {
+  font-size: 4.2em;
+  margin: 18% 0;
+  border-bottom: 4px solid #1fcdff;
+  text-align: center;
+  font-weight: 800;
+}
 header .content--background .content--menu {
-  padding-top: 5%;
   width: 100%;
   display: inline-block;
+  padding-top: 1%;
 }
 header .content--background .content--menu .content--menu__logo {
   float: left;
@@ -117,12 +140,49 @@ header .content--background .content--menu .content--menu__logo a {
 }
 header .content--background .content--menu .content--menu__logo a img {
   width: 250px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
 header .content--background .content--menu .content--menu__menu {
   float: right;
 }
+header .content--background .f-nav {
+  /* To fix main menu container */
+  z-index: 4;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: #000;
+  box-sizing: border-box;
+  padding: 1% 2%;
+}
+header .content--background .f-nav .content--menu__logo a img {
+  height: auto;
+  width: 200px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
 /*********************** Responsive Header **************************/
 /* Large Devices, Wide Screens */
+@media only screen and (max-width: 1600px) {
+  header .content--background .content--menu {
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  header .content--background .content--message {
+    width: 25%;
+  }
+  header .content--background .content--message h1 {
+    font-size: 3em;
+    border-bottom: 3px solid #1fcdff;
+  }
+}
 @media only screen and (max-width: 1200px) {
   header .content--background .content--menu {
     background-color: rgba(0, 0, 0, 0.4);
