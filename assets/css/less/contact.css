@@ -48,7 +48,6 @@
   height: auto;
   width: 100%;
   background-size: cover;
-  margin-top: 100px;
   padding: 0 2% 200px 2%;
   box-sizing: border-box;
   color: #fff;
@@ -91,7 +90,6 @@
   height: auto;
   width: 100%;
   background-size: cover;
-  margin-top: 100px;
   padding: 0 2% 200px 2%;
   box-sizing: border-box;
   color: #fff;
@@ -117,6 +115,7 @@
   /* IE 9 */
   -webkit-transform: skew(0deg, -5deg);
   /* Safari and Chrome */
+  z-index: 2;
   background: #fff;
 }
 #contact #content--zone .content--card {
