@@ -3,6 +3,9 @@
 header {
     width: 100%;
     height: auto;
+    .elem--transition;
+
+
 
     .content--background {
         background-image:url( "../img/structure/index-background-header.jpg");
@@ -29,9 +32,9 @@ header {
         }
 
         .content--menu {
-            padding-top: 5%;
             width: 100%;
             display: inline-block;
+            padding-top: 1%;
 
             .content--menu__logo {
                 float: left;
@@ -41,12 +44,32 @@ header {
 
                     img {
                         width: 250px;
+                       .elem--transition;
                     }
                 }
             }
 
             .content--menu__menu {
                 float: right;
+            }
+        }
+
+
+        .f-nav{  /* To fix main menu container */
+            z-index: 4;
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            background-color: #000;
+            box-sizing: border-box;
+            padding: 1% 2%;
+
+
+            .content--menu__logo a img {
+                height: auto;
+                width: 200px;
+                .elem--transition;
             }
         }
     }
@@ -56,6 +79,23 @@ header {
 /*********************** Responsive Header **************************/
 
 /* Large Devices, Wide Screens */
+@media only screen and (max-width : 1600px) {
+    header .content--background {
+        .content--menu {
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+
+        .content--message {
+            width: 25%;
+
+            h1 {
+                font-size: 3em;
+                border-bottom: 3px solid @pallete-color-blue;
+            }
+        }
+    }
+}
+
 @media only screen and (max-width : 1200px) {
     header .content--background {
         .content--menu {
