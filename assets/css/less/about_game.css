@@ -85,6 +85,13 @@
   box-sizing: border-box;
   font-size: 18px;
 }
+.order--list {
+  list-style-type: decimal;
+}
+.order--list li {
+  width: 100%;
+  background-image: none;
+}
 #about--game #content--zone,
 #about--game .content--card {
   display: block;
@@ -208,32 +215,25 @@
 }
 #about--game .content--background2 .game li:nth-of-type(1) {
   background-image: url(../img/icons/rules.png);
-}
-#about--game .content--background2 .game li:nth-of-type(1) ol {
   list-style-type: decimal;
 }
-#about--game .content--background2 .game li:nth-of-type(1) ol li {
+#about--game .content--background2 .game li:nth-of-type(1) li {
   width: 100%;
   background-image: none;
 }
 #about--game .content--background2 .game li:nth-of-type(2) {
   background-image: url(../img/icons/information.png);
-}
-#about--game .content--background2 .game li:nth-of-type(2) ol {
   list-style-type: decimal;
-  display: block;
 }
-#about--game .content--background2 .game li:nth-of-type(2) ol li {
+#about--game .content--background2 .game li:nth-of-type(2) li {
   width: 100%;
   background-image: none;
 }
 #about--game .content--background2 .game li:nth-of-type(3) {
   background-image: url(../img/icons/creative.png);
-}
-#about--game .content--background2 .game li:nth-of-type(3) ol {
   list-style-type: decimal;
 }
-#about--game .content--background2 .game li:nth-of-type(3) ol li {
+#about--game .content--background2 .game li:nth-of-type(3) li {
   width: 100%;
   background-image: none;
 }
