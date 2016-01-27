@@ -48,7 +48,6 @@
   height: auto;
   width: 100%;
   background-size: cover;
-  margin-top: 100px;
   padding: 0 2% 200px 2%;
   box-sizing: border-box;
   color: #fff;
@@ -85,5 +84,19 @@
   color: #343434;
   box-sizing: border-box;
   font-size: 18px;
+}
+.order--list {
+  list-style-type: decimal;
+}
+.order--list li {
+  width: 100%;
+  background-image: none;
+}
+.elem--transition {
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
 /*# sourceMappingURL=elements.css.map */

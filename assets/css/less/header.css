@@ -1,3 +1,90 @@
+.button {
+  width: 150px;
+  height: 40px;
+  box-sizing: border-box;
+  background: #1fcdff;
+  box-shadow: 0px 2px 0px 0px #179abf;
+  text-transform: uppercase;
+  color: #fff;
+}
+.content--zone__style {
+  z-index: 1;
+  position: relative;
+  display: block;
+  float: left;
+  margin: -100px 0 100px 0;
+  width: 100%;
+  background: #fff;
+  transform: skew(0deg, -10deg);
+  -ms-transform: skew(0deg, -10deg);
+  /* IE 9 */
+  -webkit-transform: skew(0deg, -5deg);
+  /* Safari and Chrome */
+}
+.content--card__style {
+  display: block;
+  float: left;
+  margin: 100px auto 80px;
+  padding: 0 2%;
+  transform: skew(0deg, 5deg);
+  -ms-transform: skew(0deg, 10deg);
+  -webkit-transform: skew(0deg, 5deg);
+  width: 100%;
+  box-sizing: border-box;
+}
+.content--zone--card__style {
+  display: block;
+  float: left;
+  margin: 100px auto 100px;
+  padding: 0 2%;
+  transform: skew(0deg, 5deg);
+  -ms-transform: skew(0deg, 10deg);
+  -webkit-transform: skew(0deg, 5deg);
+  width: 100%;
+  box-sizing: border-box;
+}
+.content--background__style {
+  background-image: url(../img/structure/index-background-content2.jpg);
+  height: auto;
+  width: 100%;
+  background-size: cover;
+  padding: 0 2% 200px 2%;
+  box-sizing: border-box;
+  color: #fff;
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+}
+.list-style {
+  list-style: none;
+  text-decoration: none;
+  text-transform: none;
+}
+.button--circle {
+  width: 42px;
+  height: 42px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-transition: all 0.8s cubic-bezier(0.64, 0.09, 0.08, 1);
+  transition: all 0.8s cubic-bezier(0.64, 0.09, 0.08, 1);
+  box-shadow: 0 5px 6px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  background: #1fcdff;
+  /* opacity: .5; */
+}
+.input {
+  background-color: #fff;
+  height: 40px;
+  padding: 10px;
+  border-bottom-left-radius: 10px;
+  float: left;
+  box-shadow: 0 2px 0 0 #ccc;
+  outline: none;
+  color: #343434;
+  box-sizing: border-box;
+  font-size: 18px;
+}
 header {
   width: 100%;
   height: auto;
@@ -12,7 +99,10 @@ header .content--background {
   box-sizing: border-box;
   color: #fff;
   background-attachment: fixed;
-  min-height: 550px;
+}
+header .content--background .content--message {
+  width: 25%;
+  margin: 0 auto;
 }
 header .content--background .content--menu {
   padding-top: 5%;
@@ -30,5 +120,94 @@ header .content--background .content--menu .content--menu__logo a img {
 }
 header .content--background .content--menu .content--menu__menu {
   float: right;
+}
+/*********************** Responsive Header **************************/
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+  header .content--background .content--menu {
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  header .content--background .content--message {
+    width: 40%;
+  }
+  header .content--background .content--message h1 {
+    font-size: 3.2em;
+    border-bottom: 3px solid #1fcdff;
+  }
+}
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  header .content--background .content--menu .content--menu__logo a img {
+    width: 200px;
+  }
+  header .content--background .content--message {
+    width: 35%;
+  }
+  header .content--background .content--message h1 {
+    font-size: 3.5em;
+    border-bottom: 2px solid #1fcdff;
+  }
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  header .content--background .content--menu {
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  header .content--background .content--menu .content--menu__logo a img {
+    width: 200px;
+  }
+  header .content--background .content--message {
+    width: 45%;
+  }
+  header .content--background .content--message h1 {
+    font-size: 3.5em;
+    border-bottom: 2px solid #1fcdff;
+  }
+}
+@media only screen and (max-width: 640px) {
+  header .content--background .content--message h1 {
+    font-size: 3em;
+  }
+}
+@media only screen and (max-width: 603px) {
+  header .content--background .content--message h1 {
+    font-size: 3em;
+  }
+}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  header .content--background .content--message {
+    width: 50%;
+  }
+  header .content--background .content--message h1 {
+    font-size: 3em;
+    margin: 25% 0;
+  }
+}
+@media only screen and (max-width: 360px) {
+  header .content--background .content--message h1 {
+    font-size: 2.5em;
+  }
+}
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+  header .content--background .content--menu .content--menu__logo a img {
+    width: 144px;
+  }
+  header .content--background .content--menu .content--menu__menu img {
+    margin-top: 4px;
+  }
+  header .content--background .content--message {
+    width: 60%;
+  }
+  header .content--background .content--message h1 {
+    font-size: 2.5em;
+    margin: 40% 0;
+  }
+}
+@media only screen and (max-width: 240px) {
+  header .content--background .content--message h1 {
+    font-size: 2em;
+  }
 }
 /*# sourceMappingURL=header.css.map */

@@ -14,7 +14,7 @@
   float: left;
   margin: -100px 0 100px 0;
   width: 100%;
-  background: gray;
+  background: #fff;
   transform: skew(0deg, -10deg);
   -ms-transform: skew(0deg, -10deg);
   /* IE 9 */
@@ -74,6 +74,18 @@
   background: #1fcdff;
   /* opacity: .5; */
 }
+.input {
+  background-color: #fff;
+  height: 40px;
+  padding: 10px;
+  border-bottom-left-radius: 10px;
+  float: left;
+  box-shadow: 0 2px 0 0 #ccc;
+  outline: none;
+  color: #343434;
+  box-sizing: border-box;
+  font-size: 18px;
+}
 .content--background {
   background-image: url(../img/structure/index-background-content2.jpg);
   height: auto;
@@ -87,15 +99,10 @@
   background-attachment: fixed;
   background-position: center;
 }
-.content--background p,
-.content--background h1 {
-  text-align: center;
-  padding: 0 20%;
-}
 #content--zone .content--card {
   display: block;
   float: left;
-  margin: 100px auto 100px;
+  margin: 200px auto 100px;
   padding: 0 2%;
   transform: skew(0deg, 5deg);
   -ms-transform: skew(0deg, 10deg);
@@ -103,23 +110,21 @@
   width: 100%;
   box-sizing: border-box;
 }
-#content--zone__footer {
+#content--zone {
   z-index: 1;
   position: relative;
   display: block;
   float: left;
   margin: -100px 0 100px 0;
   width: 100%;
-  background: gray;
+  background: #fff;
   transform: skew(0deg, -10deg);
   -ms-transform: skew(0deg, -10deg);
   /* IE 9 */
   -webkit-transform: skew(0deg, -5deg);
   /* Safari and Chrome */
-  background-color: black;
-  margin: -100px 0 30px 0;
 }
-#content--zone__footer .content--card {
+.content--card {
   display: block;
   float: left;
   margin: 100px auto 80px;

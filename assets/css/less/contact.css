@@ -48,7 +48,6 @@
   height: auto;
   width: 100%;
   background-size: cover;
-  margin-top: 100px;
   padding: 0 2% 200px 2%;
   box-sizing: border-box;
   color: #fff;
@@ -91,13 +90,13 @@
   height: auto;
   width: 100%;
   background-size: cover;
-  margin-top: 100px;
   padding: 0 2% 200px 2%;
   box-sizing: border-box;
   color: #fff;
   position: relative;
   background-attachment: fixed;
   background-position: center;
+  margin-top: 0;
 }
 #contact .content--background p,
 #contact .content--background h1 {
@@ -116,6 +115,7 @@
   /* IE 9 */
   -webkit-transform: skew(0deg, -5deg);
   /* Safari and Chrome */
+  z-index: 2;
   background: #fff;
 }
 #contact #content--zone .content--card {
@@ -128,6 +128,7 @@
   -webkit-transform: skew(0deg, 5deg);
   width: 100%;
   box-sizing: border-box;
+  padding: 0;
 }
 #contact #content--zone .content--card .contacts {
   height: auto;
@@ -187,6 +188,7 @@
 #contact #content--zone .content--card .contacts .form--personal .form--personal__infos {
   padding-left: 0;
   margin: 25px 0;
+  line-height: 1.3;
 }
 #contact #content--zone .content--card .contacts .form--personal .form--personal__infos li {
   margin: 16px 0;
@@ -229,9 +231,14 @@
 #contact #content--zone .content--card .contacts .form--personal .form--personal__infos li:nth-of-type(7) {
   background-image: url(../img/icons/youtube.png);
 }
-#contact #content--zone .content--card .contact--map {
+#contact .contact--map {
   width: 100%;
-  height: 400px;
-  background-color: red;
+}
+#contact .contact--map iframe {
+  border: 0;
+  width: 100%;
+  height: 600px;
+  margin-top: -200px;
+  -webkit-filter: grayscale(1);
 }
 /*# sourceMappingURL=contact.css.map */
