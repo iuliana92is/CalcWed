@@ -16,7 +16,7 @@
   width: 100%;
   background: #fff;
   transform: skew(0deg, -10deg);
-  -ms-transform: skew(0deg, -10deg);
+  -ms-transform: skew(0deg, -5deg);
   /* IE 9 */
   -webkit-transform: skew(0deg, -5deg);
   /* Safari and Chrome */
@@ -27,7 +27,7 @@
   margin: 100px auto 80px;
   padding: 0 2%;
   transform: skew(0deg, 5deg);
-  -ms-transform: skew(0deg, 10deg);
+  -ms-transform: skew(0deg, 5deg);
   -webkit-transform: skew(0deg, 5deg);
   width: 100%;
   box-sizing: border-box;
@@ -38,7 +38,7 @@
   margin: 100px auto 100px;
   padding: 0 2%;
   transform: skew(0deg, 5deg);
-  -ms-transform: skew(0deg, 10deg);
+  -ms-transform: skew(0deg, 5deg);
   -webkit-transform: skew(0deg, 5deg);
   width: 100%;
   box-sizing: border-box;
