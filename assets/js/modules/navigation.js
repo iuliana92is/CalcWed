@@ -8,32 +8,26 @@
         var $fixedMenu = $('#fixed--menu'),
             $menu = $fixedMenu.find('.content--menu__menu'),
             $logo = $fixedMenu.find('.content--menu__logo'),
-            $nav = $menu.find('nav'),
+            $firstNav = $('#fixed--menu > nav'),
             $li = $menu.find('li'),
             $ul = $menu.find('ul');
 
 
 
         elem.click(function() {
-            if(!$nav.hasClass('open')) {
+            if(!$firstNav.hasClass('open')) {
                 $fixedMenu.css({
                     "background-color": "rgba(0,0,0,0.8)"
                 });
-                $menu.css({
-                    width: "100%"
-                });
-               $li.css({
-                    float: 'none',
-                    'border-right': 'none'
-                });
-                $ul.css({
-                    'padding-top': '7%'
-                });
-                $logo.css({position: 'fixed', 'margin-top': '0'});
-
-                $nav.slideDown('slow').addClass('open');
+                $firstNav.addClass('open');
+                $firstNav.find('ul').addClass('open');
+                $firstNav.removeClass('closed');
+                $firstNav.find('ul').removeClass('closed');
             }else {
-                $nav.slideUp('slow').removeClass('open');
+                $firstNav.removeClass('open');
+                $firstNav.find('ul').removeClass('open');
+                $firstNav.addClass('closed');
+                $firstNav.find('ul').addClass('closed');
             }
 
 

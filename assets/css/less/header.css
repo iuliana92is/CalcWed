@@ -16,7 +16,7 @@
   width: 100%;
   background: #fff;
   transform: skew(0deg, -10deg);
-  -ms-transform: skew(0deg, -10deg);
+  -ms-transform: skew(0deg, -5deg);
   /* IE 9 */
   -webkit-transform: skew(0deg, -5deg);
   /* Safari and Chrome */
@@ -27,7 +27,7 @@
   margin: 100px auto 80px;
   padding: 0 2%;
   transform: skew(0deg, 5deg);
-  -ms-transform: skew(0deg, 10deg);
+  -ms-transform: skew(0deg, 5deg);
   -webkit-transform: skew(0deg, 5deg);
   width: 100%;
   box-sizing: border-box;
@@ -38,7 +38,7 @@
   margin: 100px auto 100px;
   padding: 0 2%;
   transform: skew(0deg, 5deg);
-  -ms-transform: skew(0deg, 10deg);
+  -ms-transform: skew(0deg, 5deg);
   -webkit-transform: skew(0deg, 5deg);
   width: 100%;
   box-sizing: border-box;
@@ -106,15 +106,17 @@ header {
   transition: all 0.3s;
 }
 header .content--background {
-  background-image: url("../img/structure/index-background-header.jpg");
+  background-image: url(../img/structure/index-background-content2.jpg);
   height: auto;
   width: 100%;
   background-size: cover;
-  position: relative;
   padding: 0 2% 200px 2%;
   box-sizing: border-box;
   color: #fff;
+  position: relative;
   background-attachment: fixed;
+  background-position: center;
+  background-image: url("../img/structure/index-background-header.jpg");
 }
 header .content--background .content--message {
   width: 25%;

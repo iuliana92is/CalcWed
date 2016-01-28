@@ -16,7 +16,7 @@
   width: 100%;
   background: #fff;
   transform: skew(0deg, -10deg);
-  -ms-transform: skew(0deg, -10deg);
+  -ms-transform: skew(0deg, -5deg);
   /* IE 9 */
   -webkit-transform: skew(0deg, -5deg);
   /* Safari and Chrome */
@@ -27,7 +27,7 @@
   margin: 100px auto 80px;
   padding: 0 2%;
   transform: skew(0deg, 5deg);
-  -ms-transform: skew(0deg, 10deg);
+  -ms-transform: skew(0deg, 5deg);
   -webkit-transform: skew(0deg, 5deg);
   width: 100%;
   box-sizing: border-box;
@@ -38,7 +38,7 @@
   margin: 100px auto 100px;
   padding: 0 2%;
   transform: skew(0deg, 5deg);
-  -ms-transform: skew(0deg, 10deg);
+  -ms-transform: skew(0deg, 5deg);
   -webkit-transform: skew(0deg, 5deg);
   width: 100%;
   box-sizing: border-box;
@@ -85,6 +85,17 @@
   box-sizing: border-box;
   font-size: 18px;
 }
+.order--list li {
+  width: 100%;
+  background-image: none;
+}
+.elem--transition {
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
 #home {
   width: 100%;
   height: auto;
@@ -95,19 +106,21 @@
   margin: 100px auto 100px;
   padding: 0 2%;
   transform: skew(0deg, 5deg);
-  -ms-transform: skew(0deg, 10deg);
+  -ms-transform: skew(0deg, 5deg);
   -webkit-transform: skew(0deg, 5deg);
   width: 100%;
   box-sizing: border-box;
 }
 #home #content--zone {
   z-index: 1;
+  position: relative;
   display: block;
   float: left;
   margin: -100px 0 100px 0;
   width: 100%;
+  background: #fff;
   transform: skew(0deg, -10deg);
-  -ms-transform: skew(0deg, -10deg);
+  -ms-transform: skew(0deg, -5deg);
   /* IE 9 */
   -webkit-transform: skew(0deg, -5deg);
   /* Safari and Chrome */

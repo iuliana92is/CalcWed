@@ -16,7 +16,7 @@
   width: 100%;
   background: #fff;
   transform: skew(0deg, -10deg);
-  -ms-transform: skew(0deg, -10deg);
+  -ms-transform: skew(0deg, -5deg);
   /* IE 9 */
   -webkit-transform: skew(0deg, -5deg);
   /* Safari and Chrome */
@@ -27,7 +27,7 @@
   margin: 100px auto 80px;
   padding: 0 2%;
   transform: skew(0deg, 5deg);
-  -ms-transform: skew(0deg, 10deg);
+  -ms-transform: skew(0deg, 5deg);
   -webkit-transform: skew(0deg, 5deg);
   width: 100%;
   box-sizing: border-box;
@@ -38,7 +38,7 @@
   margin: 100px auto 100px;
   padding: 0 2%;
   transform: skew(0deg, 5deg);
-  -ms-transform: skew(0deg, 10deg);
+  -ms-transform: skew(0deg, 5deg);
   -webkit-transform: skew(0deg, 5deg);
   width: 100%;
   box-sizing: border-box;
@@ -107,7 +107,7 @@
   margin: 100px auto 100px;
   padding: 0 2%;
   transform: skew(0deg, 5deg);
-  -ms-transform: skew(0deg, 10deg);
+  -ms-transform: skew(0deg, 5deg);
   -webkit-transform: skew(0deg, 5deg);
   width: 100%;
   box-sizing: border-box;
@@ -117,13 +117,13 @@
   height: auto;
   width: 100%;
   background-size: cover;
-  margin-top: 100px;
-  padding: 0 0 200px 0;
+  padding: 0 2% 200px 2%;
   box-sizing: border-box;
   color: #fff;
   position: relative;
   background-attachment: fixed;
   background-position: center;
+  padding: 0 0 200px 0;
   margin-top: 0;
 }
 #about--game .content--background:last-child {
@@ -143,18 +143,18 @@
   padding: 0;
 }
 #about--game #content--zone {
-  z-index: 2;
+  z-index: 1;
   position: relative;
   display: block;
   float: left;
   margin: -100px 0 100px 0;
   width: 100%;
+  background: #fff;
   transform: skew(0deg, -10deg);
-  -ms-transform: skew(0deg, -10deg);
+  -ms-transform: skew(0deg, -5deg);
   /* IE 9 */
   -webkit-transform: skew(0deg, -5deg);
   /* Safari and Chrome */
-  background: #fff;
 }
 #about--game #content--zone .content--card {
   display: block;
@@ -162,7 +162,7 @@
   margin: 100px auto 80px;
   padding: 0 2%;
   transform: skew(0deg, 5deg);
-  -ms-transform: skew(0deg, 10deg);
+  -ms-transform: skew(0deg, 5deg);
   -webkit-transform: skew(0deg, 5deg);
   width: 100%;
   box-sizing: border-box;
@@ -171,15 +171,16 @@
 #about--game .content--background2 {
   background-image: url(../img/structure/index-background-content2.jpg);
   height: auto;
-  width: 100%;
   background-size: cover;
-  margin-top: 100px;
-  padding: 0;
+  padding: 0 2% 200px 2%;
   box-sizing: border-box;
   color: #fff;
   position: relative;
   background-attachment: fixed;
   background-position: center;
+  width: 100%;
+  margin-top: 100px;
+  padding: 0;
   margin-top: 0;
 }
 #about--game .content--background2:last-child {
