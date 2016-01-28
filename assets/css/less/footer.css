@@ -8,7 +8,7 @@
   color: #fff;
 }
 .content--zone__style {
-  z-index: 1;
+  z-index: 5;
   position: relative;
   display: block;
   float: left;
@@ -16,7 +16,7 @@
   width: 100%;
   background: #fff;
   transform: skew(0deg, -10deg);
-  -ms-transform: skew(0deg, -10deg);
+  -ms-transform: skew(0deg, -5deg);
   /* IE 9 */
   -webkit-transform: skew(0deg, -5deg);
   /* Safari and Chrome */
@@ -25,9 +25,9 @@
   display: block;
   float: left;
   margin: 100px auto 80px;
-  padding: 0 2%;
+  padding: 2%;
   transform: skew(0deg, 5deg);
-  -ms-transform: skew(0deg, 10deg);
+  -ms-transform: skew(0deg, 5deg);
   -webkit-transform: skew(0deg, 5deg);
   width: 100%;
   box-sizing: border-box;
@@ -38,7 +38,7 @@
   margin: 100px auto 100px;
   padding: 0 2%;
   transform: skew(0deg, 5deg);
-  -ms-transform: skew(0deg, 10deg);
+  -ms-transform: skew(0deg, 5deg);
   -webkit-transform: skew(0deg, 5deg);
   width: 100%;
   box-sizing: border-box;
@@ -54,6 +54,12 @@
   position: relative;
   background-attachment: fixed;
   background-position: center;
+}
+.content--background__style--mobile {
+  background-image: url(../img/structure/index-background-content2--mobile.jpg);
+}
+.content--background__style--mobile-xs {
+  background-image: url(../img/structure/index-background-content2--mobile-xs.jpg);
 }
 .list-style {
   list-style: none;
@@ -84,6 +90,28 @@
   color: #343434;
   box-sizing: border-box;
   font-size: 18px;
+}
+.order--list li {
+  width: 100%;
+  background-image: none;
+}
+.elem--transition {
+  -webkit-transition: all 0.9s;
+  -moz-transition: all 0.9s;
+  -ms-transition: all 0.9s;
+  -o-transition: all 0.9s;
+  transition: all 0.9s;
+}
+.use--flex {
+  display: flex;
+  margin: auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.box--shadow__card {
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -moz-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 footer {
   width: 100%;
@@ -119,19 +147,21 @@ footer .content--background .newsletter input {
   display: inline;
 }
 footer .content--background .newsletter input.email {
+  height: 40px;
+  padding: 10px;
+  float: left;
+  box-shadow: 0 2px 0 0 #ccc;
+  outline: none;
+  box-sizing: border-box;
+  font-size: 18px;
   width: 200px;
   background-color: #fff;
   border: 0;
-  height: 40px;
-  padding: 10px;
   border-bottom-left-radius: 10px;
-  float: left;
   box-shadow: 0px 2px 0px 0px #ccc;
-  outline: none;
   color: #343434;
-  box-sizing: border-box;
-  font-size: 18px;
   background-color: #f9f9f9;
+  margin-left: -2px;
 }
 footer .content--background .newsletter .subscribe {
   float: left;
@@ -156,6 +186,8 @@ footer .content--background .newsletter .subscribe:hover {
 }
 footer .content--background .content--card .socials {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   text-align: center;
   list-style: none;
   text-decoration: none;
@@ -163,20 +195,18 @@ footer .content--background .content--card .socials {
   width: 50%;
   max-width: 300px;
   margin: auto;
-  flex-direction: row;
-  flex-wrap: wrap;
   margin-top: 50px;
 }
 footer .content--background .content--card .socials li {
+  list-style: none;
+  text-decoration: none;
+  text-transform: none;
   height: 62px;
   width: 62px;
   border-radius: 50%;
   background-color: transparent;
   background-repeat: no-repeat;
   background-size: 52px 52px;
-  list-style: none;
-  text-decoration: none;
-  text-transform: none;
   float: left;
   background-position: center;
   transition: box-shadow 0.1s cubic-bezier(0.4, 0, 0.2, 1);
@@ -212,13 +242,13 @@ footer #content--zone .content--card {
   margin: 100px auto 100px;
   padding: 0 2%;
   transform: skew(0deg, 5deg);
-  -ms-transform: skew(0deg, 10deg);
+  -ms-transform: skew(0deg, 5deg);
   -webkit-transform: skew(0deg, 5deg);
   width: 100%;
   box-sizing: border-box;
 }
 footer #content--zone__footer {
-  z-index: 1;
+  z-index: 5;
   position: relative;
   display: block;
   float: left;
@@ -226,7 +256,7 @@ footer #content--zone__footer {
   width: 100%;
   background: #fff;
   transform: skew(0deg, -10deg);
-  -ms-transform: skew(0deg, -10deg);
+  -ms-transform: skew(0deg, -5deg);
   /* IE 9 */
   -webkit-transform: skew(0deg, -5deg);
   /* Safari and Chrome */
@@ -237,9 +267,9 @@ footer #content--zone__footer .content--card {
   display: block;
   float: left;
   margin: 100px auto 80px;
-  padding: 0 2%;
+  padding: 2%;
   transform: skew(0deg, 5deg);
-  -ms-transform: skew(0deg, 10deg);
+  -ms-transform: skew(0deg, 5deg);
   -webkit-transform: skew(0deg, 5deg);
   width: 100%;
   box-sizing: border-box;
