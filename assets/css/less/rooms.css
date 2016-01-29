@@ -55,12 +55,6 @@
   background-attachment: fixed;
   background-position: center;
 }
-.content--background__style--mobile {
-  background-image: url(../img/structure/index-background-content2--mobile.jpg);
-}
-.content--background__style--mobile-xs {
-  background-image: url(../img/structure/index-background-content2--mobile-xs.jpg);
-}
 .list-style {
   list-style: none;
   text-decoration: none;
@@ -96,11 +90,11 @@
   background-image: none;
 }
 .elem--transition {
-  -webkit-transition: all 0.9s;
-  -moz-transition: all 0.9s;
-  -ms-transition: all 0.9s;
-  -o-transition: all 0.9s;
-  transition: all 0.9s;
+  -webkit-transition: all 1.3s ease;
+  -moz-transition: all 1.3s ease;
+  -ms-transition: all 1.3s ease;
+  -o-transition: all 1.3s ease;
+  transition: all 1.3s ease;
 }
 .use--flex {
   display: flex;
@@ -113,6 +107,12 @@
   -moz-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   -webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+/*********************** Responsive Home **************************/
+/* Large Devices, Wide Screens */
+/* Medium Devices, Desktops */
+/* Small Devices, Tablets */
+/* Extra Small Devices, Phones */
+/* Custom, iPhone Retina */
 #rooms {
   width: 100%;
 }
@@ -269,11 +269,11 @@
   z-index: 6;
 }
 #rooms #content--zone .content--card .rooms .card .cta {
-  -webkit-transition: all 0.9s;
-  -moz-transition: all 0.9s;
-  -ms-transition: all 0.9s;
-  -o-transition: all 0.9s;
-  transition: all 0.9s;
+  -webkit-transition: all 1.3s ease;
+  -moz-transition: all 1.3s ease;
+  -ms-transition: all 1.3s ease;
+  -o-transition: all 1.3s ease;
+  transition: all 1.3s ease;
   -moz-border-radius: 2px;
   -webkit-border-radius: 2px;
   background-clip: padding-box;
@@ -337,14 +337,34 @@
     background: url('../img/room/joker/joker.jpg') no-repeat center bottom;
   }
   #rooms #content--zone .content--card .rooms .card .cta {
-    -webkit-transition: all 0.9s;
-    -moz-transition: all 0.9s;
-    -ms-transition: all 0.9s;
-    -o-transition: all 0.9s;
-    transition: all 0.9s;
+    -webkit-transition: all 1.3s ease;
+    -moz-transition: all 1.3s ease;
+    -ms-transition: all 1.3s ease;
+    -o-transition: all 1.3s ease;
+    transition: all 1.3s ease;
     box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     -moz-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     -webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+}
+@media only screen and (max-width: 480px) {
+  #rooms .content--background {
+    padding: 0 0 150px 0;
+  }
+  #rooms #content--zone {
+    margin: -100px 0 50px 0;
+  }
+  #rooms #content--zone .content--card {
+    margin: 50px auto 30px;
+  }
+  #rooms #content--zone .content--card .rooms .card {
+    height: 400px;
+  }
+  #rooms #content--zone .content--card .rooms .card .cta-container {
+    margin-top: 330px;
+  }
+  #rooms #content--zone .content--card .rooms .card p {
+    margin-top: 280px;
   }
 }
 /*# sourceMappingURL=rooms.css.map */
