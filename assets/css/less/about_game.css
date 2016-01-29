@@ -8,7 +8,7 @@
   color: #fff;
 }
 .content--zone__style {
-  z-index: 1;
+  z-index: 5;
   position: relative;
   display: block;
   float: left;
@@ -25,7 +25,7 @@
   display: block;
   float: left;
   margin: 100px auto 80px;
-  padding: 0 2%;
+  padding: 2%;
   transform: skew(0deg, 5deg);
   -ms-transform: skew(0deg, 5deg);
   -webkit-transform: skew(0deg, 5deg);
@@ -54,6 +54,12 @@
   position: relative;
   background-attachment: fixed;
   background-position: center;
+}
+.content--background__style--mobile {
+  background-image: url(../img/structure/index-background-content2--mobile.jpg);
+}
+.content--background__style--mobile-xs {
+  background-image: url(../img/structure/index-background-content2--mobile-xs.jpg);
 }
 .list-style {
   list-style: none;
@@ -90,15 +96,25 @@
   background-image: none;
 }
 .elem--transition {
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -ms-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
+  -webkit-transition: all 0.9s;
+  -moz-transition: all 0.9s;
+  -ms-transition: all 0.9s;
+  -o-transition: all 0.9s;
+  transition: all 0.9s;
+}
+.use--flex {
+  display: flex;
+  margin: auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.box--shadow__card {
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -moz-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 #about--game {
   width: 100%;
-  overflow: hidden;
 }
 #about--game #content--zone,
 #about--game .content--card {
@@ -134,16 +150,8 @@
   text-align: center;
   padding: 0 20%;
 }
-#about--game .content--background .game {
-  background-color: pink;
-  position: relative;
-  width: 100%;
-}
-#about--game:last-child {
-  padding: 0;
-}
 #about--game #content--zone {
-  z-index: 1;
+  z-index: 5;
   position: relative;
   display: block;
   float: left;
@@ -160,17 +168,17 @@
   display: block;
   float: left;
   margin: 100px auto 80px;
-  padding: 0 2%;
+  padding: 2%;
   transform: skew(0deg, 5deg);
   -ms-transform: skew(0deg, 5deg);
   -webkit-transform: skew(0deg, 5deg);
   width: 100%;
   box-sizing: border-box;
-  padding: 0;
 }
 #about--game .content--background2 {
   background-image: url(../img/structure/index-background-content2.jpg);
   height: auto;
+  width: 100%;
   background-size: cover;
   padding: 0 2% 200px 2%;
   box-sizing: border-box;
@@ -178,13 +186,8 @@
   position: relative;
   background-attachment: fixed;
   background-position: center;
-  width: 100%;
-  margin-top: 100px;
   padding: 0;
   margin-top: 0;
-}
-#about--game .content--background2:last-child {
-  padding: 0;
 }
 #about--game .content--background2 p,
 #about--game .content--background2 h1 {
@@ -197,8 +200,8 @@
   position: absolute;
   width: 100%;
   height: auto;
-  margin-top: 300px;
-  display: inline-block;
+  margin-top: 350px;
+  display: block;
   color: black;
 }
 #about--game .content--background2 .game li {

@@ -8,7 +8,7 @@
   color: #fff;
 }
 .content--zone__style {
-  z-index: 1;
+  z-index: 5;
   position: relative;
   display: block;
   float: left;
@@ -25,7 +25,7 @@
   display: block;
   float: left;
   margin: 100px auto 80px;
-  padding: 0 2%;
+  padding: 2%;
   transform: skew(0deg, 5deg);
   -ms-transform: skew(0deg, 5deg);
   -webkit-transform: skew(0deg, 5deg);
@@ -54,6 +54,12 @@
   position: relative;
   background-attachment: fixed;
   background-position: center;
+}
+.content--background__style--mobile {
+  background-image: url(../img/structure/index-background-content2--mobile.jpg);
+}
+.content--background__style--mobile-xs {
+  background-image: url(../img/structure/index-background-content2--mobile-xs.jpg);
 }
 .list-style {
   list-style: none;
@@ -90,11 +96,22 @@
   background-image: none;
 }
 .elem--transition {
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -ms-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
+  -webkit-transition: all 0.9s;
+  -moz-transition: all 0.9s;
+  -ms-transition: all 0.9s;
+  -o-transition: all 0.9s;
+  transition: all 0.9s;
+}
+.use--flex {
+  display: flex;
+  margin: auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.box--shadow__card {
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -moz-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 #home {
   width: 100%;
@@ -112,7 +129,7 @@
   box-sizing: border-box;
 }
 #home #content--zone {
-  z-index: 1;
+  z-index: 5;
   position: relative;
   display: block;
   float: left;
@@ -125,11 +142,16 @@
   -webkit-transform: skew(0deg, -5deg);
   /* Safari and Chrome */
 }
-#home .content--card h1 {
-  text-align: center;
-  font-size: 2em;
-  font-weight: 400;
-  text-shadow: #808080 0.1em 0.1em 0.2em;
+#home #content--zone .content--card {
+  display: block;
+  float: left;
+  margin: 100px auto 80px;
+  padding: 2%;
+  transform: skew(0deg, 5deg);
+  -ms-transform: skew(0deg, 5deg);
+  -webkit-transform: skew(0deg, 5deg);
+  width: 100%;
+  box-sizing: border-box;
 }
 /*********************** Responsive Home **************************/
 /* Large Devices, Wide Screens */
