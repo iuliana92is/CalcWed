@@ -156,25 +156,77 @@
 }
 
 // Small Devices, Tablets
-@media only screen and (max-width : 768px) {
-     #rooms{   
-        .content--background {
+@media only screen and (max-width : 768px) { 
+    #rooms{ 
+        #content--zone, .content--card{ 
+        } 
+        .content--background { 
+        }
+        #content--zone{ 
+            .content--card{  
+                .rooms {  
+                    .card {
+                        background-color:  @base-color-second; 
+                       .box--shadow__card;
+                        height: 300px;
+                        left: 0;
+                        margin: auto;
+                        overflow: hidden;
+                        position: relative;
+                        right: 0;
+                        top: 0;
+                        width: 300px;
+                        float: left; 
+                        .use--flex; 
+                        margin-bottom: 30px; 
+                        height: 450px;
+                        width: 300px;
+                        .cta-container {
+                            display: inline;
+                            margin-top: 380px;
+                        }
+
+                        .card_circle { 
+                            border-radius: 0;
+                            margin-top: -130px;
+                        }
+                        h2 {
+                            background: @pallete-color-blue;
+                            color:  @base-color-second;
+                            margin-top: 220px;
+                            padding: 5px; 
+                        }
+                        p { 
+                            margin-top: 300px; 
+                        }
+                        .card_circle {
+                            background: url('../img/room/joker/joker.jpg') no-repeat center bottom; 
+                        }
+
+                        h2 { 
+                        }
+                        p {   
+                        }
+                        .cta-container {  
+                        }
+                        .cta { 
+                            .elem--transition; 
+                            .box--shadow__card;
+                            
+                        }
+                    }
+                }
+            } 
         }
     }
 }
 
 // Extra Small Devices, Phones
 @media only screen and (max-width : 480px) {
-     #rooms{   
-        .content--background {
-        }
-    }
+     
 }
 
 // Custom, iPhone Retina
 @media only screen and (max-width : 320px) {
-     #rooms{   
-        .content--background {  
-        }
-    }
+      
 }
