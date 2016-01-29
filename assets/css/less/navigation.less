@@ -37,12 +37,21 @@ nav {
 }
 
 .open {
-    max-height: 350px !important;
-    padding-bottom: 3% !important;
+    max-height: 350px;
+    padding-bottom: 3% ;
     .elem--transition;
 }
 .closed {
     .elem--transition;
+}
+
+.open--ul {
+    max-height: 350px;
+    padding-bottom: 3%;
+    .element--transition__ul;
+}
+.closed--ul {
+    .element--transition__ul;
 }
 
 
@@ -60,9 +69,12 @@ nav {
 
 }
 
+@media only screen and (max-width : 850px) {
+
+}
+
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
-
     .content--menu__menu {
 
         img {
@@ -82,6 +94,7 @@ nav {
             }
         }
     }
+
 }
 
 /* Extra Small Devices, Phones */
