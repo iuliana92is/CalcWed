@@ -37,6 +37,7 @@ header {
 
             .content--menu__logo {
                 float: left;
+                height: 100%;
                 padding-left: 2%;
                 .elem--transition;
 
@@ -75,8 +76,9 @@ header {
 
 
         .f-nav{  /* To fix main menu container */
-            z-index: 4;
+            z-index: 99;
             position: fixed;
+            position: device-fixed;
             left: 0;
             top: 0;
             width: 100%;
