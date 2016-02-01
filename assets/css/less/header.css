@@ -47,19 +47,14 @@
   background-image: url(../img/structure/index-background-content2.jpg);
   height: auto;
   width: 100%;
-  background-size: cover;
+  background-position: center center;
+  background-size: inherit;
   padding: 0 2% 200px 2%;
   box-sizing: border-box;
   color: #fff;
   position: relative;
   background-attachment: fixed;
   background-position: center;
-}
-.content--background__style--mobile {
-  background-image: url(../img/structure/index-background-content2--mobile.jpg);
-}
-.content--background__style--mobile-xs {
-  background-image: url(../img/structure/index-background-content2--mobile-xs.jpg);
 }
 .list-style {
   list-style: none;
@@ -96,11 +91,18 @@
   background-image: none;
 }
 .elem--transition {
-  -webkit-transition: all 0.9s;
-  -moz-transition: all 0.9s;
-  -ms-transition: all 0.9s;
-  -o-transition: all 0.9s;
-  transition: all 0.9s;
+  -webkit-transition: all 2s ease;
+  -moz-transition: all 2s ease;
+  -ms-transition: all 2s ease;
+  -o-transition: all 2s ease;
+  transition: all 2s ease;
+}
+.element--transition__ul {
+  -webkit-transition: all 3s ease;
+  -moz-transition: all 3s ease;
+  -ms-transition: all 3s ease;
+  -o-transition: all 3s ease;
+  transition: all 3s ease;
 }
 .use--flex {
   display: flex;
@@ -113,27 +115,31 @@
   -moz-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   -webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+/*********************** Responsive Home **************************/
+/* Large Devices, Wide Screens */
+/* Medium Devices, Desktops */
+/* Small Devices, Tablets */
+/* Extra Small Devices, Phones */
+/* Custom, iPhone Retina */
 header {
   width: 100%;
   height: auto;
-  -webkit-transition: all 0.9s;
-  -moz-transition: all 0.9s;
-  -ms-transition: all 0.9s;
-  -o-transition: all 0.9s;
-  transition: all 0.9s;
+  -webkit-transition: all 2s ease;
+  -moz-transition: all 2s ease;
+  -ms-transition: all 2s ease;
+  -o-transition: all 2s ease;
+  transition: all 2s ease;
 }
 header .content--background {
-  background-image: url(../img/structure/index-background-content2.jpg);
+  background-image: url("../img/structure/index-background-header.jpg");
   height: auto;
   width: 100%;
-  background-size: cover;
-  padding: 0 2% 200px 2%;
+  background-size: inherit;
+  position: relative;
+  padding: 0 0 200px 0;
   box-sizing: border-box;
   color: #fff;
-  position: relative;
   background-attachment: fixed;
-  background-position: center;
-  background-image: url("../img/structure/index-background-header.jpg");
 }
 header .content--background .content--message {
   width: 25%;
@@ -149,50 +155,81 @@ header .content--background .content--message h1 {
 header .content--background .content--menu {
   width: 100%;
   display: inline-block;
-  padding-top: 1%;
+  padding: 1% 0;
+  -webkit-transition: all 2s ease;
+  -moz-transition: all 2s ease;
+  -ms-transition: all 2s ease;
+  -o-transition: all 2s ease;
+  transition: all 2s ease;
 }
 header .content--background .content--menu .content--menu__logo {
   float: left;
+  height: 100%;
+  padding-left: 2%;
+  -webkit-transition: all 2s ease;
+  -moz-transition: all 2s ease;
+  -ms-transition: all 2s ease;
+  -o-transition: all 2s ease;
+  transition: all 2s ease;
 }
 header .content--background .content--menu .content--menu__logo a {
   cursor: pointer;
+  -webkit-transition: all 2s ease;
+  -moz-transition: all 2s ease;
+  -ms-transition: all 2s ease;
+  -o-transition: all 2s ease;
+  transition: all 2s ease;
 }
 header .content--background .content--menu .content--menu__logo a img {
   width: 250px;
-  -webkit-transition: all 0.9s;
-  -moz-transition: all 0.9s;
-  -ms-transition: all 0.9s;
-  -o-transition: all 0.9s;
-  transition: all 0.9s;
+  -webkit-transition: all 2s ease;
+  -moz-transition: all 2s ease;
+  -ms-transition: all 2s ease;
+  -o-transition: all 2s ease;
+  transition: all 2s ease;
 }
 header .content--background .content--menu .content--menu__menu {
   float: right;
+  padding-right: 2%;
+}
+header .content--background .content--menu > nav {
+  max-height: 0;
+}
+header .content--background .content--menu > nav ul {
+  max-height: 0;
+  width: 100%;
+  overflow: hidden;
+}
+header .content--background .content--menu > nav ul li {
+  float: none;
+  border-right: none;
 }
 header .content--background .f-nav {
   /* To fix main menu container */
   z-index: 7;
   position: fixed;
+  position: device-fixed;
   left: 0;
   top: 0;
   width: 100%;
   background-color: #000;
   box-sizing: border-box;
-  padding: 1% 2%;
+  padding: 1% 0;
 }
 header .content--background .f-nav .content--menu__logo a img {
   height: auto;
   width: 200px;
-  -webkit-transition: all 0.9s;
-  -moz-transition: all 0.9s;
-  -ms-transition: all 0.9s;
-  -o-transition: all 0.9s;
-  transition: all 0.9s;
+  -webkit-transition: all 2s ease;
+  -moz-transition: all 2s ease;
+  -ms-transition: all 2s ease;
+  -o-transition: all 2s ease;
+  transition: all 2s ease;
 }
 /*********************** Responsive Header **************************/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1600px) {
   header .content--background .content--menu {
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.8);
   }
   header .content--background .content--message {
     width: 25%;
@@ -204,7 +241,7 @@ header .content--background .f-nav .content--menu__logo a img {
 }
 @media only screen and (max-width: 1200px) {
   header .content--background .content--menu {
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.8);
   }
   header .content--background .content--message {
     width: 40%;
@@ -230,7 +267,7 @@ header .content--background .f-nav .content--menu__logo a img {
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
   header .content--background .content--menu {
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.8);
   }
   header .content--background .content--menu .content--menu__logo a img {
     width: 200px;

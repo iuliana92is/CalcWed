@@ -23,8 +23,7 @@
     #content--zone{
         .content--zone__style;
         .content--card{
-            .content--card__style; 
-             
+            .content--card__style;  
             .rooms {
                 width: 100%; 
                 height: inherit;
@@ -147,16 +146,6 @@
 
 // Large Devices, Wide Screens
 @media only screen and (max-width : 1200px) {
-
-}
-
-// Medium Devices, Desktops
-@media only screen and (max-width : 992px) {
-   
-}
-
-// Small Devices, Tablets
-@media only screen and (max-width : 768px) { 
     #rooms{ 
         #content--zone, .content--card{ 
         } 
@@ -210,8 +199,60 @@
                         .cta-container {  
                         }
                         .cta { 
-                            .elem--transition; 
                             .box--shadow__card;
+                            
+                        }
+                        &:hover {
+                            h2{
+                                margin-top: 220px;
+                            }
+                            .card_circle { 
+                            }
+                        }
+                    }
+                }
+            } 
+        }
+    }
+}
+
+// Medium Devices, Desktops
+@media only screen and (max-width : 992px) {
+
+}
+
+// Small Devices, Tablets
+@media only screen and (max-width : 768px) { 
+    #rooms{ 
+        #content--zone, .content--card{ 
+        } 
+        .content--background {
+        padding: 0 0 150px 0;  
+        }
+        #content--zone{ 
+            margin: -100px 0 50px 0;
+            .content--card{  
+                margin: 50px auto 30px;
+                .rooms {  
+                    .card { 
+                        .cta-container {
+                        }
+
+                        .card_circle {  
+                        }
+                        h2 { 
+                        }
+                        p {  
+                        }
+                        .card_circle {  
+                        }
+                        h2 { 
+                        }
+                        p {   
+                        }
+                        .cta-container {  
+                        }
+                        .cta {  
                             
                         }
                     }
@@ -223,7 +264,7 @@
 
 // Extra Small Devices, Phones
 @media only screen and (max-width : 480px) {
-     #rooms{ 
+    #rooms{ 
         #content--zone, .content--card{ 
 
         } 

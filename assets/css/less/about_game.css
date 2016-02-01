@@ -47,12 +47,13 @@
   background-image: url(../img/structure/index-background-content2.jpg);
   height: auto;
   width: 100%;
-  background-size: cover;
+  background-size: inherit;
+  position: relative;
   padding: 0 2% 200px 2%;
   box-sizing: border-box;
   color: #fff;
-  position: relative;
   background-attachment: fixed;
+  background-attachment: device-fixed;
   background-position: center;
 }
 .list-style {
@@ -90,11 +91,18 @@
   background-image: none;
 }
 .elem--transition {
-  -webkit-transition: all 1.3s ease;
-  -moz-transition: all 1.3s ease;
-  -ms-transition: all 1.3s ease;
-  -o-transition: all 1.3s ease;
-  transition: all 1.3s ease;
+  -webkit-transition: all 2s ease;
+  -moz-transition: all 2s ease;
+  -ms-transition: all 2s ease;
+  -o-transition: all 2s ease;
+  transition: all 2s ease;
+}
+.element--transition__ul {
+  -webkit-transition: all 3s ease;
+  -moz-transition: all 3s ease;
+  -ms-transition: all 3s ease;
+  -o-transition: all 3s ease;
+  transition: all 3s ease;
 }
 .use--flex {
   display: flex;
@@ -132,23 +140,36 @@
   background-image: url(../img/structure/index-background-content2.jpg);
   height: auto;
   width: 100%;
-  background-size: cover;
+  background-size: inherit;
+  position: relative;
   padding: 0 2% 200px 2%;
   box-sizing: border-box;
   color: #fff;
-  position: relative;
   background-attachment: fixed;
+  background-attachment: device-fixed;
   background-position: center;
   padding: 0 0 200px 0;
   margin-top: 0;
-}
-#about--game .content--background:last-child {
-  padding: 0;
 }
 #about--game .content--background p,
 #about--game .content--background h1 {
   text-align: center;
   padding: 0 20%;
+}
+#about--game .content--background .games {
+  padding-top: 350px;
+}
+#about--game .content--background .games .games--info {
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 20px 0;
+  padding: 10px 0;
+  background-color: rgba(255, 255, 255, 0.6);
+  color: #000;
+}
+#about--game .content--background .games .games--info p,
+#about--game .content--background .games .games--info h2 {
+  text-align: center;
+  padding: 0 2%;
 }
 #about--game #content--zone {
   z-index: 5;
@@ -175,154 +196,42 @@
   width: 100%;
   box-sizing: border-box;
 }
-#about--game .content--background2 {
-  background-image: url(../img/structure/index-background-content2.jpg);
-  height: auto;
-  width: 100%;
-  background-size: cover;
-  padding: 0 2% 200px 2%;
-  box-sizing: border-box;
-  color: #fff;
-  position: relative;
-  background-attachment: fixed;
-  background-position: center;
-  padding: 0;
-  margin-top: 0;
-}
-#about--game .content--background2 p,
-#about--game .content--background2 h1 {
-  text-align: center;
-  padding: 0 20%;
-}
-#about--game .content--background2 .game {
-  z-index: 3;
-  background-color: rgba(255, 255, 255, 0.5);
-  position: absolute;
-  width: 100%;
-  height: auto;
-  margin-top: 350px;
-  display: block;
-  color: black;
-}
-#about--game .content--background2 .game li {
-  float: left;
-  width: 33.33%;
-  box-sizing: border-box;
-  padding: 10px 2%;
-  background-color: transparent;
-  background-repeat: no-repeat;
-  background-size: 120px 120px;
-  background-position: 50% 5%;
-  color: #000;
-}
-#about--game .content--background2 .game li:nth-of-type(1) {
-  background-image: url(../img/icons/rules.png);
-}
-#about--game .content--background2 .game li:nth-of-type(1) li {
-  width: 100%;
-  background-image: none;
-}
-#about--game .content--background2 .game li:nth-of-type(2) {
-  background-image: url(../img/icons/information.png);
-}
-#about--game .content--background2 .game li:nth-of-type(2) li {
-  width: 100%;
-  background-image: none;
-}
-#about--game .content--background2 .game li:nth-of-type(3) {
-  background-image: url(../img/icons/creative.png);
-}
-#about--game .content--background2 .game li:nth-of-type(3) li {
-  width: 100%;
-  background-image: none;
-}
-#about--game .content--background2 .game li p {
-  font-size: 28px;
-  text-align: center;
-  margin-top: 130px;
-}
-#about--game .content--background2 video#bgvid {
-  width: 150%;
-  height: auto;
-  margin-top: -200px;
-}
-@media only screen and (max-width: 1200px) {
-  #about--game .content--background2 video#bgvid {
-    width: 180%;
-  }
-}
 @media only screen and (max-width: 992px) {
-  #about--game .content--background2 .game {
-    margin-top: 250px;
-  }
-  #about--game .content--background2 .game li {
-    background-size: 70px 70px;
-  }
-  #about--game .content--background2 .game li p {
-    margin-top: 80px;
-    font-size: 28px;
-  }
-  #about--game .content--background2 video#bgvid {
-    width: 190%;
+  #about--game .content--background .games {
+    padding-top: 150px;
   }
 }
 @media only screen and (max-width: 768px) {
-  #about--game .content--background2 .game {
-    margin-top: 265px;
-  }
-  #about--game .content--background2 .game li {
-    width: 100%;
-    text-align: center;
-    background-size: 70px 70px;
-  }
-  #about--game .content--background2 .game li p {
-    margin-top: 80px;
-    font-size: 28px;
-  }
-  #about--game .content--background2 video#bgvid {
-    width: 440%;
-  }
-}
-@media only screen and (max-width: 480px) {
-  #about--game #content--zone,
-  #about--game .content--card {
-    margin: -100px 0 50px 0;
-  }
   #about--game .content--background {
-    padding: 0 2% 100px 2%;
+    padding: 0 0 150px 0;
   }
   #about--game #content--zone {
-    margin: -50px 0 50px 0;
+    margin: -100px 0 50px 0;
   }
   #about--game #content--zone .content--card {
     margin: 50px auto 30px;
   }
-  #about--game .content--background2 .game {
-    margin-top: 265px;
+}
+@media only screen and (max-width: 480px) {
+  #about--game .content--background {
+    padding: 0 0 150px 0;
   }
-  #about--game .content--background2 .game li {
-    width: 100%;
-    text-align: center;
-    background-size: 40px 40px;
+  #about--game .content--background .games {
+    padding-top: 150px;
   }
-  #about--game .content--background2 .game li p {
-    margin-top: 50px;
-    font-size: 18px;
+  #about--game #content--zone {
+    margin: -100px 0 50px 0;
   }
-  #about--game .content--background2 video#bgvid {
-    width: 600%;
+  #about--game #content--zone .content--card {
+    margin: 50px auto 30px;
   }
 }
-#about--game .content--background2 .game li:nth-of-type(1) li {
-  width: 100%;
-  background-image: none;
-}
-#about--game .content--background2 .game li:nth-of-type(2) li {
-  width: 100%;
-  background-image: none;
-}
-#about--game .content--background2 .game li:nth-of-type(3) li {
-  width: 100%;
-  background-image: none;
+@media only screen and (max-width: 320px) {
+  #about--game .content--background {
+    padding: 0 0 150px 0;
+  }
+  #about--game .content--background .games {
+    padding-top: 300px;
+  }
 }
 /*# sourceMappingURL=about_game.css.map */

@@ -47,12 +47,13 @@
   background-image: url(../img/structure/index-background-content2.jpg);
   height: auto;
   width: 100%;
-  background-size: cover;
+  background-size: inherit;
+  position: relative;
   padding: 0 2% 200px 2%;
   box-sizing: border-box;
   color: #fff;
-  position: relative;
   background-attachment: fixed;
+  background-attachment: device-fixed;
   background-position: center;
 }
 .list-style {
@@ -90,11 +91,18 @@
   background-image: none;
 }
 .elem--transition {
-  -webkit-transition: all 1.3s ease;
-  -moz-transition: all 1.3s ease;
-  -ms-transition: all 1.3s ease;
-  -o-transition: all 1.3s ease;
-  transition: all 1.3s ease;
+  -webkit-transition: all 2s ease;
+  -moz-transition: all 2s ease;
+  -ms-transition: all 2s ease;
+  -o-transition: all 2s ease;
+  transition: all 2s ease;
+}
+.element--transition__ul {
+  -webkit-transition: all 3s ease;
+  -moz-transition: all 3s ease;
+  -ms-transition: all 3s ease;
+  -o-transition: all 3s ease;
+  transition: all 3s ease;
 }
 .use--flex {
   display: flex;

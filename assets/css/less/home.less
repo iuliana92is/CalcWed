@@ -9,6 +9,8 @@
     }
     #content--zone {
         .content--zone__style;
+        box-sizing: border-box;
+        padding: 0 2%;
         .content--card {
             .content--card__style;
         }
@@ -30,12 +32,7 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
-
-}
-
-/* Extra Small Devices, Phones */
-@media only screen and (max-width : 480px) {
-     #home {  
+    #home {  
         #content--zone .content--card { 
             margin: 50px auto 50px;
             padding: 0 2%;
@@ -46,6 +43,11 @@
             }
         }
     }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+    
 }
 
 /* Custom, iPhone Retina */
