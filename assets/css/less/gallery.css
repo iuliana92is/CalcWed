@@ -171,10 +171,69 @@
   -webkit-transform: skew(0deg, 5deg);
   width: 100%;
   box-sizing: border-box;
+  display: flex;
+  margin: auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 100px auto ;
 }
 #gallery #content--zone .content--card .room--gallery {
-  display: inline-block;
-  width: 700px;
-  background-color: red;
+  margin: 0 auto;
+  min-width: 300px;
+  max-width: 400px;
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: flex;
+  margin: auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  padding: 1%;
+  box-sizing: border-box;
 }
+#gallery #content--zone .content--card .room--gallery .room--gallery__image {
+  display: flex;
+  margin: auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+#gallery #content--zone .content--card .room--gallery .room--gallery__image h2 {
+  line-height: 2;
+}
+#gallery #content--zone .content--card .room--gallery .room--place img {
+  width: 100%;
+  height: auto;
+  opacity: 0.7;
+}
+#gallery #content--zone .content--card .room--gallery .room--place img:hover {
+  opacity: 1;
+}
+#gallery #content--zone .content--card .room--gallery .room--place .room--place__number {
+  height: 30px;
+  width: 100%;
+  position: relative;
+  margin-top: -50px;
+  margin-bottom: 30px;
+  background: #1fcdff;
+  color: #fff;
+}
+#gallery #content--zone .content--card .room--gallery .room--place .room--place__number p {
+  text-align: center;
+}
+/*********************** Responsive Home **************************/
+/* Large Devices, Wide Screens */
+/* Medium Devices, Desktops */
+/* Small Devices, Tablets */
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  #gallery #content--zone .content--card .room--gallery .room--place img {
+    opacity: 1;
+  }
+  #gallery #content--zone .content--card .room--gallery .room--place img:hover {
+    opacity: 1;
+  }
+  #gallery #content--zone .content--card .room--gallery .room--place .room--place__number p {
+    line-height: 2;
+  }
+}
+/* Custom, iPhone Retina */
 /*# sourceMappingURL=gallery.css.map */
