@@ -10,7 +10,7 @@
     }
 
     .content--background {
-        .content--background__style; 
+        .content--background__style;
         padding:0 0 200px 0; 
         margin-top: 0;
         
@@ -40,6 +40,32 @@
             .content--card__style; 
         } 
     }  
+    .content--background--games {
+        .content--background__style;
+        background-image:url( ../img/structure/background--game.jpg);
+        padding:0 0 200px 0; 
+        margin-top: 0;
+        
+        p, h1 {
+            text-align: center;
+            padding: 0 20%;
+        }
+
+        .games{
+            padding-top: 350px;
+            .games--info{
+                box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);                 
+                margin: 20px 0;
+                padding: 10px 0;
+                background-color: rgba(255,255,255,0.6);
+                color: @base-color;
+                p, h2 {
+                    text-align: center;
+                    padding: 0 2%;
+                }
+            }
+        }
+    } 
 }
 
 
@@ -51,7 +77,7 @@
 
 // Medium Devices, Desktops
 @media only screen and (max-width : 992px) {
-     #about--game{ 
+    #about--game{ 
         .content--background { 
             p, h1 { 
             }
@@ -77,13 +103,7 @@
         .content--background { 
             padding: 0 0 150px 0;
             p, h1 { 
-            }
-            .games{ 
-                .games--info{ 
-                    p, h1 { 
-                    }
-                }
-            }
+            } 
         }
         #content--zone{ 
             margin: -100px 0 50px 0;
@@ -91,6 +111,18 @@
                 margin: 50px auto 30px;
             } 
         }  
+        .content--background--games { 
+            padding: 0 0 150px 0;
+            p, h1 { 
+            }
+            .games{ 
+            padding-top: 150px;
+                .games--info{ 
+                    p, h1 { 
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -103,7 +135,7 @@
             }
 
             .games{ 
-                 padding-top: 150px;
+                padding-top: 150px;
                 .games--info{ 
                     p, h1 { 
                     }
