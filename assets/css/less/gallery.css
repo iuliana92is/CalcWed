@@ -232,6 +232,22 @@
 #gallery #content--zone .content--card .room--gallery .room--place .room--place__number p {
   text-align: center;
 }
+div#lightbox_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: red;
+}
+div#lightbox_container {
+  position: absolute;
+  z-index: 10;
+}
+div#lightbox_container img {
+  width: 50%;
+  margin-left: 25%;
+}
 /*********************** Responsive Home **************************/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {

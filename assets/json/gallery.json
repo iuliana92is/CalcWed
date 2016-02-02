@@ -1,0 +1,20 @@
+var gallery = { "rooms": [ 
+				{
+					"room-name": "Camera joker",
+					"lightbox-img": ["assets/img/room/joker/place1.jpg, assets/img/room/joker/place12.jpg, assets/img/room/joker/place3.jpg"],
+					"images": ["assets/img/room/joker/place1.jpg,assets/img/room/joker/place2.jpg,assets/img/room/joker/place3.jpg"],
+					"place-number": ["castigatorii locului 1", "castigatorii locului 2", "castigatorii locului 3"]
+				},
+				{
+					"room-name": "Camera Batman",
+					"lightbox-img": ["assets/img/room/batman/place1.jpg, assets/img/room/batman/place1.jpg, assets/img/room/batman/place1.jpg"],
+					"images": ["assets/img/room/batman/place1.jpg,assets/img/room/batman/place1.jpg,assets/img/room/batman/place1.jpg"],
+					"place-number": ["castigatorii locului 1", "castigatorii locului 2", "castigatorii locului 3"]
+				},{
+					"room-name": "Camera  Simpson",
+					"lightbox-img": ["assets/img/room/simpson/place1.jpg, assets/img/room/simpson/place2.jpg, assets/img/room/simpson/place3.jpg"],
+					"images": ["assets/img/room/simpson/place1.jpg,assets/img/room/simpson/place2.jpg,assets/img/room/simpson/place3.jpg"],
+					"place-number":["castigatorii locului 1", "castigatorii locului 2", "castigatorii locului 3"]
+				}
+			]
+		};

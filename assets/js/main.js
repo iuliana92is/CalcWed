@@ -4,6 +4,8 @@
    // variables
     var $header = BASEMENT_ESCAPE.modules.header,
         $navigation = BASEMENT_ESCAPE.modules.navigation;
+    var gallery = BASEMENT_ESCAPE.modules.gallery;
+        
 
     (function init() {
         // local variables
@@ -14,8 +16,11 @@
 
             $header.fixedHeader($fixedElem);
             $navigation.toggleMobileMenu($hamburger);
+            gallery.aaa();
         });
 
     })();
 
 }(window, window.BASEMENT_ESCAPE, window.jQuery));
+
+
