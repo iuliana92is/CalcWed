@@ -6,11 +6,7 @@
     $navigation.toggleMobileMenu = function(elem) {
 
         var $fixedMenu = $('#fixed--menu'),
-            $menu = $fixedMenu.find('.content--menu__menu'),
-            $logo = $fixedMenu.find('.content--menu__logo'),
-            $firstNav = $('#fixed--menu > nav'),
-            $li = $menu.find('li'),
-            $ul = $menu.find('ul');
+            $firstNav = $('#fixed--menu > nav');
 
 
 

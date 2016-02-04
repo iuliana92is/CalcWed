@@ -1,6 +1,5 @@
 (function(window, BASEMENT_ESCAPE, $) {
     'use strict';
-
     var $gallery = {};
 
     $gallery.aaa = function() {

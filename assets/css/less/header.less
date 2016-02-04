@@ -11,10 +11,11 @@ header {
         width:100%;
         background-size: inherit;
         position:relative;
-        padding:0 0 200px 0;
+        padding:13% 0 13% 0;
+
         box-sizing: border-box;
         color: @base-color-second;
-        background-attachment: fixed;
+        background-attachment: fixed; 
 
         .content--message {
             width: 25%;
@@ -22,7 +23,7 @@ header {
 
             h1 {
                 font-size: 4.2em;
-                margin: 18% 0;
+                margin: 0;
                 border-bottom: 4px solid @pallete-color-blue;
                 text-align: center;
                 font-weight: 800;
@@ -65,6 +66,7 @@ header {
                     width: 100%;
                     overflow: hidden;
 
+
                     li {
                         float: none;
                         border-right: none;
@@ -87,9 +89,7 @@ header {
 
 
             .content--menu__logo a img {
-                height: auto;
                 width: 200px;
-                .elem--transition;
             }
         }
     }
@@ -97,6 +97,17 @@ header {
 
 
 /*********************** Responsive Header **************************/
+
+@media only screen and (max-width : 1759px) {
+    header .content--background .content--message h1 {
+        font-size: 4em;
+    }
+}
+@media only screen and (max-width : 1677px) {
+    header .content--background .content--message h1 {
+        font-size: 3.8em;
+    }
+}
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1600px) {
@@ -109,15 +120,34 @@ header {
             width: 25%;
 
             h1 {
-                font-size: 3em;
+                font-size: 3.5em;
                 border-bottom: 3px solid @pallete-color-blue;
             }
         }
     }
 }
 
+@media only screen and (max-width : 1469px) {
+    header .content--background .content--message h1 {
+        font-size: 3.2em;
+    }
+}
+@media only screen and (max-width : 1345px) {
+    header .content--background .content--message h1 {
+        font-size: 2.8em;
+    }
+}
+@media only screen and (max-width : 1262px) {
+    header .content--background .content--message h1 {
+        font-size: 2.6em;
+    }
+}
+
+
+
 @media only screen and (max-width : 1200px) {
     header .content--background {
+        padding:165px 0 165px 0;
         .content--menu {
             background-color: rgba(0, 0, 0, 0.8);
         }
@@ -134,7 +164,7 @@ header {
 }
 
 /* Medium Devices, Desktops */
-@media only screen and (max-width : 992px) {
+@media only screen and (max-width : 993px) {
     header {
         .content--background {
             .content--menu {
@@ -147,7 +177,7 @@ header {
                 width: 35%;
 
                 h1 {
-                    font-size: 3.5em;
+                    font-size: 3em;
                     border-bottom: 2px solid @pallete-color-blue;
                 }
             }
@@ -204,6 +234,18 @@ header {
     }
 }
 
+@media only screen and (max-width : 535px) {
+    header .content--background .content--message h1 {
+        font-size: 2.8em;
+    }
+}
+@media only screen and (max-width : 502px) {
+    header .content--background .content--message h1 {
+        font-size: 2.6em;
+    }
+}
+
+
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
     header {
@@ -212,13 +254,18 @@ header {
                 width: 50%;
 
                 h1 {
-                    font-size: 3em;
-                    margin: 25% 0;
+                    font-size: 2.8em;
                 }
             }
         }
     }
 }
+@media only screen and (max-width : 380px) {
+    header .content--background .content--message h1 {
+        font-size: 2.4em;
+    }
+}
+
 
 @media only screen and (max-width : 360px) {
     header {
@@ -226,7 +273,7 @@ header {
             .content--message {
 
                 h1 {
-                    font-size: 2.5em;
+                    font-size: 2.3em;
                 }
             }
         }
@@ -251,7 +298,7 @@ header {
             width: 60%;
 
             h1 {
-                font-size: 2.5em;
+                font-size: 2.2em;
                 margin: 40% 0;
             }
         }

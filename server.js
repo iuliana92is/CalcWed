@@ -2,6 +2,12 @@ var express = require('express'),
     hbs     = require('express-hbs'),
     server  = express();
 
+var fs = require("fs");
+var content = fs.readFileSync("./assets/json/gallery.json");
+var contentJSON =JSON.parse(content);
+
+
+
 // set the view engine
 server.set('view engine', 'hbs');
 
@@ -17,11 +23,8 @@ server.engine('hbs', hbs.express3({
 // configure views path
 server.set('views', __dirname + '/views');
 
-server.get('/', function(req, res) {  
-  var user = {
-    name: 'Baseroom-Escape'
-  }
-  res.render('index', user);
+server.get('/', function(req, res) {
+    res.render('index', contentJSON);
 
 });
 
