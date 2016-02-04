@@ -15,10 +15,12 @@ header {
         box-sizing: border-box;
         color: @base-color-second;
         background-attachment: fixed;
+        top: -43px;
 
         .content--message {
             width: 25%;
             margin: 0 auto;
+            padding-top: 10%;
 
             h1 {
                 font-size: 4.2em;
@@ -64,9 +66,7 @@ header {
                     max-height: 0;
                     width: 100%;
                     overflow: hidden;
-                    position: absolute;
-                    background-color: rgba(0, 0, 0, 0.8);
-                    top: 11.9%;
+
 
                     li {
                         float: none;
@@ -99,6 +99,17 @@ header {
 
 /*********************** Responsive Header **************************/
 
+@media only screen and (max-width : 1759px) {
+    header .content--background .content--message h1 {
+        font-size: 4em;
+    }
+}
+@media only screen and (max-width : 1677px) {
+    header .content--background .content--message h1 {
+        font-size: 3.8em;
+    }
+}
+
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1600px) {
     header .content--background {
@@ -110,12 +121,30 @@ header {
             width: 25%;
 
             h1 {
-                font-size: 3em;
+                font-size: 3.5em;
                 border-bottom: 3px solid @pallete-color-blue;
             }
         }
     }
 }
+
+@media only screen and (max-width : 1469px) {
+    header .content--background .content--message h1 {
+        font-size: 3.2em;
+    }
+}
+@media only screen and (max-width : 1345px) {
+    header .content--background .content--message h1 {
+        font-size: 2.8em;
+    }
+}
+@media only screen and (max-width : 1262px) {
+    header .content--background .content--message h1 {
+        font-size: 2.6em;
+    }
+}
+
+
 
 @media only screen and (max-width : 1200px) {
     header .content--background {
@@ -135,7 +164,7 @@ header {
 }
 
 /* Medium Devices, Desktops */
-@media only screen and (max-width : 992px) {
+@media only screen and (max-width : 993px) {
     header {
         .content--background {
             .content--menu {
@@ -148,7 +177,7 @@ header {
                 width: 35%;
 
                 h1 {
-                    font-size: 3.5em;
+                    font-size: 3em;
                     border-bottom: 2px solid @pallete-color-blue;
                 }
             }
@@ -205,6 +234,18 @@ header {
     }
 }
 
+@media only screen and (max-width : 535px) {
+    header .content--background .content--message h1 {
+        font-size: 2.8em;
+    }
+}
+@media only screen and (max-width : 502px) {
+    header .content--background .content--message h1 {
+        font-size: 2.6em;
+    }
+}
+
+
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
     header {
@@ -213,13 +254,19 @@ header {
                 width: 50%;
 
                 h1 {
-                    font-size: 3em;
+                    font-size: 2.8em;
                     margin: 25% 0;
                 }
             }
         }
     }
 }
+@media only screen and (max-width : 380px) {
+    header .content--background .content--message h1 {
+        font-size: 2.4em;
+    }
+}
+
 
 @media only screen and (max-width : 360px) {
     header {
