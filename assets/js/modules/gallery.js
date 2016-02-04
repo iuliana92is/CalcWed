@@ -26,24 +26,24 @@
 		            .appendTo("#lightbox_container");
 		        return false;
 		    });
-		    function positionLightboxImage() {
-		        var top = ($(window).height() - $("#lightbox_container").height()) / 2;
-		        var left = ($(window).width() - $("#lightbox_container").width()) / 2;
-		        $("#lightbox_container").css({
-		            top: top + $(document).scrollTop(),
-		            left: left
-		        }).fadeIn();
-		    }
-		    function removeLightbox() {
-		        $("#lightbox_overlay, #lightbox_container")
-		            .fadeOut("slow", function() {
-		                $(this).remove();
-		                $("body").css("overflow-y", "auto");
-		            });
-		    }
-		} 
 
+		}
 
+        function positionLightboxImage() {
+            var top = ($(window).height() - $("#lightbox_container").height()) / 2;
+            var left = ($(window).width() - $("#lightbox_container").width()) / 2;
+            $("#lightbox_container").css({
+                top: top + $(document).scrollTop(),
+                left: left
+            }).fadeIn();
+        }
+        function removeLightbox() {
+            $("#lightbox_overlay, #lightbox_container")
+                .fadeOut("slow", function() {
+                    $(this).remove();
+                    $("body").css("overflow-y", "auto");
+                });
+        }
 		function isMobile(){
 
 		    var isDevice = false;

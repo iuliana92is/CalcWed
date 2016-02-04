@@ -29,6 +29,16 @@ server.get('/', function(req, res) {
 
 });
 
+server.get('/joker_room', function(req, res) {
+    server.engine('hbs', hbs.express3({
+        defaultLayout: __dirname + '/views/layouts/joker_room.hbs',
+        partialsDir: __dirname + '/views/partials',
+        layoutsDir: __dirname + '/views/layouts'
+    }));
+    res.render('joker_room');
+
+});
+
 server.listen(1234);
 console.log("Serverul a pornit cu portul:'1234'");  
 
