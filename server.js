@@ -3,7 +3,7 @@ var express = require('express'),
     server  = express();
 
 var fs = require("fs");
-var content = fs.readFileSync("./assets/json/gallery.json");
+var content = fs.readFileSync("assets/json/gallery.json");
 var contentJSON =JSON.parse(content);
 
 
@@ -24,6 +24,7 @@ server.engine('hbs', hbs.express3({
 server.set('views', __dirname + '/views');
 
 server.get('/', function(req, res) {
+    console.log(contentJSON);
     res.render('index', contentJSON);
 
 });

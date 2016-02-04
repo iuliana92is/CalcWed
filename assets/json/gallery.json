@@ -1,6 +1,41 @@
-{
-    "username":"xyz",
-    "password":"xyz@123",
-    "email":"xyz@xyz.com",
-    "uid": 1100
+{ "rooms": [
+         {
+            "room-name": "Camera Batman",
+
+            "images1": "assets/img/room/batman/place1.jpg",
+            "images2" :"assets/img/room/batman/place1.jpg",
+            "images3": "assets/img/room/batman/place1.jpg",
+
+            "place-number1": "castigatorii locului 1",
+            "place-number2":  "castigatorii locului 2",
+            "place-number3":  "castigatorii locului 3"
+        },
+        {
+            "room-name": "Camera Batman",
+
+            "images1": "assets/img/room/batman/place1.jpg",
+            "images2" :"assets/img/room/batman/place1.jpg",
+            "images3": "assets/img/room/batman/place1.jpg",
+
+            "place-number1": "castigatorii locului 1",
+            "place-number2":  "castigatorii locului 2",
+            "place-number3":  "castigatorii locului 3"
+        },
+        {
+            "room-name": "Camera Batman",
+
+            "images1": "assets/img/room/batman/place1.jpg",
+            "images2" :"assets/img/room/batman/place1.jpg",
+            "images3": "assets/img/room/batman/place1.jpg",
+
+            "place-number1": "castigatorii locului 1",
+            "place-number2":  "castigatorii locului 2",
+            "place-number3":  "castigatorii locului 3"
+        }
+    ]
+
 }
+
+
+
+

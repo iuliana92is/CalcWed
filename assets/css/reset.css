@@ -28,7 +28,7 @@ body {
     font-size: 24px;
     font-weight: 300;
     font-family: 'Josefin Sans', sans-serif; 
-    widows: 100%;
+    width: 100%;
     overflow-x: hidden; 
 }
 ol, ul {

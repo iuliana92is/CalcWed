@@ -3,22 +3,35 @@
  
 
 #about--game{
-    width: 100%;
+    width: 100%; 
 
     #content--zone, .content--card{
         .content--zone--card__style;
     }
 
     .content--background {
-        .content--background__style; 
+        .content--background__style;
         padding:0 0 200px 0; 
         margin-top: 0;
-        &:last-child {
-            padding:0;
-        }
+        
         p, h1 {
             text-align: center;
             padding: 0 20%;
+        }
+
+        .games{
+            padding-top: 350px;
+            .games--info{
+                box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);                 
+                margin: 20px 0;
+                padding: 10px 0;
+                background-color: rgba(255,255,255,0.6);
+                color: @base-color;
+                p, h2 {
+                    text-align: center;
+                    padding: 0 2%;
+                }
+            }
         }
     }
     #content--zone{
@@ -26,63 +39,32 @@
         .content--card{
             .content--card__style; 
         } 
-    }
-
-    .content--background2 {
+    }  
+    .content--background--games {
         .content--background__style;
-        padding:0;
+        background-image:url( ../img/structure/background--game.jpg);
+        padding:0 0 200px 0; 
         margin-top: 0;
+        
         p, h1 {
             text-align: center;
             padding: 0 20%;
-        } 
-        .game{
-            z-index: 3;
-            background-color: rgba(255,255,255,0.5);
-            position: absolute;
-            width: 100%;
-            height: auto;
-            margin-top: 350px;
-            display: block;
-            color: black;
-            li{
-                float: left;
-                width: 33.33%;
-                box-sizing: border-box;
-                padding: 10px 2%;
-                background-color: transparent;
-                background-repeat: no-repeat;
-                background-size: 120px 120px;
-                background-position: 50% 5%;
-                color: @base-color;
-
-                &:nth-of-type(1){
-                    background-image:url( ../img/icons/rules.png); 
-                    .order--list;
-                }
-                &:nth-of-type(2){
-                    background-image:url( ../img/icons/information.png);
-                     .order--list;
-                }
-                &:nth-of-type(3){
-                    background-image:url( ../img/icons/creative.png);
-                     .order--list;
-                }
-                p {
-                    font-size: 28px;
-                    text-align: center;
-                    margin-top: 130px;
-                }
-
-            }
-
         }
-        
-        video#bgvid {
-            width: 150%;
-            height: auto;
-            margin-top: -200px;
-        } 
+
+        .games{
+            padding-top: 350px;
+            .games--info{
+                box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);                 
+                margin: 20px 0;
+                padding: 10px 0;
+                background-color: rgba(255,255,255,0.6);
+                color: @base-color;
+                p, h2 {
+                    text-align: center;
+                    padding: 0 2%;
+                }
+            }
+        }
     } 
 }
 
@@ -90,252 +72,105 @@
 
 // Large Devices, Wide Screens
 @media only screen and (max-width : 1200px) {
-    #about--game{
-
-        #content--zone, .content--card{
-        }
-
-
-        .content--background {
-            &:last-child {
-            }
-            p, h1 {
-            } 
-            .game{
-            }
-        }
-        &:last-child {
-            }
-        #content--zone{
-            .content--card{
-                p{
-
-                }
-            } 
-        }
-
-        .content--background2 {
-            &:last-child {
-            }
-            p, h1 {
-            } 
-            .game{ 
-            }
-            video#bgvid {
-                 width: 180%;
-            } 
-        } 
-    }
+    
 }
 
 // Medium Devices, Desktops
 @media only screen and (max-width : 992px) {
-    #about--game{
+    #about--game{ 
+        .content--background { 
+            p, h1 { 
+            }
 
-        #content--zone, .content--card{
-        } 
-        .content--background {
-            &:last-child {
-            }
-            p, h1 {
-            } 
-            .game{
-            }
-        }
-        &:last-child {
-            }
-        #content--zone{
-            .content--card{
-                p{
-
-                }
-            } 
-        }
-
-        .content--background2 {
-            &:last-child {
-            }
-            p, h1 {
-            } 
-            .game{ 
-                margin-top: 250px;
-                li {
-                    background-size: 70px 70px;
-                    p{
-                        margin-top: 80px;
-                        font-size: 28px;
+            .games{ 
+                 padding-top: 150px;
+                .games--info{ 
+                    p, h1 { 
                     }
                 }
             }
-            video#bgvid {
-                 width: 190%;
+        }
+        #content--zone{ 
+            .content--card{ 
             } 
-        } 
+        }  
     }
 }
 
 // Small Devices, Tablets
 @media only screen and (max-width : 768px) {
-    #about--game{
-
-        #content--zone, .content--card{
-        } 
-        .content--background {
-            &:last-child {
-            }
-            p, h1 {
-            } 
-            .game{
-            }
-        }
-        &:last-child {
-            }
-        #content--zone{
-            .content--card{
-                p{
-
-                }
+      #about--game{ 
+        .content--background { 
+            padding: 0 0 150px 0;
+            p, h1 { 
             } 
         }
-
-        .content--background2 {
-            &:last-child {
-            }
-            p, h1 {
+        #content--zone{ 
+            margin: -100px 0 50px 0;
+            .content--card{ 
+                margin: 50px auto 30px;
             } 
-            .game{ 
-                margin-top: 265px;
-                li {
-                    width: 100%;
-                    text-align: center;
-                    background-size: 70px 70px;
-                    p{
-                        margin-top: 80px;
-                        font-size: 28px;
+        }  
+        .content--background--games { 
+            padding: 0 0 150px 0;
+            p, h1 { 
+            }
+            .games{ 
+            padding-top: 150px;
+                .games--info{ 
+                    p, h1 { 
                     }
                 }
             }
-            video#bgvid {
-                 width: 440%;
-            } 
-        } 
+        }
     }
 }
 
 // Extra Small Devices, Phones
 @media only screen and (max-width : 480px) {
-    #about--game{
-
-        #content--zone, .content--card{
-            margin: -100px 0 50px 0;
-        } 
-        .content--background {
-            padding:0 2% 100px 2%; 
-        }
-        &:last-child {
+    #about--game{ 
+        .content--background { 
+            padding: 0 0 150px 0;
+            p, h1 { 
             }
-        #content--zone{
-            margin: -50px 0 50px 0;
-            .content--card{
-                margin: 50px auto 30px;
-                p{
 
-                }
-            } 
-        }
-
-        .content--background2 { 
-            .game{ 
-                margin-top: 265px;
-                li {
-                    width: 100%;
-                    text-align: center;
-                    background-size: 40px 40px;
-                    p{
-                        margin-top: 50px;
-                        font-size: 18px;
+            .games{ 
+                padding-top: 150px;
+                .games--info{ 
+                    p, h1 { 
                     }
                 }
             }
-            video#bgvid {
-                 width: 600%;
+        }
+        #content--zone{ 
+            margin: -100px 0 50px 0;
+            .content--card{ 
+                margin: 50px auto 30px;
             } 
-        } 
+        }  
     }
 }
 
 // Custom, iPhone Retina
 @media only screen and (max-width : 320px) {
+    #about--game{ 
+        .content--background { 
+            padding: 0 0 150px 0;
+            p, h1 { 
+            }
 
-}
-
-
-#about--game{
-
-    #content--zone, .content--card{
-    }
-
-
-    .content--background {
-        &:last-child {
-        }
-        p, h1 {
-        } 
-        
-        
-        .game{
-        }
-        iframe{
-            html{
-                body{
-                    video{
+            .games{ 
+                 padding-top: 300px;
+                .games--info{ 
+                    p, h1 { 
                     }
                 }
             }
         }
-
+        #content--zone{ 
+            .content--card{ 
+            } 
+        }  
     }
-    &:last-child {
-        }
-    #content--zone{
-        .content--card{
-            p{
-
-            }
-        } 
-    }
-
-      .content--background2 {
-        &:last-child {
-        }
-        p, h1 {
-        } 
-        .game{
-            li{
-                &:nth-of-type(1){
-                    .order--list;
-                }
-                &:nth-of-type(2){
-                     .order--list;
-                }
-                &:nth-of-type(3){
-                     .order--list;
-                }
-                p {
-                }
-
-            }
-
-        }
-        iframe{
-            html{
-                body{
-                    video{
-                    }
-                }
-            }
-        }
-        video#bgvid {
-        } 
-    } 
 }
+ 

@@ -1,26 +1,35 @@
 <section id="gallery"> 
     <div class="content--background">
-        <h1>Gallery </h1>
-       
-    </div> 
+        <h1>Hall Of Fame </h1> 
+    </div>
 
     <div id="content--zone">
-        <div class="content--card"> 
-            <div class="room--gallery">  
+        <div class="content--card">
+            {{#each rooms}}
+            <div class="room--gallery">
                 <div class="room--gallery__image"> 
-                    <img src="assets/img/room/joker/joker.jpg"/>  
+                    <h2>{{room-name}}</h2>
                 </div>
-                <div class="room--place">   
-                    <img src="assets/img/room/joker/place1.jpg"/>  
+                <div class="room--place">  
+                    <a href="{{images1}}" class="lightbox">
+                        <img src="{{images1}}"/>
+                    </a>
+                    <div class="room--place__number"> <p> {{place-number1}} </p></div>
                 </div>
-                <div class="room--place">   
-                    <img src="assets/img/room/joker/place2.jpg"/> 
+                <div class="room--place">
+                    <a href="{{images2}}" class="lightbox">
+                        <img src="{{images2}}"/>
+                    </a>
+                    <div class="room--place__number"> <p> {{place-number2}} </p></div>
                 </div>
-                <div class="room--place">   
-                    <img src="assets/img/room/joker/place3.jpg"/> 
-                </div>     
+                <div class="room--place">
+                    <a href="{{images3}}" class="lightbox">
+                        <img src="{{images3}}"/>
+                    </a>
+                    <div class="room--place__number"> <p> {{place-number3}} </p></div>
+                </div>
             </div>
+            {{/each}}
         </div>
-    </div> 
- 
+    </div>   
 </section>
