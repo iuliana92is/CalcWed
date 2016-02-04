@@ -48,11 +48,12 @@
 		function isMobile(){
 
 		    var isDevice = false;
-		    // var browserDevice =  (/android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(navigator.userAgent.toLowerCase()));
 
-		    if($(window).width() <= 640){
+		    if($(window).width() <= 768){
+		    	console.log('width is lower than 768px');
+		    	$("a.lightbox").removeAttr("href");
+
 		        isDevice = true; 
-		        
 		    }
 		    return isDevice;
 		}
