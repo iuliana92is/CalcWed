@@ -181,19 +181,13 @@
   width: 100%;
   box-sizing: border-box;
 }
-#joker--preturi #content--zone .content--card .voucher {
-  padding: 20px 0;
-  width: 60%;
-  margin: 0 auto;
-}
-#joker--preturi #content--zone .content--card .voucher p {
-  text-align: center;
-}
+#joker--preturi #content--zone .content--card .voucher,
 #joker--preturi #content--zone .content--card .reduceri {
   padding: 20px 0;
   width: 60%;
   margin: 0 auto;
 }
+#joker--preturi #content--zone .content--card .voucher p,
 #joker--preturi #content--zone .content--card .reduceri p {
   text-align: center;
 }
@@ -202,21 +196,25 @@
   width: 60%;
   margin: 0 auto;
 }
+#joker--preturi #content--zone .content--card .lista--preturi .happy--hour,
 #joker--preturi #content--zone .content--card .lista--preturi .pret--normal {
   margin: 2%;
-  background-color: yellowgreen;
+  background-color: red;
   box-sizing: border-box;
   float: left;
   width: 46%;
 }
+#joker--preturi #content--zone .content--card .lista--preturi .happy--hour ul,
 #joker--preturi #content--zone .content--card .lista--preturi .pret--normal ul {
   box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+#joker--preturi #content--zone .content--card .lista--preturi .happy--hour ul li,
 #joker--preturi #content--zone .content--card .lista--preturi .pret--normal ul li {
   text-align: center;
   padding: 10px 0;
   background-color: #f9f9f9;
 }
+#joker--preturi #content--zone .content--card .lista--preturi .happy--hour ul li:nth-of-type(odd),
 #joker--preturi #content--zone .content--card .lista--preturi .pret--normal ul li:nth-of-type(odd) {
   background-color: #e6e6e6;
 }
@@ -225,28 +223,9 @@
   background-color: #1fcdff;
   padding: 20px;
 }
-#joker--preturi #content--zone .content--card .lista--preturi .happy--hour {
-  margin: 2%;
-  background-color: red;
-  box-sizing: border-box;
-  float: left;
-  width: 46%;
-}
-#joker--preturi #content--zone .content--card .lista--preturi .happy--hour ul {
-  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-#joker--preturi #content--zone .content--card .lista--preturi .happy--hour ul li {
-  text-align: center;
-  padding: 10px 0;
-  background-color: #f9f9f9;
-}
-#joker--preturi #content--zone .content--card .lista--preturi .happy--hour ul li:nth-of-type(odd) {
-  background-color: #e6e6e6;
-}
 #joker--preturi #content--zone .content--card .lista--preturi .happy--hour ul li:first-child {
   font-weight: bold;
   background-color: #F33157;
   padding: 20px;
-  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 /*# sourceMappingURL=joker__room-preturi.css.map */

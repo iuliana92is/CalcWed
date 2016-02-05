@@ -24,7 +24,7 @@
         .content--zone__style;
         .content--card{
             .content--card__style; 
-            .voucher{ 
+            .voucher, .reduceri{ 
             	padding: 20px 0;
                 width: 60%;
                 margin: 0 auto; 
@@ -32,68 +32,54 @@
                 	text-align: center;
                 }
             }
-            .reduceri {
-            	padding: 20px 0;
-                width: 60%;
-                margin: 0 auto;
-                p{
-                	text-align: center;
-                }
-            }
+            
 
             .lista--preturi {
             	background-color: blue;
             	width: 60%;
             	margin: 0 auto;
-            	.pret--normal{
+
+            	.happy--hour, .pret--normal {
             		margin: 2%;
-	            	background-color: yellowgreen;
+	            	background-color: red;
 	        	    box-sizing: border-box;
 				    float: left;
 				    width: 46%;
-	                ul {
+				    ul {
 						box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
 	                    li{
 	                    	text-align: center;
 	                    	padding: 10px 0;
-	                    	background-color: #f9f9f9;
+	                    	background-color: @input--color;
 	                    	
 	                    	&:nth-of-type(odd){
-	                    		background-color: #e6e6e6;
+	                    		background-color: @input-color-dark;
 	                    	}
+	                    }
+	                }
+            	}
+
+            	.pret--normal{            		
+	                ul {						
+	                    li{
+	                    	
 	                    	&:first-child {
 	                    		font-weight: bold;
-	                    		background-color: #1fcdff;
+	                    		background-color: @pallete-color-blue;
 	                    		padding: 20px;
 	                    	}
 	                    }
 	                }
 	            }
 
-	            .happy--hour{
-	            	margin: 2%;
-	            	background-color: red;
-	        	    box-sizing: border-box;
-				    float: left;
-				    width: 46%;
-	                ul{
-						box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+	            .happy--hour{	            	
+	                ul{						
 	                    li{
-	                    	text-align: center;
-	                    	padding: 10px 0;
-	                    	background-color: #f9f9f9;
-	                    	
-	                    	&:nth-of-type(odd){
-	                    		background-color: #e6e6e6;
-	                    	}
-
 	                    	&:first-child {
 	                    		font-weight: bold;
-	                    		background-color: #F33157;
-	                    		padding: 20px;
-	                    		box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+	                    		background-color: @red-background;
+	                    		padding: 20px; 
 	                    	}
-
 	                    }
 	                }
 	            }
