@@ -13,10 +13,31 @@
     <link rel='stylesheet' href="assets/css/reset.css" />
     <link rel='stylesheet' href="assets/css/normalize.css" />
     <link rel='stylesheet' href="assets/css/main.compiled.css" />
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
 
 </head>
 <body>
 {{> header}}
+
+<table id="prices" ></table>
+<script>
+    $(function() {
+        $( "#datepicker" ).datepicker({
+            altFormat: "yy-mm-dd",
+            minDate: new Date(),
+            hideIfNoPrevNext: true,
+            dayNamesMin: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
+            onSelect: function(){
+                $('#prices').append($("<tr></tr>")
+                                .append($("<td></td>")
+                                        .html("Vine vacanta!!!")
+                        )
+                );
+            }
+        });
+    })
+</script>
 {{> footer}}
 
 
