@@ -323,7 +323,7 @@ header .content--background {
   width: 100%;
   background-size: inherit;
   position: relative;
-  padding: 0 0 200px 0;
+  padding: 11% 0 13% 0;
   box-sizing: border-box;
   color: #fff;
   background-attachment: fixed;
@@ -334,7 +334,7 @@ header .content--background .content--message {
 }
 header .content--background .content--message h1 {
   font-size: 4.2em;
-  margin: 18% 0;
+  margin: 0;
   border-bottom: 4px solid #1fcdff;
   text-align: center;
   font-weight: 800;
@@ -404,15 +404,19 @@ header .content--background .f-nav {
   padding: 1% 0;
 }
 header .content--background .f-nav .content--menu__logo a img {
-  height: auto;
   width: 200px;
-  -webkit-transition: all 2s ease;
-  -moz-transition: all 2s ease;
-  -ms-transition: all 2s ease;
-  -o-transition: all 2s ease;
-  transition: all 2s ease;
 }
 /*********************** Responsive Header **************************/
+@media only screen and (max-width: 1759px) {
+  header .content--background .content--message h1 {
+    font-size: 4em;
+  }
+}
+@media only screen and (max-width: 1677px) {
+  header .content--background .content--message h1 {
+    font-size: 3.8em;
+  }
+}
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1600px) {
   header .content--background .content--menu {
@@ -422,11 +426,29 @@ header .content--background .f-nav .content--menu__logo a img {
     width: 25%;
   }
   header .content--background .content--message h1 {
-    font-size: 3em;
+    font-size: 3.5em;
     border-bottom: 3px solid #1fcdff;
   }
 }
+@media only screen and (max-width: 1469px) {
+  header .content--background .content--message h1 {
+    font-size: 3.2em;
+  }
+}
+@media only screen and (max-width: 1345px) {
+  header .content--background .content--message h1 {
+    font-size: 2.8em;
+  }
+}
+@media only screen and (max-width: 1262px) {
+  header .content--background .content--message h1 {
+    font-size: 2.6em;
+  }
+}
 @media only screen and (max-width: 1200px) {
+  header .content--background {
+    padding: 122px 0 165px 0;
+  }
   header .content--background .content--menu {
     background-color: rgba(0, 0, 0, 0.8);
   }
@@ -439,7 +461,7 @@ header .content--background .f-nav .content--menu__logo a img {
   }
 }
 /* Medium Devices, Desktops */
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 993px) {
   header .content--background .content--menu .content--menu__logo a img {
     width: 200px;
   }
@@ -447,7 +469,7 @@ header .content--background .f-nav .content--menu__logo a img {
     width: 35%;
   }
   header .content--background .content--message h1 {
-    font-size: 3.5em;
+    font-size: 3em;
     border-bottom: 2px solid #1fcdff;
   }
 }
@@ -477,19 +499,33 @@ header .content--background .f-nav .content--menu__logo a img {
     font-size: 3em;
   }
 }
+@media only screen and (max-width: 535px) {
+  header .content--background .content--message h1 {
+    font-size: 2.8em;
+  }
+}
+@media only screen and (max-width: 502px) {
+  header .content--background .content--message h1 {
+    font-size: 2.6em;
+  }
+}
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
   header .content--background .content--message {
     width: 50%;
   }
   header .content--background .content--message h1 {
-    font-size: 3em;
-    margin: 25% 0;
+    font-size: 2.8em;
+  }
+}
+@media only screen and (max-width: 380px) {
+  header .content--background .content--message h1 {
+    font-size: 2.4em;
   }
 }
 @media only screen and (max-width: 360px) {
   header .content--background .content--message h1 {
-    font-size: 2.5em;
+    font-size: 2.3em;
   }
 }
 /* Custom, iPhone Retina */
@@ -504,7 +540,7 @@ header .content--background .f-nav .content--menu__logo a img {
     width: 60%;
   }
   header .content--background .content--message h1 {
-    font-size: 2.5em;
+    font-size: 2.2em;
     margin: 40% 0;
   }
 }
@@ -580,8 +616,7 @@ nav ul li a:hover {
   }
 }
 /* Medium Devices, Desktops */
-/* Small Devices, Tablets */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 851px) {
   .content--menu__menu img {
     display: block;
     margin-top: 10px;
@@ -598,6 +633,7 @@ nav ul li a:hover {
     float: none;
   }
 }
+/* Small Devices, Tablets */
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
   .content--menu__menu img {
@@ -1673,5 +1709,90 @@ footer .footer--submenu .submenu li a:hover {
   body footer .footer--submenu .submenu li {
     margin-top: 20px;
   }
+}
+#joker--description #content--zone {
+  z-index: 5;
+  position: relative;
+  display: block;
+  float: left;
+  margin: -100px 0 100px 0;
+  width: 100%;
+  background: #fff;
+  transform: skew(0deg, -10deg);
+  -ms-transform: skew(0deg, -5deg);
+  /* IE 9 */
+  -webkit-transform: skew(0deg, -5deg);
+  /* Safari and Chrome */
+}
+#joker--description #content--zone .content--card {
+  display: block;
+  float: left;
+  margin: 100px auto 80px;
+  padding: 2%;
+  transform: skew(0deg, 5deg);
+  -ms-transform: skew(0deg, 5deg);
+  -webkit-transform: skew(0deg, 5deg);
+  width: 100%;
+  box-sizing: border-box;
+}
+#joker--preturi {
+  width: 100%;
+}
+#joker--preturi #content--zone,
+#joker--preturi .content--card {
+  display: block;
+  float: left;
+  margin: 100px auto 100px;
+  padding: 0 2%;
+  transform: skew(0deg, 5deg);
+  -ms-transform: skew(0deg, 5deg);
+  -webkit-transform: skew(0deg, 5deg);
+  width: 100%;
+  box-sizing: border-box;
+}
+#joker--preturi .content--background {
+  background-image: url(../img/structure/index-background-content2.jpg);
+  height: auto;
+  width: 100%;
+  background-size: inherit;
+  position: relative;
+  padding: 0 2% 200px 2%;
+  box-sizing: border-box;
+  color: #fff;
+  background-attachment: fixed;
+  background-attachment: device-fixed;
+  background-position: center;
+  padding: 0 0 200px 0;
+  margin-top: 0;
+}
+#joker--preturi .content--background p,
+#joker--preturi .content--background h1 {
+  text-align: center;
+  padding: 0 20%;
+}
+#joker--preturi #content--zone {
+  z-index: 5;
+  position: relative;
+  display: block;
+  float: left;
+  margin: -100px 0 100px 0;
+  width: 100%;
+  background: #fff;
+  transform: skew(0deg, -10deg);
+  -ms-transform: skew(0deg, -5deg);
+  /* IE 9 */
+  -webkit-transform: skew(0deg, -5deg);
+  /* Safari and Chrome */
+}
+#joker--preturi #content--zone .content--card {
+  display: block;
+  float: left;
+  margin: 100px auto 80px;
+  padding: 2%;
+  transform: skew(0deg, 5deg);
+  -ms-transform: skew(0deg, 5deg);
+  -webkit-transform: skew(0deg, 5deg);
+  width: 100%;
+  box-sizing: border-box;
 }
 /*# sourceMappingURL=imports.css.map */
