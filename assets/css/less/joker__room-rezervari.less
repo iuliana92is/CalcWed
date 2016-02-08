@@ -24,7 +24,137 @@
         .content--zone__style;
         .content--card{
             .content--card__style; 
+            .reservation-zone{  
+                width: 80%;
+                margin: 0 auto;
+
+                #calendar{
+                    display: none;
+                    box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+                    width: 60%; 
+                    max-width: 500px;
+                    // border: 1px solid black;
+                    margin: 20px auto;
+                    text-align: center;
+                    opacity: 0.5; 
+                    thead{
+                        // border: 1px solid black;
+                        padding: 10px 0;
+                        background-color: red;
+                        tr{
+                            th {
+                                
+                                background-color: @red-background;
+                                padding: 20px 0;
+                                width: 50%;
+                                &:first-child { 
+                                    background-color: @pallete-color-blue;
+                                }
+                            }
+                        }
+                    }
+                    tbody{
+                        // border: 1px solid black;
+                        tr{
+                            a{
+                                cursor: pointer;
+                                width: auto;
+                                height: auto;
+                                &:hover {
+
+                                }
+                            }
+                            // border: 1px solid black;
+                            &:nth-of-type(odd) {
+                                background-color: @input-color-dark;
+                            }
+                            td{
+                                padding: 10px; 
+                            } 
+                            .room-state{
+                                 background-color: @green-background;
+                            }
+                        }
+                    }
+
+                }
+                
+                #datepicker{
+                    width: 100%; 
+                    .ui-datepicker-inline.ui-datepicker.ui-widget.ui-widget-content.ui-helper-clearfix.ui-corner-all{
+                        margin: 0 auto;
+                    } 
+                    a.ui-state-default.ui-state-active {
+                        background-color: @pallete-color-blue;
+                    }
+                    .ui-widget-content {
+                        b    border: 1px solid #aaaaaa;
+                        // background: #ffffff url("images/ui-bg_flat_75_ffffff_40x100.png") 50% 50% repeat-x;
+                        color: @pallete-color-blue;
+                    }
+                    .ui-widget-header {
+                        color: @pallete-color-blue-hover;
+                        background: @pallete-color-blue-hover;
+                    }
+                    a.ui-state-default {
+                        border: 1px solid #d3d3d3;
+                        background: #343434 url("images/ui-bg_glass_75_e6e6e6_1x400.png") 50% 50% repeat-x;
+                        font-weight: normal;
+                        color: #fff;
+                    }
+                    .ui-datepicker-header.ui-widget-header.ui-helper-clearfix.ui-corner-all {
+                        background-color: @pallete-color-blue;
+                    }
+                    .ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next, .ui-state-over {
+                        &:hover{
+                            background-color: @pallete-color-blue;
+                        }
+                    }
+                    .ui-datepicker-next-hover, .ui-datepicker-prev-hover{
+                        background: red;
+                        border:0; 
+                    }
+                    .ui-datepicker-next-hover {
+                        background-size:20px 20px;
+                    }
+
+                }
+            }
             
         } 
-    }  
+    } 
+
+    #online--booking{
+        width: 400px;
+        height: 400px;
+        // background-color: @input-color-dark;
+        border-radius: 10px;
+        margin: 0 auto;
+        padding: 20px 0;
+        box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+        // display: none;
+       
+        input, select{
+            width: 80%;
+            box-sizing: border-box;
+            padding: 0 20px;
+            margin: 10px 10%; 
+            box-sizing: border-box; 
+            border-top-right-radius: 10px; 
+            background-color: @input--color;
+            outline: none;
+            box-shadow: 0px 2px 0px 0px @shadow-form; 
+            border: 1px solid @shadow-form;
+            .input;
+
+        }
+
+        input{
+
+        }
+
+        select {
+
+        }
+    } 
 }

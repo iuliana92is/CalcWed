@@ -184,7 +184,7 @@
 #joker--preturi #content--zone .content--card .voucher,
 #joker--preturi #content--zone .content--card .reduceri {
   padding: 20px 0;
-  width: 60%;
+  width: 80%;
   margin: 0 auto;
 }
 #joker--preturi #content--zone .content--card .voucher p,
@@ -193,7 +193,7 @@
 }
 #joker--preturi #content--zone .content--card .lista--preturi {
   background-color: blue;
-  width: 60%;
+  width: 80%;
   margin: 0 auto;
 }
 #joker--preturi #content--zone .content--card .lista--preturi .happy--hour,

@@ -3,30 +3,30 @@
             "room-name": "Camera Batman",
 
             "images1": "assets/img/room/batman/place1.jpg",
-            "images2" :"assets/img/room/batman/place1.jpg",
-            "images3": "assets/img/room/batman/place1.jpg",
+            "images2" :"assets/img/room/batman/place2.jpg",
+            "images3": "assets/img/room/batman/place3.jpg",
 
             "place-number1": "castigatorii locului 1",
             "place-number2":  "castigatorii locului 2",
             "place-number3":  "castigatorii locului 3"
         },
         {
-            "room-name": "Camera Batman",
+            "room-name": "Camera Joker",
 
-            "images1": "assets/img/room/batman/place1.jpg",
-            "images2" :"assets/img/room/batman/place1.jpg",
-            "images3": "assets/img/room/batman/place1.jpg",
+            "images1": "assets/img/room/joker/place1.jpg",
+            "images2" :"assets/img/room/joker/place2.jpg",
+            "images3": "assets/img/room/joker/place3.jpg",
 
             "place-number1": "castigatorii locului 1",
             "place-number2":  "castigatorii locului 2",
             "place-number3":  "castigatorii locului 3"
         },
         {
-            "room-name": "Camera Batman",
+            "room-name": "Camera simpson",
 
-            "images1": "assets/img/room/batman/place1.jpg",
-            "images2" :"assets/img/room/batman/place1.jpg",
-            "images3": "assets/img/room/batman/place1.jpg",
+            "images1": "assets/img/room/simpson/place1.jpg",
+            "images2" :"assets/img/room/simpson/place2.jpg",
+            "images3": "assets/img/room/simpson/place3.jpg",
 
             "place-number1": "castigatorii locului 1",
             "place-number2":  "castigatorii locului 2",

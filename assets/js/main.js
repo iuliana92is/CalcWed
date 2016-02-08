@@ -7,7 +7,6 @@
     var $navigation = BASEMENT_ESCAPE.modules.navigation;
     var gallery = BASEMENT_ESCAPE.modules.gallery;
 
-    var $navigation = BASEMENT_ESCAPE.modules.navigation; 
 
     (function init() {
         // local variables

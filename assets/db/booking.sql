@@ -1,0 +1,23 @@
+{ "booking":[ 
+				{
+					"Ora":"07-08",
+					"Status":"Liber" 
+				}, 
+				{
+					"Ora":"08-09",
+					"Status":"Liber" 
+				}, 
+				{
+					"Ora":"09-10",
+					"Status":"Liber" 
+				}, 
+				{
+					"Ora":"10-11",
+					"Status":"Liber" 
+				}, 
+				{
+					"Ora":"11-12",
+					"Status":"Liber" 
+				}
+			]
+}
