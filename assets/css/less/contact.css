@@ -209,10 +209,34 @@
   box-sizing: border-box;
   border-top-right-radius: 10px;
   margin: 10px 0;
-  background-color: #f9f9f9;
   outline: none;
   box-shadow: 0px 2px 0px 0px #ccc;
   border: 1px solid #ccc;
+}
+#contact #content--zone .content--card .contacts .form--contact button.btn-system-send {
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  text-decoration: none;
+  padding: 13px;
+  padding-right: 50px;
+  padding-left: 50px;
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 20px;
+  border: 0;
+  outline: none;
+  width: 150px;
+  height: 40px;
+  box-sizing: border-box;
+  background: #1fcdff;
+  box-shadow: 0px 2px 0px 0px #179abf;
+  text-transform: uppercase;
+  color: #fff;
+  width: 100%;
+}
+#contact #content--zone .content--card .contacts .form--contact button.btn-system-send:hover {
+  background-color: #343434;
+  box-shadow: 0px 2px 0px 0px #454848;
 }
 #contact #content--zone .content--card .contacts .form--personal {
   box-sizing: border-box;

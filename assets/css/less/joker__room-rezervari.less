@@ -32,7 +32,7 @@
                     display: none;
                     box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
                     width: 60%; 
-                    max-width: 500px;
+                    max-width: 460px;
                     // border: 1px solid black;
                     margin: 20px auto;
                     text-align: center;
@@ -56,40 +56,37 @@
                     tbody{
                         // border: 1px solid black;
                         tr{
-                            a{
-                                cursor: pointer;
-                                width: auto;
-                                height: auto;
-                                &:hover {
-
-                                }
-                            }
+                            opacity: 0.7;    
+                             cursor: pointer;
                             // border: 1px solid black;
                             &:nth-of-type(odd) {
                                 background-color: @input-color-dark;
                             }
-                            td{
+                            .room-hour{
                                 padding: 10px; 
                             } 
                             .room-state{
                                  background-color: @green-background;
                             }
+                            &:hover{
+                                opacity: 1;
+                            }
                         }
                     }
-
                 }
                 
                 #datepicker{
                     width: 100%; 
                     .ui-datepicker-inline.ui-datepicker.ui-widget.ui-widget-content.ui-helper-clearfix.ui-corner-all{
                         margin: 0 auto;
+                        font-family: 'Josefin Sans', sans-serif; 
                     } 
                     a.ui-state-default.ui-state-active {
                         background-color: @pallete-color-blue;
                     }
                     .ui-widget-content {
-                        b    border: 1px solid #aaaaaa;
-                        // background: #ffffff url("images/ui-bg_flat_75_ffffff_40x100.png") 50% 50% repeat-x;
+                        border: 0;
+                        box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
                         color: @pallete-color-blue;
                     }
                     .ui-widget-header {
@@ -98,9 +95,18 @@
                     }
                     a.ui-state-default {
                         border: 1px solid #d3d3d3;
-                        background: #343434 url("images/ui-bg_glass_75_e6e6e6_1x400.png") 50% 50% repeat-x;
+                        background: #343434;
                         font-weight: normal;
                         color: #fff;
+                        border-radius: 50%;
+                        width: 40px;
+                        height: 40px;
+                        line-height: 1.5;
+                        padding-right: 6px;
+                        box-sizing: border-box;
+                        line-height: 1.7;
+                        padding-right: 10px;
+                        font-family: 'Josefin Sans', sans-serif; 
                     }
                     .ui-datepicker-header.ui-widget-header.ui-helper-clearfix.ui-corner-all {
                         background-color: @pallete-color-blue;
@@ -117,44 +123,78 @@
                     .ui-datepicker-next-hover {
                         background-size:20px 20px;
                     }
+                    span.ui-state-default {
+                        border: 1px solid #d3d3d3;
+                        background: #343434 ;
+                        font-weight: normal;
+                        color: #fff;
+                        border-radius: 50%;
+                        width: 40px;
+                        height: 40px;
+                        line-height: 1.5;
+                        padding-right: 6px;
+                        box-sizing: border-box;
+                    }
 
                 }
             }
-            
+
+
+            #online--booking{
+                width: 420px;
+                height: 400px;
+                // background-color: @input-color-dark;
+                border-radius: 5px;
+                margin: 0 auto;
+                padding: 20px 0;
+                box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+                display: none;
+               
+                input, select{
+                    width: 80%;
+                    box-sizing: border-box;
+                    padding: 0 20px;
+                    margin: 10px 10%; 
+                    box-sizing: border-box; 
+                    border-top-right-radius: 10px; 
+                    background-color: @input--color;
+                    outline: none;
+                    box-shadow: 0px 2px 0px 0px @shadow-form; 
+                    border: 1px solid @shadow-form;
+                    .input;
+
+                }
+
+                input{
+
+                }
+
+                select {
+
+                }
+                
+                button.btn-system {            
+                    border-top-right-radius: 10px;
+                    border-bottom-left-radius: 10px;
+                    text-decoration: none;
+                    padding: 13px;
+                    padding-right: 50px;
+                    padding-left: 50px;
+                    font-weight: bold;
+                    font-size: 18px;
+                    margin: 80px 10% 0 10%;
+                    border: 0;
+                    outline: none;
+                    .button;
+                    width: 80%;
+                    &:hover {
+                        background-color: @pallete-color-blue-hover;
+                        box-shadow: 0px 2px 0px 0px @pallete-color-darkblue-hover;
+                    }
+             
+                }
+            } 
         } 
-    } 
+    }  
+} 
 
-    #online--booking{
-        width: 400px;
-        height: 400px;
-        // background-color: @input-color-dark;
-        border-radius: 10px;
-        margin: 0 auto;
-        padding: 20px 0;
-        box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-        // display: none;
-       
-        input, select{
-            width: 80%;
-            box-sizing: border-box;
-            padding: 0 20px;
-            margin: 10px 10%; 
-            box-sizing: border-box; 
-            border-top-right-radius: 10px; 
-            background-color: @input--color;
-            outline: none;
-            box-shadow: 0px 2px 0px 0px @shadow-form; 
-            border: 1px solid @shadow-form;
-            .input;
-
-        }
-
-        input{
-
-        }
-
-        select {
-
-        }
-    } 
-}

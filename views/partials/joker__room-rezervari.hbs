@@ -19,168 +19,51 @@
 					  </thead> 
 
 					  <tbody>
-					    <tr> 
-					    	<a href="#">
-								<td value="hour" class="room-hour">07-08</td>
-								<td value"liber" class="room-state"> LIBER </td>
-					      	</a>
+					     <tr> 
+							<td value="hour" class="room-hour">21-22 </td>
+							<td value"liber" class="room-state"> LIBER </td> 
 					    </tr>
-					    <tr>
-					    	<a href="#">
-								<td value="hour" class="room-hour">08-09</td>
-								<td value"liber" class="room-state"> LIBER </td>
-							</a>	
+					     <tr> 
+							<td value="hour" class="room-hour">21-22 </td>
+							<td value"liber" class="room-state"> LIBER </td> 
 					    </tr>
-					    <tr>
-					      	<a href="#">
-								<td value="hour" class="room-hour">09-10</td>
-								<td value"liber" class="room-state"> LIBER </td>
-							</a>	
+					     <tr> 
+							<td value="hour" class="room-hour">21-22 </td>
+							<td value"liber" class="room-state"> LIBER </td>  
 					    </tr>
-					    <tr>
-					    	<a href="#">
-								<td value="hour" class="room-hour">10-11</td>
-								<td value"liber" class="room-state"> LIBER </td>
-							</a>	
-					    </tr>
-					      <tr>
-					      	<a href="#">
-								<td value="hour" class="room-hour">11-12</td>
-								<td value"liber" class="room-state"> LIBER </td>
-							</a>	
-					    </tr>
-					    <tr>
-					    	<a href="#">
-								<td value="hour" class="room-hour">12-13</td>
-								<td value"liber" class="room-state"> LIBER </td>
-							</a>	
-					    </tr>
-					      <tr>
-					      	<a href="#">
-								<td value="hour" class="room-hour">13-14</td>
-								<td value"liber" class="room-state"> LIBER </td>
-							</a>	
-					    </tr>
-					    <tr>
-					    	<a href="#">
-								<td value="hour" class="room-hour">14-15</td>
-								<td value"liber" class="room-state"> LIBER </td>
-							</a>	
-					    </tr>
-					      <tr>
-					      	<a href="#">
-								<td value="hour" class="room-hour">15-16</td>
-								<td value"liber" class="room-state"> LIBER </td>
-							</a>	
-					    </tr>
-					    <tr>
-					    	<a href="#">
-								<td value="hour" class="room-hour">16-17</td>
-								<td value"liber" class="room-state"> LIBER </td>
-							</a>	
-					    </tr>
-					    <tr>
-					    	<a href="#">
-								<td value="hour" class="room-hour">17-18</td>
-								<td value"liber" class="room-state"> LIBER </td>
-							</a>	
-					    </tr>
-					    <tr>
-					    	<a href="#">
-								<td value="hour" class="room-hour">18-19</td>
-								<td value"liber" class="room-state"> LIBER </td>
-							</a>	
-					    </tr>
-					    <tr>
-					    	<a href="#">
-								<td value="hour" class="room-hour">19-20</td>
-								<td value"liber" class="room-state"> LIBER </td>
-							</a>	
-					    </tr>
-					    <tr>
-					    	<a href="#dfgdfgdfgdfg">
-								<td value="hour" class="room-hour">20-21</td>
-								<td value"liber" class="room-state"> LIBER </td>
-							</a>	
-					    </tr>
-					    <tr>
-					    	<a href="#">
-								<td value="hour" class="room-hour">21-22</td>
-								<td value"liber" class="room-state"> LIBER </td>
-							</a>	
+					     <tr> 
+							<td value="hour" class="room-hour">21-22 </td>
+							<td value"liber" class="room-state"> LIBER </td> 					   
+						</tr>	 
+					     <tr> 
+							<td value="hour" class="room-hour">21-22 </td>
+							<td value"liber" class="room-state"> LIBER </td> 
 					    </tr>
 					  </tbody> 
 	            </table>  
-	        </div>
-
-
-			<div id="online--booking">
-				
+	        </div> 
+        	<div id="online--booking"> 
 				<input type="text" name="name" id="name" value ="" placeholder="Nume si Prenume">
-					<br/>
-				
+					<br/>				
 				<input type="text" name="name" id="name" value ="" placeholder="Telefon">
-					<br/>
-				
+					<br/>				
 				<input type="text" name="name" id="name" value ="" placeholder="Adresa Email">
-					<br/>		
-				 	
+					<br/>					 	
 				<select value "numar persoane"> 
-                    <option>1</option>
-                    <option>2</option>
+			        <option>1</option>
+			        <option>2</option>
 					<option>3</option>
 					<option>4</option>
 					<option>5</option>
 					<option>6</option>
-					<option>7</option>
-                </select>
-
+			    </select>
+					<br/>	
+			    <button type="submit" id="submit" class="btn-system "><p><a href=""></a></p>Send</button>
+			    <div id="success"></div>
 			</div>	
-
-		</div>
+	</div>
 
     </div> 
-
-
-
-    <script>
-    $(function() {
-        $( "#datepicker" ).datepicker({
-            altFormat: "yy-mm-dd",
-            minDate: new Date(),
-            hideIfNoPrevNext: true,
-            dayNamesMin: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
-            onSelect: function(){
-                $('#calendar').css({
-                	"display" : "table"
-                })
-                 .animate({ opacity: 1 }, "slow")
-                // 			.append($("<tr></tr>")
-                //                 .append($("<td></td>")
-                //                         .html("yolo!!")
-                //         )
-                // );
-            }
-        });
-    })
-
-    $('tbody').find('tr').click(function() {
-        $('#online--booking').css({
-        	'display' : "initial"
-        })
-        .animate({ 
-        	opacity: 0.5 
-        }, "slow")
-
-    });
-
-    $('#online-booking').click(function() {
-        ('room-state').text('lulu');
-        console.log('booking well done');
-    });
-
-
-</script>
 
 
 </section>

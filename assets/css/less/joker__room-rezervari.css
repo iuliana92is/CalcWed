@@ -189,7 +189,7 @@
   display: none;
   box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   width: 60%;
-  max-width: 500px;
+  max-width: 460px;
   margin: 20px auto;
   text-align: center;
   opacity: 0.5;
@@ -206,31 +206,35 @@
 #joker--rezervari #content--zone .content--card .reservation-zone #calendar thead tr th:first-child {
   background-color: #1fcdff;
 }
-#joker--rezervari #content--zone .content--card .reservation-zone #calendar tbody tr a {
+#joker--rezervari #content--zone .content--card .reservation-zone #calendar tbody tr {
+  opacity: 0.7;
   cursor: pointer;
-  width: auto;
-  height: auto;
 }
 #joker--rezervari #content--zone .content--card .reservation-zone #calendar tbody tr:nth-of-type(odd) {
   background-color: #e6e6e6;
 }
-#joker--rezervari #content--zone .content--card .reservation-zone #calendar tbody tr td {
+#joker--rezervari #content--zone .content--card .reservation-zone #calendar tbody tr .room-hour {
   padding: 10px;
 }
 #joker--rezervari #content--zone .content--card .reservation-zone #calendar tbody tr .room-state {
   background-color: #64D864;
+}
+#joker--rezervari #content--zone .content--card .reservation-zone #calendar tbody tr:hover {
+  opacity: 1;
 }
 #joker--rezervari #content--zone .content--card .reservation-zone #datepicker {
   width: 100%;
 }
 #joker--rezervari #content--zone .content--card .reservation-zone #datepicker .ui-datepicker-inline.ui-datepicker.ui-widget.ui-widget-content.ui-helper-clearfix.ui-corner-all {
   margin: 0 auto;
+  font-family: 'Josefin Sans', sans-serif;
 }
 #joker--rezervari #content--zone .content--card .reservation-zone #datepicker a.ui-state-default.ui-state-active {
   background-color: #1fcdff;
 }
 #joker--rezervari #content--zone .content--card .reservation-zone #datepicker .ui-widget-content {
-  bborder: 1px solid #aaaaaa;
+  border: 0;
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   color: #1fcdff;
 }
 #joker--rezervari #content--zone .content--card .reservation-zone #datepicker .ui-widget-header {
@@ -239,9 +243,18 @@
 }
 #joker--rezervari #content--zone .content--card .reservation-zone #datepicker a.ui-state-default {
   border: 1px solid #d3d3d3;
-  background: #343434 url("images/ui-bg_glass_75_e6e6e6_1x400.png") 50% 50% repeat-x;
+  background: #343434;
   font-weight: normal;
   color: #fff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  line-height: 1.5;
+  padding-right: 6px;
+  box-sizing: border-box;
+  line-height: 1.7;
+  padding-right: 10px;
+  font-family: 'Josefin Sans', sans-serif;
 }
 #joker--rezervari #content--zone .content--card .reservation-zone #datepicker .ui-datepicker-header.ui-widget-header.ui-helper-clearfix.ui-corner-all {
   background-color: #1fcdff;
@@ -259,16 +272,29 @@
 #joker--rezervari #content--zone .content--card .reservation-zone #datepicker .ui-datepicker-next-hover {
   background-size: 20px 20px;
 }
-#joker--rezervari #online--booking {
-  width: 400px;
+#joker--rezervari #content--zone .content--card .reservation-zone #datepicker span.ui-state-default {
+  border: 1px solid #d3d3d3;
+  background: #343434 ;
+  font-weight: normal;
+  color: #fff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  line-height: 1.5;
+  padding-right: 6px;
+  box-sizing: border-box;
+}
+#joker--rezervari #content--zone .content--card #online--booking {
+  width: 420px;
   height: 400px;
-  border-radius: 10px;
+  border-radius: 5px;
   margin: 0 auto;
   padding: 20px 0;
   box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: none;
 }
-#joker--rezervari #online--booking input,
-#joker--rezervari #online--booking select {
+#joker--rezervari #content--zone .content--card #online--booking input,
+#joker--rezervari #content--zone .content--card #online--booking select {
   width: 80%;
   padding: 0 20px;
   margin: 10px 10%;
@@ -286,5 +312,30 @@
   color: #343434;
   box-sizing: border-box;
   font-size: 18px;
+}
+#joker--rezervari #content--zone .content--card #online--booking button.btn-system {
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  text-decoration: none;
+  padding: 13px;
+  padding-right: 50px;
+  padding-left: 50px;
+  font-weight: bold;
+  font-size: 18px;
+  margin: 80px 10% 0 10%;
+  border: 0;
+  outline: none;
+  width: 150px;
+  height: 40px;
+  box-sizing: border-box;
+  background: #1fcdff;
+  box-shadow: 0px 2px 0px 0px #179abf;
+  text-transform: uppercase;
+  color: #fff;
+  width: 80%;
+}
+#joker--rezervari #content--zone .content--card #online--booking button.btn-system:hover {
+  background-color: #343434;
+  box-shadow: 0px 2px 0px 0px #454848;
 }
 /*# sourceMappingURL=joker__room-rezervari.css.map */

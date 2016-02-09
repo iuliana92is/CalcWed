@@ -6,6 +6,7 @@
 
     var $navigation = BASEMENT_ESCAPE.modules.navigation;
     var gallery = BASEMENT_ESCAPE.modules.gallery;
+    var booking = BASEMENT_ESCAPE.modules.booking;
 
 
     (function init() {
@@ -16,6 +17,7 @@
 
             $navigation.toggleMobileMenu($hamburger);
             gallery.aaa();
+            booking.aaa();
         });
 
     })();

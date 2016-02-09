@@ -44,10 +44,32 @@
                         box-sizing: border-box; 
                         border-top-right-radius: 10px;
                         margin: 10px 0;
-                        background-color: @input--color;
+                        // background-color: @input--color;
                         outline: none;
                         box-shadow: 0px 2px 0px 0px @shadow-form; 
                         border: 1px solid @shadow-form;
+                    }
+
+                    button.btn-system-send {
+                        width: 150px;
+                        border-top-right-radius: 10px;
+                        border-bottom-left-radius: 10px;
+                        text-decoration: none;
+                        padding: 13px;
+                        padding-right: 50px;
+                        padding-left: 50px;
+                        font-weight: bold;
+                        font-size: 18px;
+                        margin-top: 20px;
+                        border: 0;
+                        outline: none;
+                        .button;
+                        width: 100%;
+                        &:hover {
+                            background-color: @pallete-color-blue-hover;
+                            box-shadow: 0px 2px 0px 0px @pallete-color-darkblue-hover;
+                        }
+                 
                     }
                     
                 }
