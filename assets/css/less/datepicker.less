@@ -1,0 +1,163 @@
+@import url('variables/colors.less');
+@import url('variables/elements.less');
+
+#datepicker{
+    width: 100%; 
+    .ui-datepicker-inline.ui-datepicker.ui-widget.ui-widget-content.ui-helper-clearfix.ui-corner-all{
+        margin: 0 auto;
+        font-family: 'Josefin Sans', sans-serif; 
+    } 
+    a.ui-state-default.ui-state-active {
+        background-color: @pallete-color-blue;
+    }
+    .ui-widget-content {
+        border: 0;
+        box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+        color: @pallete-color-blue;
+    }
+    .ui-widget-header {
+        color: @pallete-color-blue-hover;
+        background: @pallete-color-blue-hover;
+    }
+    a.ui-state-default {
+        border: 1px solid #d3d3d3;
+        background: #343434;
+        font-weight: normal;
+        color: #fff;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        line-height: 1.2;
+        box-sizing: border-box;
+        font-family: 'Josefin Sans', sans-serif; 
+        text-align: center;
+    }
+    .ui-datepicker-header.ui-widget-header.ui-helper-clearfix.ui-corner-all {
+        background-color: @pallete-color-blue;
+    }
+    .ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next, .ui-state-over {
+        &:hover{
+            background-color: @pallete-color-blue;
+        }
+    }
+    .ui-datepicker-next-hover, .ui-datepicker-prev-hover{
+        background: red;
+        border:0; 
+    }
+    .ui-datepicker-next-hover {
+        background-size:20px 20px;
+    }
+    span.ui-state-default {
+        border: 1px solid #d3d3d3;
+        background: #343434 ;
+        font-weight: normal;
+        color: #fff;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        line-height: 1.2;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+}
+
+/*********************** Responsive Home **************************/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+    
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+    #datepicker{
+    
+        .ui-datepicker-inline.ui-datepicker.ui-widget.ui-widget-content.ui-helper-clearfix.ui-corner-all{
+             
+        } 
+        a.ui-state-default.ui-state-active {
+             
+        }
+        .ui-widget-content {
+             
+        }
+        .ui-widget-header {
+             
+        }
+        a.ui-state-default {
+             line-height: 1.5;
+        }
+        .ui-datepicker-header.ui-widget-header.ui-helper-clearfix.ui-corner-all {
+             
+        }
+        .ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next, .ui-state-over {
+            &:hover{
+                
+            }
+        }
+        .ui-datepicker-next-hover, .ui-datepicker-prev-hover{
+             
+        }
+        .ui-datepicker-next-hover {
+             
+        }
+        span.ui-state-default {
+             line-height: 1.5;
+        }
+
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+    
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+    #datepicker{
+    
+        .ui-datepicker-inline.ui-datepicker.ui-widget.ui-widget-content.ui-helper-clearfix.ui-corner-all{
+             
+        } 
+        a.ui-state-default.ui-state-active {
+             
+        }
+        .ui-widget-content {
+             
+        }
+        .ui-widget-header {
+             
+        }
+        a.ui-state-default {
+             width: 30px;
+             height: 30px;
+        }
+        .ui-datepicker-header.ui-widget-header.ui-helper-clearfix.ui-corner-all {
+             
+        }
+        .ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next, .ui-state-over {
+            &:hover{
+                
+            }
+        }
+        .ui-datepicker-next-hover, .ui-datepicker-prev-hover{
+             
+        }
+        .ui-datepicker-next-hover {
+             
+        }
+        span.ui-state-default {
+             width: 30px;
+             height: 30px;
+        }
+
+    }
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+

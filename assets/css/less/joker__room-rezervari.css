@@ -222,68 +222,6 @@
 #joker--rezervari #content--zone .content--card .reservation-zone #calendar tbody tr:hover {
   opacity: 1;
 }
-#joker--rezervari #content--zone .content--card .reservation-zone #datepicker {
-  width: 100%;
-}
-#joker--rezervari #content--zone .content--card .reservation-zone #datepicker .ui-datepicker-inline.ui-datepicker.ui-widget.ui-widget-content.ui-helper-clearfix.ui-corner-all {
-  margin: 0 auto;
-  font-family: 'Josefin Sans', sans-serif;
-}
-#joker--rezervari #content--zone .content--card .reservation-zone #datepicker a.ui-state-default.ui-state-active {
-  background-color: #1fcdff;
-}
-#joker--rezervari #content--zone .content--card .reservation-zone #datepicker .ui-widget-content {
-  border: 0;
-  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  color: #1fcdff;
-}
-#joker--rezervari #content--zone .content--card .reservation-zone #datepicker .ui-widget-header {
-  color: #343434;
-  background: #343434;
-}
-#joker--rezervari #content--zone .content--card .reservation-zone #datepicker a.ui-state-default {
-  border: 1px solid #d3d3d3;
-  background: #343434;
-  font-weight: normal;
-  color: #fff;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  line-height: 1.5;
-  padding-right: 6px;
-  box-sizing: border-box;
-  line-height: 1.7;
-  padding-right: 10px;
-  font-family: 'Josefin Sans', sans-serif;
-}
-#joker--rezervari #content--zone .content--card .reservation-zone #datepicker .ui-datepicker-header.ui-widget-header.ui-helper-clearfix.ui-corner-all {
-  background-color: #1fcdff;
-}
-#joker--rezervari #content--zone .content--card .reservation-zone #datepicker .ui-datepicker .ui-datepicker-prev:hover,
-#joker--rezervari #content--zone .content--card .reservation-zone #datepicker .ui-datepicker .ui-datepicker-next:hover,
-#joker--rezervari #content--zone .content--card .reservation-zone #datepicker .ui-state-over:hover {
-  background-color: #1fcdff;
-}
-#joker--rezervari #content--zone .content--card .reservation-zone #datepicker .ui-datepicker-next-hover,
-#joker--rezervari #content--zone .content--card .reservation-zone #datepicker .ui-datepicker-prev-hover {
-  background: red;
-  border: 0;
-}
-#joker--rezervari #content--zone .content--card .reservation-zone #datepicker .ui-datepicker-next-hover {
-  background-size: 20px 20px;
-}
-#joker--rezervari #content--zone .content--card .reservation-zone #datepicker span.ui-state-default {
-  border: 1px solid #d3d3d3;
-  background: #343434 ;
-  font-weight: normal;
-  color: #fff;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  line-height: 1.5;
-  padding-right: 6px;
-  box-sizing: border-box;
-}
 #joker--rezervari #content--zone .content--card #online--booking {
   width: 420px;
   height: 400px;
