@@ -182,7 +182,7 @@
   box-sizing: border-box;
 }
 #joker--rezervari #content--zone .content--card .reservation-zone {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
 }
 #joker--rezervari #content--zone .content--card .reservation-zone #calendar {
@@ -222,58 +222,182 @@
 #joker--rezervari #content--zone .content--card .reservation-zone #calendar tbody tr:hover {
   opacity: 1;
 }
-#joker--rezervari #content--zone .content--card #online--booking {
-  width: 420px;
-  height: 400px;
-  border-radius: 5px;
-  margin: 0 auto;
-  padding: 20px 0;
-  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  display: none;
+/*********************** Responsive rezervari **************************/
+/* Large Devices, Wide Screens */
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  #joker--rezervari #content--zone,
+  #joker--rezervari .content--card {
+    display: block;
+    float: left;
+    margin: 100px auto 100px;
+    padding: 0 2%;
+    transform: skew(0deg, 5deg);
+    -ms-transform: skew(0deg, 5deg);
+    -webkit-transform: skew(0deg, 5deg);
+    width: 100%;
+    box-sizing: border-box;
+  }
+  #joker--rezervari .content--background {
+    background-image: url(../img/structure/index-background-content2.jpg);
+    height: auto;
+    width: 100%;
+    background-size: inherit;
+    position: relative;
+    padding: 0 2% 200px 2%;
+    box-sizing: border-box;
+    color: #fff;
+    background-attachment: fixed;
+    background-attachment: device-fixed;
+    background-position: center;
+  }
+  #joker--rezervari #content--zone {
+    z-index: 5;
+    position: relative;
+    display: block;
+    float: left;
+    margin: -100px 0 100px 0;
+    width: 100%;
+    background: #fff;
+    transform: skew(0deg, -10deg);
+    -ms-transform: skew(0deg, -5deg);
+    /* IE 9 */
+    -webkit-transform: skew(0deg, -5deg);
+    /* Safari and Chrome */
+  }
+  #joker--rezervari #content--zone .content--card {
+    display: block;
+    float: left;
+    margin: 100px auto 80px;
+    padding: 2%;
+    transform: skew(0deg, 5deg);
+    -ms-transform: skew(0deg, 5deg);
+    -webkit-transform: skew(0deg, 5deg);
+    width: 100%;
+    box-sizing: border-box;
+  }
+  #joker--rezervari #content--zone .content--card .reservation-zone #calendar {
+    max-width: 340px;
+    width: 340px;
+  }
 }
-#joker--rezervari #content--zone .content--card #online--booking input,
-#joker--rezervari #content--zone .content--card #online--booking select {
-  width: 80%;
-  padding: 0 20px;
-  margin: 10px 10%;
-  border-top-right-radius: 10px;
-  background-color: #f9f9f9;
-  box-shadow: 0px 2px 0px 0px #ccc;
-  border: 1px solid #ccc;
-  background-color: #fff;
-  height: 40px;
-  padding: 10px;
-  border-bottom-left-radius: 10px;
-  float: left;
-  box-shadow: 0 2px 0 0 #ccc;
-  outline: none;
-  color: #343434;
-  box-sizing: border-box;
-  font-size: 18px;
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  #joker--rezervari #content--zone,
+  #joker--rezervari .content--card {
+    display: block;
+    float: left;
+    margin: 100px auto 100px;
+    padding: 0 2%;
+    transform: skew(0deg, 5deg);
+    -ms-transform: skew(0deg, 5deg);
+    -webkit-transform: skew(0deg, 5deg);
+    width: 100%;
+    box-sizing: border-box;
+  }
+  #joker--rezervari .content--background {
+    background-image: url(../img/structure/index-background-content2.jpg);
+    height: auto;
+    width: 100%;
+    background-size: inherit;
+    position: relative;
+    padding: 0 2% 200px 2%;
+    box-sizing: border-box;
+    color: #fff;
+    background-attachment: fixed;
+    background-attachment: device-fixed;
+    background-position: center;
+    padding: 0 0 150px 0;
+  }
+  #joker--rezervari #content--zone {
+    z-index: 5;
+    position: relative;
+    display: block;
+    float: left;
+    margin: -100px 0 100px 0;
+    width: 100%;
+    background: #fff;
+    transform: skew(0deg, -10deg);
+    -ms-transform: skew(0deg, -5deg);
+    /* IE 9 */
+    -webkit-transform: skew(0deg, -5deg);
+    /* Safari and Chrome */
+    margin: -100px 0 50px 0;
+  }
+  #joker--rezervari #content--zone .content--card {
+    display: block;
+    float: left;
+    margin: 100px auto 80px;
+    padding: 2%;
+    transform: skew(0deg, 5deg);
+    -ms-transform: skew(0deg, 5deg);
+    -webkit-transform: skew(0deg, 5deg);
+    width: 100%;
+    box-sizing: border-box;
+    margin: 50px auto 30px;
+  }
+  #joker--rezervari #content--zone .content--card .reservation-zone #calendar {
+    width: 340px;
+  }
 }
-#joker--rezervari #content--zone .content--card #online--booking button.btn-system {
-  border-top-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-  text-decoration: none;
-  padding: 13px;
-  padding-right: 50px;
-  padding-left: 50px;
-  font-weight: bold;
-  font-size: 18px;
-  margin: 80px 10% 0 10%;
-  border: 0;
-  outline: none;
-  width: 150px;
-  height: 40px;
-  box-sizing: border-box;
-  background: #1fcdff;
-  box-shadow: 0px 2px 0px 0px #179abf;
-  text-transform: uppercase;
-  color: #fff;
-  width: 80%;
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  #joker--rezervari #content--zone,
+  #joker--rezervari .content--card {
+    display: block;
+    float: left;
+    margin: 100px auto 100px;
+    padding: 0 2%;
+    transform: skew(0deg, 5deg);
+    -ms-transform: skew(0deg, 5deg);
+    -webkit-transform: skew(0deg, 5deg);
+    width: 100%;
+    box-sizing: border-box;
+  }
+  #joker--rezervari .content--background {
+    background-image: url(../img/structure/index-background-content2.jpg);
+    height: auto;
+    width: 100%;
+    background-size: inherit;
+    position: relative;
+    padding: 0 2% 200px 2%;
+    box-sizing: border-box;
+    color: #fff;
+    background-attachment: fixed;
+    background-attachment: device-fixed;
+    background-position: center;
+    padding: 0 0 150px 0;
+  }
+  #joker--rezervari #content--zone {
+    z-index: 5;
+    position: relative;
+    display: block;
+    float: left;
+    margin: -100px 0 100px 0;
+    width: 100%;
+    background: #fff;
+    transform: skew(0deg, -10deg);
+    -ms-transform: skew(0deg, -5deg);
+    /* IE 9 */
+    -webkit-transform: skew(0deg, -5deg);
+    /* Safari and Chrome */
+    margin: -100px 0 50px 0;
+  }
+  #joker--rezervari #content--zone .content--card {
+    display: block;
+    float: left;
+    margin: 100px auto 80px;
+    padding: 2%;
+    transform: skew(0deg, 5deg);
+    -ms-transform: skew(0deg, 5deg);
+    -webkit-transform: skew(0deg, 5deg);
+    width: 100%;
+    box-sizing: border-box;
+    margin: 50px auto 30px;
+  }
+  #joker--rezervari #content--zone .content--card .reservation-zone #calendar {
+    width: 280px;
+  }
 }
-#joker--rezervari #content--zone .content--card #online--booking button.btn-system:hover {
-  background-color: #343434;
-  box-shadow: 0px 2px 0px 0px #454848;
-}
+/* Custom, iPhone Retina */
 /*# sourceMappingURL=joker__room-rezervari.css.map */

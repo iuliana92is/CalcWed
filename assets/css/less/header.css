@@ -136,7 +136,7 @@ header .content--background {
   width: 100%;
   background-size: inherit;
   position: relative;
-  padding: 13% 0 13% 0;
+  padding: 11% 0 13% 0;
   box-sizing: border-box;
   color: #fff;
   background-attachment: fixed;
@@ -260,7 +260,7 @@ header .content--background .f-nav .content--menu__logo a img {
 }
 @media only screen and (max-width: 1200px) {
   header .content--background {
-    padding: 165px 0 165px 0;
+    padding: 122px 0 165px 0;
   }
   header .content--background .content--menu {
     background-color: rgba(0, 0, 0, 0.8);

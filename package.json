@@ -17,7 +17,8 @@
   "dependencies": {
     "express": "^4.13.3",
     "express-handlebars": "^2.0.1",
-    "express-hbs": "^0.8.4"
+    "express-hbs": "^0.8.4",
+    "mysql": "^2.5.4"
   },
   "devDependencies": {
     "grunt": "^0.4.5",

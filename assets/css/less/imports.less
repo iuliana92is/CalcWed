@@ -1,7 +1,7 @@
 .clearfix {
 	clear: both;  
 }
-
+// gallery animation
 div#lightbox_overlay {
     position: absolute; 
     top: 0; 
@@ -21,74 +21,9 @@ div#lightbox_container {
 		.box--shadow__card;
 	}
 }
+
+
 //joker room booking
-div#light_overlay {
-    position: absolute; 
-    top: 0; 
-    left: 0; 
-    width: 100%; 
-    height: 100%;  
-    background-color: rgba(0,0,0,0.8);
-}
-div#light_container { 
-	position: absolute; 
-	z-index: 10;
-	#online--booking{
-        width: 420px;
-        height: 400px;
-        // background-color: @input-color-dark;
-        border-radius: 5px;
-        margin: 0 auto;
-        padding: 20px 0;
-        box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-        display: none;
-       
-        input, select{
-            width: 80%;
-            box-sizing: border-box;
-            padding: 0 20px;
-            margin: 10px 10%; 
-            box-sizing: border-box; 
-            border-top-right-radius: 10px; 
-            background-color: @input--color;
-            outline: none;
-            box-shadow: 0px 2px 0px 0px @shadow-form; 
-            border: 1px solid @shadow-form;
-            .input;
-
-        }
-
-        input{
-
-        }
-
-        select {
-
-        }
-        
-        button.btn-system {            
-            border-top-right-radius: 10px;
-            border-bottom-left-radius: 10px;
-            text-decoration: none;
-            padding: 13px;
-            padding-right: 50px;
-            padding-left: 50px;
-            font-weight: bold;
-            font-size: 18px;
-            margin: 80px 10% 0 10%;
-            border: 0;
-            outline: none;
-            .button;
-            width: 80%;
-            &:hover {
-                background-color: @pallete-color-blue-hover;
-                box-shadow: 0px 2px 0px 0px @pallete-color-darkblue-hover;
-            }
-     
-        }
-    }
-}
-
 
 
 
@@ -109,3 +44,4 @@ div#light_container {
 @import url("joker__room-preturi.less"); 
 @import url("joker__room-rezervari.less"); 
 @import url("datepicker.less"); 
+@import url("onlinebooking.less"); 

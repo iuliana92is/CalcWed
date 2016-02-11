@@ -181,7 +181,7 @@
   text-align: center;
   box-sizing: border-box;
 }
-/*********************** Responsive Home **************************/
+/*********************** Responsive datepicker **************************/
 /* Large Devices, Wide Screens */
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {

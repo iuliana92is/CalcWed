@@ -22,72 +22,6 @@ div#lightbox_container img {
   -moz-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   -webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-div#light_overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
-}
-div#light_container {
-  position: absolute;
-  z-index: 10;
-}
-div#light_container #online--booking {
-  width: 420px;
-  height: 400px;
-  border-radius: 5px;
-  margin: 0 auto;
-  padding: 20px 0;
-  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  display: none;
-}
-div#light_container #online--booking input,
-div#light_container #online--booking select {
-  width: 80%;
-  padding: 0 20px;
-  margin: 10px 10%;
-  border-top-right-radius: 10px;
-  background-color: #f9f9f9;
-  box-shadow: 0px 2px 0px 0px #ccc;
-  border: 1px solid #ccc;
-  background-color: #fff;
-  height: 40px;
-  padding: 10px;
-  border-bottom-left-radius: 10px;
-  float: left;
-  box-shadow: 0 2px 0 0 #ccc;
-  outline: none;
-  color: #343434;
-  box-sizing: border-box;
-  font-size: 18px;
-}
-div#light_container #online--booking button.btn-system {
-  border-top-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-  text-decoration: none;
-  padding: 13px;
-  padding-right: 50px;
-  padding-left: 50px;
-  font-weight: bold;
-  font-size: 18px;
-  margin: 80px 10% 0 10%;
-  border: 0;
-  outline: none;
-  width: 150px;
-  height: 40px;
-  box-sizing: border-box;
-  background: #1fcdff;
-  box-shadow: 0px 2px 0px 0px #179abf;
-  text-transform: uppercase;
-  color: #fff;
-  width: 80%;
-}
-div#light_container #online--booking button.btn-system:hover {
-  background-color: #343434;
-  box-shadow: 0px 2px 0px 0px #454848;
-}
 @font-face {
   font-family: 'Avenir Next LT Pro Condensed';
   font-style: normal;
@@ -2033,60 +1967,6 @@ footer .footer--submenu .submenu li a:hover {
 #joker--rezervari #content--zone .content--card .reservation-zone #calendar tbody tr:hover {
   opacity: 1;
 }
-#joker--rezervari #content--zone .content--card #online--booking {
-  width: 420px;
-  height: 400px;
-  border-radius: 5px;
-  margin: 0 auto;
-  padding: 20px 0;
-  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  display: none;
-}
-#joker--rezervari #content--zone .content--card #online--booking input,
-#joker--rezervari #content--zone .content--card #online--booking select {
-  width: 80%;
-  padding: 0 20px;
-  margin: 10px 10%;
-  border-top-right-radius: 10px;
-  background-color: #f9f9f9;
-  box-shadow: 0px 2px 0px 0px #ccc;
-  border: 1px solid #ccc;
-  background-color: #fff;
-  height: 40px;
-  padding: 10px;
-  border-bottom-left-radius: 10px;
-  float: left;
-  box-shadow: 0 2px 0 0 #ccc;
-  outline: none;
-  color: #343434;
-  box-sizing: border-box;
-  font-size: 18px;
-}
-#joker--rezervari #content--zone .content--card #online--booking button.btn-system {
-  border-top-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-  text-decoration: none;
-  padding: 13px;
-  padding-right: 50px;
-  padding-left: 50px;
-  font-weight: bold;
-  font-size: 18px;
-  margin: 80px 10% 0 10%;
-  border: 0;
-  outline: none;
-  width: 150px;
-  height: 40px;
-  box-sizing: border-box;
-  background: #1fcdff;
-  box-shadow: 0px 2px 0px 0px #179abf;
-  text-transform: uppercase;
-  color: #fff;
-  width: 80%;
-}
-#joker--rezervari #content--zone .content--card #online--booking button.btn-system:hover {
-  background-color: #343434;
-  box-shadow: 0px 2px 0px 0px #454848;
-}
 #datepicker {
   width: 100%;
 }
@@ -2114,12 +1994,10 @@ footer .footer--submenu .submenu li a:hover {
   border-radius: 50%;
   width: 40px;
   height: 40px;
-  line-height: 1.5;
-  padding-right: 6px;
+  line-height: 1.2;
   box-sizing: border-box;
-  line-height: 1.7;
-  padding-right: 10px;
   font-family: 'Josefin Sans', sans-serif;
+  text-align: center;
 }
 #datepicker .ui-datepicker-header.ui-widget-header.ui-helper-clearfix.ui-corner-all {
   background-color: #1fcdff;
@@ -2145,8 +2023,86 @@ footer .footer--submenu .submenu li a:hover {
   border-radius: 50%;
   width: 40px;
   height: 40px;
-  line-height: 1.5;
-  padding-right: 6px;
+  line-height: 1.2;
+  text-align: center;
   box-sizing: border-box;
+}
+/*********************** Responsive Home **************************/
+/* Large Devices, Wide Screens */
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  #datepicker a.ui-state-default {
+    line-height: 1.5;
+  }
+  #datepicker span.ui-state-default {
+    line-height: 1.5;
+  }
+}
+/* Small Devices, Tablets */
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  #datepicker a.ui-state-default {
+    width: 30px;
+    height: 30px;
+  }
+  #datepicker span.ui-state-default {
+    width: 30px;
+    height: 30px;
+  }
+}
+/* Custom, iPhone Retina */
+#online--booking {
+  width: 420px;
+  height: 400px;
+  border-radius: 5px;
+  margin: 0 auto;
+  padding: 20px 0;
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: none;
+}
+#online--booking input,
+#online--booking select {
+  width: 80%;
+  padding: 0 20px;
+  margin: 10px 10%;
+  border-top-right-radius: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0px 2px 0px 0px #ccc;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  height: 40px;
+  padding: 10px;
+  border-bottom-left-radius: 10px;
+  float: left;
+  box-shadow: 0 2px 0 0 #ccc;
+  outline: none;
+  color: #343434;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+#online--booking button.btn-system {
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  text-decoration: none;
+  padding: 13px;
+  padding-right: 50px;
+  padding-left: 50px;
+  font-weight: bold;
+  font-size: 18px;
+  margin: 80px 10% 0 10%;
+  border: 0;
+  outline: none;
+  width: 150px;
+  height: 40px;
+  box-sizing: border-box;
+  background: #1fcdff;
+  box-shadow: 0px 2px 0px 0px #179abf;
+  text-transform: uppercase;
+  color: #fff;
+  width: 80%;
+}
+#online--booking button.btn-system:hover {
+  background-color: #343434;
+  box-shadow: 0px 2px 0px 0px #454848;
 }
 /*# sourceMappingURL=imports.css.map */

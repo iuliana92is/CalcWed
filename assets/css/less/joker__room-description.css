@@ -146,4 +146,68 @@
   width: 100%;
   box-sizing: border-box;
 }
+/*********************** Responsive datepicker **************************/
+/* Large Devices, Wide Screens */
+/* Medium Devices, Desktops */
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  #joker--description #content--zone {
+    z-index: 5;
+    position: relative;
+    display: block;
+    float: left;
+    margin: -100px 0 100px 0;
+    width: 100%;
+    background: #fff;
+    transform: skew(0deg, -10deg);
+    -ms-transform: skew(0deg, -5deg);
+    /* IE 9 */
+    -webkit-transform: skew(0deg, -5deg);
+    /* Safari and Chrome */
+    margin: -100px 0 50px 0;
+  }
+  #joker--description #content--zone .content--card {
+    display: block;
+    float: left;
+    margin: 100px auto 80px;
+    padding: 2%;
+    transform: skew(0deg, 5deg);
+    -ms-transform: skew(0deg, 5deg);
+    -webkit-transform: skew(0deg, 5deg);
+    width: 100%;
+    box-sizing: border-box;
+    margin: 50px auto 30px;
+  }
+}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  #joker--description #content--zone {
+    z-index: 5;
+    position: relative;
+    display: block;
+    float: left;
+    margin: -100px 0 100px 0;
+    width: 100%;
+    background: #fff;
+    transform: skew(0deg, -10deg);
+    -ms-transform: skew(0deg, -5deg);
+    /* IE 9 */
+    -webkit-transform: skew(0deg, -5deg);
+    /* Safari and Chrome */
+    margin: -100px 0 50px 0;
+  }
+  #joker--description #content--zone .content--card {
+    display: block;
+    float: left;
+    margin: 100px auto 80px;
+    padding: 2%;
+    transform: skew(0deg, 5deg);
+    -ms-transform: skew(0deg, 5deg);
+    -webkit-transform: skew(0deg, 5deg);
+    width: 100%;
+    box-sizing: border-box;
+    margin: 50px auto 30px;
+  }
+}
+/* Custom, iPhone Retina */
 /*# sourceMappingURL=joker__room-description.css.map */

@@ -192,7 +192,6 @@
   text-align: center;
 }
 #joker--preturi #content--zone .content--card .lista--preturi {
-  background-color: blue;
   width: 80%;
   margin: 0 auto;
 }
@@ -228,4 +227,137 @@
   background-color: #F33157;
   padding: 20px;
 }
+/*********************** Responsive preturi **************************/
+/* Large Devices, Wide Screens */
+/* Medium Devices, Desktops */
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  #joker--preturi #content--zone,
+  #joker--preturi .content--card {
+    display: block;
+    float: left;
+    margin: 100px auto 100px;
+    padding: 0 2%;
+    transform: skew(0deg, 5deg);
+    -ms-transform: skew(0deg, 5deg);
+    -webkit-transform: skew(0deg, 5deg);
+    width: 100%;
+    box-sizing: border-box;
+  }
+  #joker--preturi .content--background {
+    background-image: url(../img/structure/index-background-content2.jpg);
+    height: auto;
+    width: 100%;
+    background-size: inherit;
+    position: relative;
+    padding: 0 2% 200px 2%;
+    box-sizing: border-box;
+    color: #fff;
+    background-attachment: fixed;
+    background-attachment: device-fixed;
+    background-position: center;
+    padding: 0 0 150px 0;
+  }
+  #joker--preturi #content--zone {
+    z-index: 5;
+    position: relative;
+    display: block;
+    float: left;
+    margin: -100px 0 100px 0;
+    width: 100%;
+    background: #fff;
+    transform: skew(0deg, -10deg);
+    -ms-transform: skew(0deg, -5deg);
+    /* IE 9 */
+    -webkit-transform: skew(0deg, -5deg);
+    /* Safari and Chrome */
+    margin: -100px 0 50px 0;
+  }
+  #joker--preturi #content--zone .content--card {
+    display: block;
+    float: left;
+    margin: 100px auto 80px;
+    padding: 2%;
+    transform: skew(0deg, 5deg);
+    -ms-transform: skew(0deg, 5deg);
+    -webkit-transform: skew(0deg, 5deg);
+    width: 100%;
+    box-sizing: border-box;
+    margin: 50px auto 30px;
+  }
+  #joker--preturi #content--zone .content--card .lista--preturi .happy--hour,
+  #joker--preturi #content--zone .content--card .lista--preturi .pret--normal {
+    margin: 0 auto;
+    float: none;
+    width: 340px;
+    margin-top: 20px;
+  }
+}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  #joker--preturi #content--zone,
+  #joker--preturi .content--card {
+    display: block;
+    float: left;
+    margin: 100px auto 100px;
+    padding: 0 2%;
+    transform: skew(0deg, 5deg);
+    -ms-transform: skew(0deg, 5deg);
+    -webkit-transform: skew(0deg, 5deg);
+    width: 100%;
+    box-sizing: border-box;
+  }
+  #joker--preturi .content--background {
+    background-image: url(../img/structure/index-background-content2.jpg);
+    height: auto;
+    width: 100%;
+    background-size: inherit;
+    position: relative;
+    padding: 0 2% 200px 2%;
+    box-sizing: border-box;
+    color: #fff;
+    background-attachment: fixed;
+    background-attachment: device-fixed;
+    background-position: center;
+    padding: 0 0 150px 0;
+  }
+  #joker--preturi #content--zone {
+    z-index: 5;
+    position: relative;
+    display: block;
+    float: left;
+    margin: -100px 0 100px 0;
+    width: 100%;
+    background: #fff;
+    transform: skew(0deg, -10deg);
+    -ms-transform: skew(0deg, -5deg);
+    /* IE 9 */
+    -webkit-transform: skew(0deg, -5deg);
+    /* Safari and Chrome */
+    margin: -100px 0 50px 0;
+  }
+  #joker--preturi #content--zone .content--card {
+    display: block;
+    float: left;
+    margin: 100px auto 80px;
+    padding: 2%;
+    transform: skew(0deg, 5deg);
+    -ms-transform: skew(0deg, 5deg);
+    -webkit-transform: skew(0deg, 5deg);
+    width: 100%;
+    box-sizing: border-box;
+    margin: 50px auto 30px;
+  }
+  #joker--preturi #content--zone .content--card .lista--preturi {
+    width: 100%;
+  }
+  #joker--preturi #content--zone .content--card .lista--preturi .happy--hour,
+  #joker--preturi #content--zone .content--card .lista--preturi .pret--normal {
+    margin: 0 auto;
+    float: none;
+    width: 280px;
+    margin-top: 20px;
+  }
+}
+/* Custom, iPhone Retina */
 /*# sourceMappingURL=joker__room-preturi.css.map */
