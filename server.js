@@ -33,15 +33,15 @@ server.get('/', function(req, res) {
 
 });
 
-server.get('/joker_room', function(req, res) {
-    server.engine('hbs', hbs.express3({defaultLayout:  __dirname + '/views/layouts/joker_room.hbs'}));
-    res.render('joker_room');
+server.get('/second_page', function(req, res) {
+    server.engine('hbs', hbs.express3({defaultLayout:  __dirname + '/views/layouts/second_page.hbs'}));
+    res.render('second_page');
 
 });
  
 
-server.listen(1111);
-console.log("Serverul a pornit cu portul:'1111'");  
+server.listen(9090);
+console.log("Serverul a pornit cu portul:'9090'");  
 
 // var express = require('express'),  
 //     hbs     = require('express-hbs'),
