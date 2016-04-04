@@ -40,8 +40,8 @@ server.get('/joker_room', function(req, res) {
 });
  
 
-server.listen(1234);
-console.log("Serverul a pornit cu portul:'1234'");  
+server.listen(1111);
+console.log("Serverul a pornit cu portul:'1111'");  
 
 // var express = require('express'),  
 //     hbs     = require('express-hbs'),
