@@ -1,27 +1,62 @@
-(function(window, BASEMENT_ESCAPE, $) {
+(function(window, CALCULATOR, $) {
     'use strict';
 
    // variables
 
 
-    var $navigation = BASEMENT_ESCAPE.modules.navigation;
-    var gallery = BASEMENT_ESCAPE.modules.gallery;
-    var booking = BASEMENT_ESCAPE.modules.booking;
-
+    var tables = CALCULATOR.modules.tablesModule;
+    var table = CALCULATOR.modules.allGains;
 
     (function init() {
         // local variables
 
-        $(document).ready(function(){
-            var $hamburger = $('.content--menu__menu img');
-
-            $navigation.toggleMobileMenu($hamburger);
-            gallery.aaa();
-            booking.aaa();
-        });
-
+        $(document).on('keyup', 'input', function(){
+            CALCULATOR.modules.tablesModule.calcSum(); 
+        }); 
     })();
 
-}(window, window.BASEMENT_ESCAPE, window.jQuery));
+
+     (function init() {
+        // local variables
+
+        $(document).on('keyup', 'input', function(){ 
+            CALCULATOR.modules.allGains.calcSumGains();
+        }); 
+    })();
+
+    (function init() {
+        // local variables
+
+        $(document).on('keyup', 'input', function(){ 
+            CALCULATOR.modules.gifts.calcGiftsCosts();
+        }); 
+    })();
+
+    (function init() {
+        // local variables
+
+        $(document).on('keyup', 'input', function(){ 
+            CALCULATOR.modules.personCosts.calcPersonCosts();
+        }); 
+    })();
+
+    (function init() {
+        // local variables
+
+        $(document).on('keyup', 'input', function(){ 
+            CALCULATOR.modules.allSpent.calcCostTotal();
+        }); 
+    })();
+
+ 	(function init() {
+        // local variables
+
+        $(document).on('keyup', 'input', function(){ 
+            CALCULATOR.modules.allProfits.calcProfits();
+        }); 
+    })();
+
+
+}(window, window.CALCULATOR, window.jQuery));
 
 

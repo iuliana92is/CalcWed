@@ -1,0 +1,37 @@
+<h2> Persons </h2> 
+<form id="persons"> 
+	<div>
+		<label>Parents</label>
+	    <input id="parent" type="text" placeholder="enter number" />
+	</div>  
+	<div>
+		<label>Godparents</label>
+    	<input id="godparent" type="text" placeholder="enter number" />
+	</div>  
+	<div>
+	    <label>Family</label>
+	    <input id="family" type="text" placeholder="enter number" />
+    </div>  
+    <div>
+	    <label>Friends</label>
+	    <input id="friend" type="text" placeholder="enter number" />
+	</div>  
+    <div id="nrPersons">
+        <label for="totalNrPersons">Total Persoane</label>
+        <span id="totalNrPersons">0</span>
+    </div>
+</form>
+
+<script type="text/javascript">
+	
+$(document).ready( function() {
+    $('#persons').on('keyup', 'input', function() {
+        var sumaPersoane = 0;
+        $('#persons input').each( function() {
+           sumaPersoane = sumaPersoane + parseFloat($(this).val());
+        });
+        $('#totalNrPersons').html(sumaPersoane);
+    });
+});
+ 
+</script>

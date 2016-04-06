@@ -3,19 +3,31 @@
 <head>
     <title>WEDDING CALCULATOR</title>
     <meta charset="UTF-8">
-    <meta name="author" content="Boyz">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge;Chrome=1" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-    <meta name="format-detection" content="telephone=no" />
+    <meta name="author" content="Boyz"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1" /> 
     <script src="assets/plugins/jquery-1.11.3.min.js"></script>
     <link rel='stylesheet' href="assets/css/reset.css" />
     <link rel='stylesheet' href="assets/css/normalize.css" />
     <link rel='stylesheet' href="assets/css/main.compiled.css" />
+    <link rel='stylesheet' href="assets/css/less/imports.css" />
 
 </head>
 <body>   
- 
+    {{> header}}
+    {{> persons}} 
+    {{> moneySpent}}
+    {{> party}}
+    {{> gains}}
+    {{> costs}}
+    {{> footer}}
+
+    <script src="assets/js/global.js" type="text/javascript"></script>
+    <script src="assets/js/main.js" type="text/javascript"></script>
+    <script src="assets/js/modules/moneySpent.js" type="text/javascript"></script> 
+    <script src="assets/js/modules/allGains.js" type="text/javascript"></script> 
+    <script src="assets/js/modules/gifts.js" type="text/javascript"></script> 
+    <script src="assets/js/modules/personCosts.js" type="text/javascript"></script> 
+    <script src="assets/js/modules/costs.js" type="text/javascript"></script> 
+    <script src="assets/js/modules/profits.js" type="text/javascript"></script> 
 </body>
 </html>

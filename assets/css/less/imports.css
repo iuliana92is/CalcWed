@@ -1,0 +1,258 @@
+.clearfix {
+  clear: both;
+}
+body {
+  color: #000000;
+}
+body input {
+  color: black;
+}
+::-webkit-input-placeholder {
+  color: #000000;
+}
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: #000000;
+}
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #000000;
+}
+:-ms-input-placeholder {
+  color: #000000;
+}
+@font-face {
+  font-family: 'Avenir Next LT Pro Condensed';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Avenir Next LT Pro Condensed'), url('../fonts/AvenirNextLTPro-Cn.woff') format('woff');
+}
+@font-face {
+  font-family: 'Avenir Next LT Pro Demi';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Avenir Next LT Pro Demi'), url('../fonts/AvenirNextLTPro-Demi.woff') format('woff');
+}
+@font-face {
+  font-family: 'Avenir Next LT Pro Demi Condensed';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Avenir Next LT Pro Demi Condensed'), url('../fonts/AvenirNextLTPro-DemiCn.woff') format('woff');
+}
+@font-face {
+  font-family: 'Avenir Next LT Pro Heavy Condensed';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Avenir Next LT Pro Heavy Condensed'), url('../fonts/AvenirNextLTPro-HeavyCn.woff') format('woff');
+}
+@font-face {
+  font-family: 'Avenir Next LT Pro Medium Condensed';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Avenir Next LT Pro Medium Condensed'), url('../fonts/AvenirNextLTPro-MediumCn.woff') format('woff');
+}
+@font-face {
+  font-family: 'Avenir Next LT Pro Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Avenir Next LT Pro Regular'), url('../fonts/AvenirNextLTPro-Regular.woff') format('woff');
+}
+@font-face {
+  font-family: 'Avenir Next LT Pro Ultra Light Condensed';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Avenir Next LT Pro Ultra Light Condensed'), url('../fonts/AvenirNextLTPro-UltLtCn.woff') format('woff');
+}
+@font-face {
+  font-family: 'Avenir Next LT Pro Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Avenir Next LT Pro Bold'), url('../fonts/AvenirNextLTPro-Bold.woff') format('woff');
+}
+@font-face {
+  font-family: 'Avenir Next LT Pro Bold Condensed';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Avenir Next LT Pro Bold Condensed'), url('../fonts/AvenirNextLTPro-BoldCn.woff') format('woff');
+}
+@font-face {
+  font-family: 'Avenir Next LT Pro Bold Condensed Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Avenir Next LT Pro Bold Condensed Italic'), url('../fonts/AvenirNextLTPro-BoldCnIt.woff') format('woff');
+}
+@font-face {
+  font-family: 'Avenir Next LT Pro Condensed Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Avenir Next LT Pro Condensed Italic'), url('../fonts/AvenirNextLTPro-CnIt.woff') format('woff');
+}
+@font-face {
+  font-family: 'Avenir Next LT Pro Demi Condensed Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Avenir Next LT Pro Demi Condensed Italic'), url('../fonts/AvenirNextLTPro-DemiCnIt.woff') format('woff');
+}
+@font-face {
+  font-family: 'Avenir Next LT Pro Demi Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Avenir Next LT Pro Demi Italic'), url('../fonts/AvenirNextLTPro-DemiIt.woff') format('woff');
+}
+@font-face {
+  font-family: 'Avenir Next LT Pro Heavy Condensed Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Avenir Next LT Pro Heavy Condensed Italic'), url('../fonts/AvenirNextLTPro-HeavyCnIt.woff') format('woff');
+}
+@font-face {
+  font-family: 'Avenir Next LT Pro Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Avenir Next LT Pro Italic'), url('../fonts/AvenirNextLTPro-It.woff') format('woff');
+}
+@font-face {
+  font-family: 'Avenir Next LT Pro Medium Condensed Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Avenir Next LT Pro Medium Condensed Italic'), url('../fonts/AvenirNextLTPro-MediumCnIt.woff') format('woff');
+}
+@font-face {
+  font-family: 'Avenir Next LT Pro Ultra Light Condensed Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Avenir Next LT Pro Ultra Light Condensed Italic'), url('../fonts/AvenirNextLTPro-UltLtCnIt.woff') format('woff');
+}
+@font-face {
+  font-family: 'Josefin Sans';
+  src: url('../fonts/josefin-sans/JosefinSans-Light.ttf') format("truetype");
+}
+header {
+  width: 100%;
+  height: 70px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+header h1 {
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+  line-height: 2.5;
+  font-size: 30px;
+  margin: 0;
+}
+form {
+  margin: 0 auto;
+  margin-top: 30px;
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+form#persons {
+  width: 960px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+form#persons div {
+  height: 35px;
+  width: 100%;
+  display: inline-flex;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+form#persons div label {
+  width: 50%;
+  float: left;
+  line-height: 1.6;
+}
+form#persons div input {
+  width: 50%;
+  float: right;
+  box-sizing: border-box;
+  height: 30px;
+  border: none;
+  background-color: transparent;
+  height: 35px;
+  text-align: right;
+  outline: none;
+  clear: both;
+}
+form#persons div:nth-of-type(odd) {
+  background-color: #f3f3f3;
+}
+form#persons #nrPersons {
+  background-color: grey;
+  font-weight: bold;
+}
+form#persons #nrPersons label {
+  width: 50%;
+  float: left;
+  line-height: 1.6;
+}
+form#persons #nrPersons span {
+  float: right;
+  width: 50%;
+  text-align: right;
+  line-height: 1.6;
+}
+h2 {
+  text-align: center;
+  font-size: 25px;
+  color: grey;
+  font-weight: bold;
+  margin: 30px 0 10px 0;
+}
+table {
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 960px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  margin-top: 20px;
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+table thead tr {
+  width: 35px;
+  line-height: 1.6;
+  background-color: grey;
+  font-weight: bold;
+  padding: 0 10px;
+}
+table thead tr th {
+  width: 50%;
+  padding: 0 10px;
+  text-align: right;
+}
+table thead tr th:nth-of-type(odd) {
+  text-align: left;
+}
+table tbody tr {
+  width: 35px;
+  line-height: 1.6;
+}
+table tbody tr td {
+  width: 50%;
+  text-align: right;
+  padding: 0 10px;
+}
+table tbody tr td:nth-of-type(odd) {
+  text-align: left;
+}
+table tbody tr td input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  text-align: right;
+}
+table tbody tr:nth-of-type(odd) {
+  background-color: #f3f3f3;
+}
+footer {
+  width: 100%;
+  height: 50px;
+  background-color: #f3f3f3;
+  text-align: center;
+  margin-top: 30px;
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+footer h1 {
+  font-size: 20px;
+  line-height: 2;
+}
+/*# sourceMappingURL=imports.css.map */

@@ -1,8 +1,8 @@
 (function (window){
     'use strict';
 
-    var BASEMENT_ESCAPE = window.BASEMENT_ESCAPE || {};
-    BASEMENT_ESCAPE.modules = {};
+    var CALCULATOR = window.CALCULATOR || {};
+    CALCULATOR.modules = {};
 
-    window.BASEMENT_ESCAPE = BASEMENT_ESCAPE;
+    window.CALCULATOR = CALCULATOR;
 }(window));
