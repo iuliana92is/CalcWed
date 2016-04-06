@@ -1,13 +1,16 @@
+@import url("variable/colors.less");
+
 form {
     margin: 0 auto;
     margin-top: 30px; 
-    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow:@baseShadow;
 }
 
 form#persons {
 
-    width: 960px;
-    background-color: rgba(255, 255, 255, 0.8); 
+    // max-width: 960px;
+    width: 80%;
+    background-color: @highOpacity; 
 	div {
 	    height: 35px;
 	    width: 100%;
@@ -35,11 +38,11 @@ form#persons {
 		}
 
 	    &:nth-of-type(odd) {
-	    	background-color: #f3f3f3;
+	    	background-color: @lightgrey;
 		}
 	}
 	#nrPersons {
-	    background-color: #8EE7DE;
+	    background-color: @lightgreen;
 	    font-weight: bold;
 	    label {
 			width: 50%;

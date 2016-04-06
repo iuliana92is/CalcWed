@@ -1,22 +1,18 @@
-h2 {
-	text-align: center;
-	font-size: 25px;
-	color: grey;
-	font-weight: bold; 
-	margin: 30px 0 10px 0;
-}
+@import url("variable/colors.less");
+
 table {
-	background-color: rgba(255, 255, 255, 0.8);
-	width: 960px; 
+	background-color: @highOpacity;
+	// max-width: 960px;
+    width: 80%;
 	margin: 0 auto;
 	box-sizing: border-box;
 	margin-top: 20px;
-	box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	box-shadow: @baseShadow;
 	thead{
 		tr{	
 			width: 35px;
 			line-height: 1.6;
-		    background-color: #8EE7DE;
+		    background-color: @lightgreen;
 		    font-weight: bold;
 		    padding: 0 10px; 
 			th{
@@ -48,10 +44,8 @@ table {
 				}
 			}
 			&:nth-of-type(odd) { 
-				background-color: #f3f3f3;
+				background-color: @lightgrey;
 			}
-
-
 		}
 	}
 }

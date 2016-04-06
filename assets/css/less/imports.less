@@ -7,31 +7,38 @@ body {
     background-attachment: fixed;
     background-size: auto 100%;
     background-position: center;
-    color: #000000;
+    color: @basecolor;
     input {
-    	color: black;
+    	color: @basecolor;
     }
 }
 
+h2 {
+  text-align: center;
+  font-size: 25px;
+  color: @basecolor;
+  font-weight: bold; 
+  margin: 30px 0 10px 0;
+}
+
 ::-webkit-input-placeholder {
-   color: #000000;
+   color: @basecolor;
 }
 
 :-moz-placeholder { /* Firefox 18- */
-   color: #000000;  
+   color: @basecolor;  
 }
 
 ::-moz-placeholder {  /* Firefox 19+ */
-   color: #000000;  
+   color: @basecolor;  
 }
 
 :-ms-input-placeholder {  
-   color: #000000;  
+   color: @basecolor;  
 }
 
-
-
 @import url("fonts.less");
+@import url("variable/colors.less");
 
 @import url("header.less"); 
 @import url("persons.less");
