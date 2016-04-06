@@ -5,7 +5,7 @@ var express = require('express'),
 var fs = require("fs");
 var content = fs.readFileSync("assets/json/gallery.json");
 var contentJSON =JSON.parse(content);
-
+ 
 // set the view engine
 server.set('view engine', 'hbs');
 
@@ -28,6 +28,7 @@ server.get('/', function(req, res) {
         layoutsDir: __dirname + '/views/layouts'
     }));
     res.render('index', contentJSON);
+ 
 });
 
 server.get('/second_page', function(req, res) {
@@ -36,5 +37,5 @@ server.get('/second_page', function(req, res) {
 });
 
 server.listen(9999);
-console.log("Serverul a pornit cu portul:'9090'");  
-
+console.log("Serverul a pornit cu portul:'9999'");  
+ 

@@ -58,5 +58,6 @@
 
 
 }(window, window.CALCULATOR, window.jQuery));
+ 
 
 
