@@ -2,6 +2,10 @@
   clear: both;
 }
 body {
+  background-image: url(../../img/structure/background.jpg);
+  background-attachment: fixed;
+  background-size: auto 100%;
+  background-position: center;
   color: #000000;
 }
 body input {
@@ -177,7 +181,7 @@ form#persons div:nth-of-type(odd) {
   background-color: #f3f3f3;
 }
 form#persons #nrPersons {
-  background-color: grey;
+  background-color: #8EE7DE;
   font-weight: bold;
 }
 form#persons #nrPersons label {
@@ -209,7 +213,7 @@ table {
 table thead tr {
   width: 35px;
   line-height: 1.6;
-  background-color: grey;
+  background-color: #8EE7DE;
   font-weight: bold;
   padding: 0 10px;
 }
@@ -241,6 +245,12 @@ table tbody tr td input {
 }
 table tbody tr:nth-of-type(odd) {
   background-color: #f3f3f3;
+}
+#allCosts tbody tr {
+  background-color: #8EE7DE;
+}
+#allCosts tbody tr:nth-of-type(odd) {
+  background-color: #FFA09D;
 }
 footer {
   width: 100%;

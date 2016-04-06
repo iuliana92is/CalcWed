@@ -1,0 +1,7 @@
+#allCosts tbody tr {
+  background-color: #8EE7DE;
+}
+#allCosts tbody tr:nth-of-type(odd) {
+  background-color: #FFA09D;
+}
+/*# sourceMappingURL=costs.css.map */
