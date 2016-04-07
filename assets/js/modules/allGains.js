@@ -5,8 +5,8 @@
      
     var allGains ={};
 
-    allGains.calcSumGains=function(){
-    	// var allCash = $('#gainsCash');
+    allGains.calcSumGains=function(){ 
+        
     	var gains = 0;
 
     	var parent = $('#parent').val();

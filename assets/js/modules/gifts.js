@@ -17,8 +17,7 @@
        	var giftsMoney =$('#gainsParents').val();	
 	    	spents = parseInt(parent) * parseInt($('.giftsParent').val()) +
 	    			parseInt(godparent) * parseInt($('.giftsGodparent').val()) +
-	    			(parseInt(family) + parseInt(friend)) * parseInt($('.giftsAll').val());
-	    			// console.log(giftsMoney); 
+	    			(parseInt(family) + parseInt(friend)) * parseInt($('.giftsAll').val()); 
 
 	    var afisare = $('#giftsPay').find('#gifts');
 	    
